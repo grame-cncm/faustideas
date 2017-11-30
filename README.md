@@ -113,6 +113,18 @@ Be able to generate tenser flow code with Faust.
 
 ---
 
+## Implement Modal Reverbs in Faust
+
+* Currently addressed by: nill
+
+Implement Jonathan Abel's modal reverb algorithm. A companion idea would be
+to create a website implementing modal reverbs of various landmarks in the
+world (e.g., cathedrals, caves, etc.) for people to be able to process the 
+sound of their microphone. Thanks to the felxibility of this type of algorithm,
+it would be possible to change the reverb parameters in real-time.
+
+---
+
 ## Improved Linear Algebra Support
 
 * Currently addressed by: nill
