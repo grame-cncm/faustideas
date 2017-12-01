@@ -18,9 +18,9 @@ section below.
 * [Improve the Faust Website](#improve-the-faust-website)
 * [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
 * [Create a Separate Repository for the Faust Libraries](#create-a-separate-repository-for-the-faust-libraries)
-* [Improved UI Declarations](#impoved-ui-declarations)
-* [TenserFlow Support](#tenserflow-support)
-* [Improved Linear Algebra Support](#inproved-linear-algebra-support)
+* [Improved UI Declarations](#improved-ui-declarations)
+* [TenserFlow Support](#tensorflow-support)
+* [Improved Linear Algebra Support](#improved-linear-algebra-support)
 
 ---
 
@@ -105,11 +105,11 @@ reformatting.
 
 ---
 
-## TenserFlow Support
+## TensorFlow Support
 
 * Currently addressed by: Tim O'Brien
 
-Be able to generate tenser flow code with Faust.
+Be able to generate TensorFlow code with Faust.
 
 ---
 
@@ -120,7 +120,7 @@ Be able to generate tenser flow code with Faust.
 Implement Jonathan Abel's modal reverb algorithm. A companion idea would be
 to create a website implementing modal reverbs of various landmarks in the
 world (e.g., cathedrals, caves, etc.) for people to be able to process the 
-sound of their microphone. Thanks to the felxibility of this type of algorithm,
+sound of their microphone. Thanks to the flexibility of this type of algorithm,
 it would be possible to change the reverb parameters in real-time.
 
 ---
@@ -139,8 +139,8 @@ etc.) primitives could be added to the language.
 Matrices could be expressed using the Faust-multirate `vectorize` primitives
 by creating vectors of vectors.
 
-It would be interesting to try implement matrix operations from scratch in 
-Faust. Although it me hard and not so optimized, thus a more pragmatic
+It would be interesting to try to implement matrix operations from scratch in 
+Faust. Although it might be hard and not so optimized, thus a more pragmatic
 solution would be to implement them as primitives. That would be a fair amount
 of work as this would imply that the corresponding code for each language
 supported by Faust would have to be supported. 
