@@ -21,6 +21,7 @@ section below.
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
 * [Improved Linear Algebra Support](#improved-linear-algebra-support)
+* [Trigonometric simplifications](#trigonometric-simplifications)
 
 ---
 
