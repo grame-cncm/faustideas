@@ -19,7 +19,7 @@ section below.
 * [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
 * [Create a Separate Repository for the Faust Libraries](#create-a-separate-repository-for-the-faust-libraries)
 * [Improved UI Declarations](#improved-ui-declarations)
-* [TenserFlow Support](#tensorflow-support)
+* [TensorFlow Support](#tensorflow-support)
 * [Improved Linear Algebra Support](#improved-linear-algebra-support)
 
 ---
@@ -51,7 +51,7 @@ imply some compromises and be a fair amount of work but it is really worth it.
 
 ## Separate Repository for the Faust Libraries
 
-* Currently addressed by: nill
+* Currently addressed by: Yann
 
 Since Faust libraries are shared between multiple projects and repositories
 (e.g., FaustLive, Faust web editor, Faust compiler, etc.), it would make much
@@ -144,5 +144,13 @@ Faust. Although it might be hard and not so optimized, thus a more pragmatic
 solution would be to implement them as primitives. That would be a fair amount
 of work as this would imply that the corresponding code for each language
 supported by Faust would have to be supported. 
+
+---
+
+## Trigonometric simplifications
+
+* Currently addressed by: nill (suggested by [Pierre Leconte](https://github.com/grame-cncm/faust/issues/59))
+
+For some applications, trigonometric functions (spherical harmonics) are used, and depending on the algorithm, the output formula could be very complicated. However, in a lot of cases, trigonometric identities could help to simplify drastically the expressions.
 
 ---
