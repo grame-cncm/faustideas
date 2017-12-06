@@ -18,6 +18,7 @@ section below.
 * [Improve the Faust Website](#improve-the-faust-website)
 * [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
 * [Create a Separate Repository for the Faust Libraries](#create-a-separate-repository-for-the-faust-libraries)
+* [Implement Jonathan Abel's Modal Reverb](implement-jonathan-abels-modal-reverb)
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
 * [Improved Linear Algebra Support](#improved-linear-algebra-support)
@@ -57,6 +58,21 @@ imply some compromises and be a fair amount of work but it is really worth it.
 Since Faust libraries are shared between multiple projects and repositories
 (e.g., FaustLive, Faust web editor, Faust compiler, etc.), it would make much
 more sense to centralize them in a single place. 
+
+---
+
+## Implement Jonathan Abel's Modal Reverb
+
+* Currently addressed by: Romain and Yann
+
+This should be done as part of the Longyou grottoes project. The "final goal"
+would be to create an interactive website where users can process the sound of
+their microphone to apply the acoustics of this ancient space. Modal reverb
+would allow to interpolate between IRs and change some of the parameters of
+the space in real-time. It'd be nice if this could be reproducible so we need
+to think about a way to nicely generate these reverbs from an impulse response.
+This tool could be similar to `mesh2faust` or could come as part of a toolkit
+in matlab/octave/pyhton, etc.  
 
 ---
 
