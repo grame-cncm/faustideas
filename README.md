@@ -22,6 +22,7 @@ section below.
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
 * [Improved Linear Algebra Support](#improved-linear-algebra-support)
+* [Finish the DX7 Implementation](#finish-the-dx7-implementation)
 * [Trigonometric simplifications](#trigonometric-simplifications)
 
 ---
@@ -149,6 +150,16 @@ Faust. Although it might be hard and not so optimized, thus a more pragmatic
 solution would be to implement them as primitives. That would be a fair amount
 of work as this would imply that the corresponding code for each language
 supported by Faust would have to be supported. 
+
+---
+
+## Finish the DX7 Implementation
+
+Essentially, finish `dx7.lib`. It might be worth looking at these elements to
+make this happen:
+
+* <https://webaudiomodules.org/demos/wasm/dx7.html>
+* <https://github.com/everythingwillbetakenaway/DX7-Supercollider>
 
 ---
 
