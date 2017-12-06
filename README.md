@@ -17,7 +17,6 @@ section below.
 
 * [Improve the Faust Website](#improve-the-faust-website)
 * [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
-* [Create a Separate Repository for the Faust Libraries](#create-a-separate-repository-for-the-faust-libraries)
 * [Implement Jonathan Abel's Modal Reverb](implement-jonathan-abels-modal-reverb)
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
@@ -49,16 +48,6 @@ The main reason for doing this is to be able to have a portable html version
 of the documentation. This is very important as having a doc in this format
 will allow for a better listing by web search engines. Obviously, this will
 imply some compromises and be a fair amount of work but it is really worth it.
-
----
-
-## Separate Repository for the Faust Libraries
-
-* Currently addressed by: Yann
-
-Since Faust libraries are shared between multiple projects and repositories
-(e.g., FaustLive, Faust web editor, Faust compiler, etc.), it would make much
-more sense to centralize them in a single place. 
 
 ---
 
