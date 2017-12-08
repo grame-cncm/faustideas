@@ -16,6 +16,7 @@ section below.
 ## List
 
 * [Improve the Faust Website](#improve-the-faust-website)
+* [Move Library Documentation to the Libraries Repo and Try to Automate Doc Generation on the GH-pages Branch](#move-library-documentation)
 * [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
 * [Implement Jonathan Abel's Modal Reverb](implement-jonathan-abels-modal-reverb)
 * [Improved UI Declarations](#improved-ui-declarations)
@@ -37,6 +38,14 @@ There's lots of work to do here, in particular:
 * Make things more obvious
 * Improve the overall design/theme, the new Faust logo should be more visible
 * Highlight the web editor: make it a central component of the website
+
+---
+
+## Move Library Documentation to the Libraries Repo and Try to Automate Doc Generation on the GH-pages Branch
+
+* Currently addressed by: nill
+
+Just do it...
 
 ---
 
