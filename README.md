@@ -24,6 +24,7 @@ section below.
 * [Improved Linear Algebra Support](#improved-linear-algebra-support)
 * [Finish the DX7 Implementation](#finish-the-dx7-implementation)
 * [Trigonometric simplifications](#trigonometric-simplifications)
+* [WebAssembly specific optimisations](#webassembly-optimisations)
 
 ---
 
@@ -168,3 +169,10 @@ make this happen:
 For some applications, trigonometric functions (spherical harmonics) are used, and depending on the algorithm, the output formula could be very complicated. However, in a lot of cases, trigonometric identities could help to simplify drastically the expressions.
 
 ---
+
+## WebAssembly specific optimisations
+
+* Currently addressed by: Stéphane and Yann
+
+To run as fast as possible and approch native code performances as much as possible, WebAssembly code requires some specific optimisations, like: memory access (index precomputation as much as possible...), delay lines handling, struck/stack variable access...etc. We have started an informal collaboration with Mozilla engineers (Benjamin Bouvier) to work on this subject.
+
