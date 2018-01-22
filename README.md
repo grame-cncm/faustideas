@@ -25,7 +25,7 @@ section below.
 * [Finish the DX7 Implementation](#finish-the-dx7-implementation)
 * [Trigonometric simplifications](#trigonometric-simplifications)
 * [WebAssembly specific optimisations](#webassembly-optimisations)
-* [Testing tools on the Web]](#testing-tools)
+* [Testing tools on the Web](#testing-tools)
 
 ---
 
@@ -183,7 +183,7 @@ To run as fast as possible and approch native code performances as much as possi
 
 * Currently addressed by: nill
 
-Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoides..) would be available.
+Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
 
 
 
