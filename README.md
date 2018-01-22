@@ -25,6 +25,7 @@ section below.
 * [Finish the DX7 Implementation](#finish-the-dx7-implementation)
 * [Trigonometric simplifications](#trigonometric-simplifications)
 * [WebAssembly specific optimisations](#webassembly-optimisations)
+* [Testing tools on the Web]](#testing-tools)
 
 ---
 
@@ -175,4 +176,14 @@ For some applications, trigonometric functions (spherical harmonics) are used, a
 * Currently addressed by: Stéphane and Yann
 
 To run as fast as possible and approch native code performances as much as possible, WebAssembly code requires some specific optimisations, like: memory access (index precomputation as much as possible...), delay lines handling, struck/stack variable access...etc. We have started an informal collaboration with Mozilla engineers (Benjamin Bouvier) to work on this subject.
+
+---
+
+## Testing tools on the Web
+
+* Currently addressed by: nill
+
+Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoides..) would be available.
+
+
 
