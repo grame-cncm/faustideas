@@ -8,7 +8,7 @@ language](http://faust.grame.fr).
 * Items are placed at the bottom of the file and separated by `---`. 
 * Items can have a person associated to them by declaring `* Currently 
 addressed by: xxx`. If no-one is currently working on the item, replace 
-`xxx` by `nill`. 
+`xxx` by `nil`. 
 * Items are ordered by priority and are also listed in the [List](#list) 
 section below. 
 * Items can be commented by adding subsections, pictures, etc. 
@@ -18,7 +18,7 @@ section below.
 * [Improve the Faust Website](#improve-the-faust-website)
 * [Move Library Documentation to the Libraries Repo and Try to Automate Doc Generation on the GH-pages Branch](#move-library-documentation)
 * [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
-* [Implement Jonathan Abel's Modal Reverb](implement-jonathan-abels-modal-reverb)
+* [Implement Jonathan Abel's Modal Reverb](#implement-jonathan-abels-modal-reverb)
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
 * [Improved Linear Algebra Support](#improved-linear-algebra-support)
@@ -45,7 +45,7 @@ There's lots of work to do here, in particular:
 
 ## Move Library Documentation to the Libraries Repo and Try to Automate Doc Generation on the GH-pages Branch
 
-* Currently addressed by: nill
+* Currently addressed by: nil
 
 Just do it...
 
@@ -111,6 +111,7 @@ declare UI "
 f = hslider("freq",400,50,1000,0.1);
 g = hslider("gain",0.5,0,1,0.01);
 process = hgroup("synth",os.sawtooth(f)*g);
+
 ```
 
 Of course, it would still be possible to declare metadatas within the UI
@@ -133,7 +134,7 @@ Be able to generate TensorFlow code with Faust.
 
 ## Improved Linear Algebra Support
 
-* Currently addressed by: nill
+* Currently addressed by: nil
 
 Linear algebra operations are currently poorly supported in Faust. Having a
 way to conveniently express matrices would improvement. As part of that,
@@ -165,7 +166,7 @@ make this happen:
 
 ## Trigonometric simplifications
 
-* Currently addressed by: nill (suggested by [Pierre Leconte](https://github.com/grame-cncm/faust/issues/59))
+* Currently addressed by: nil (suggested by [Pierre Leconte](https://github.com/grame-cncm/faust/issues/59))
 
 For some applications, trigonometric functions (spherical harmonics) are used, and depending on the algorithm, the output formula could be very complicated. However, in a lot of cases, trigonometric identities could help to simplify drastically the expressions.
 
@@ -175,13 +176,13 @@ For some applications, trigonometric functions (spherical harmonics) are used, a
 
 * Currently addressed by: Stéphane and Yann
 
-To run as fast as possible and approch native code performances as much as possible, WebAssembly code requires some specific optimisations, like: memory access (index precomputation as much as possible...), delay lines handling, struck/stack variable access...etc. We have started an informal collaboration with Mozilla engineers (Benjamin Bouvier) to work on this subject.
+To run as fast as possible and approch native code performances as much as possible, WebAssembly code requires some specific optimisations, like: memory access (index precomputation as much as possible...), delay lines handling, struct/stack variables access...etc. We have started an informal collaboration with Mozilla engineers (Benjamin Bouvier) to work on this subject.
 
 ---
 
 ## Testing tools on the Web
 
-* Currently addressed by: nill
+* Currently addressed by: nil
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
 
