@@ -1,3 +1,14 @@
+
+## Submitting a Google Summer of Code project
+
+The application process for GSoC consists of next steps:
+
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
+- join to [Faust Slack channel](https://faustaudio.slack.com.) and/or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord
+- search mentor for chosen project in mailing list discuss
+- get invite to chosen project in Faust github organization
+- submit the application/proposal including all requirements at the Google Summer of Code Site
+
 # Faust ideas
 
 This repository hosts the "TODO/ideas list" for the [Faust programming 
