@@ -26,7 +26,6 @@ section below.
 
 ## List
 
-* [Improve the Faust Website](#improve-the-faust-website)
 * [Implement Jonathan Abel's Modal Reverb](#implement-jonathan-abels-modal-reverb)
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
@@ -38,20 +37,6 @@ section below.
 * [Integration in Bespoke](#integration-in-bespoke)
 * [Integration in Cables.jl](#integration-in-cables-jl)
 * [Integration in HISE](#integration-in-hise)
----
-
-## Improve the Faust Website
-
-* Currently addressed by: Romain
-
-There's lots of work to do here, in particular:
-
-* Improve the doc (see [corresponding item](#rewrite-the-faust-documentation-in-markdown))
-* Add tutorials structured in a clear way (not as news posts)
-* Make things more obvious
-* Improve the overall design/theme, the new Faust logo should be more visible
-* Highlight the web editor: make it a central component of the website
-
 ---
 
 ## Implement Jonathan Abel's Modal Reverb
