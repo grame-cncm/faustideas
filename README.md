@@ -37,6 +37,7 @@ section below.
 * [Integration in Bespoke](#integration-in-bespoke)
 * [Integration in Cables.jl](#integration-in-cables-jl)
 * [Integration in HISE](#integration-in-hise)
+* [Improve faust2audiokit](#improve-faust2audiokit)
 ---
 
 ## Implement Jonathan Abel's Modal Reverb
@@ -192,3 +193,11 @@ HISE is a cross-platform open source audio application for building virtual inst
 The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 This is currently [discused here](https://github.com/christophhart/HISE/issues/224).
 
+
+---
+
+## Improve faust2audiokit
+
+The [faust2audiokit](https://github.com/grame-cncm/faust/tree/master-dev/architecture/audiokit) tool transforms a Faust DSP program into a fully working AudioKit node. The result can be a monophonic DSP or a MIDI controllable polyphonic one (when the DSP describes an instrument, following the freq, gain, gate parameter naming convention).
+
+The project consist in improving and finishing the tool.
