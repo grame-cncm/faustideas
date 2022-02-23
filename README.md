@@ -35,7 +35,9 @@ section below.
 * [Trigonometric simplifications](#trigonometric-simplifications)
 * [WebAssembly specific optimisations](#webassembly-optimisations)
 * [Testing tools on the Web](#testing-tools)
-
+* [Integration in Bespoke](#integration-in-bespoke)
+* [Integration in Cables.jl](#integration-in-cables-jl)
+* [Integration in HISE](#integration-in-hise)
 ---
 
 ## Improve the Faust Website
@@ -177,4 +179,31 @@ To run as fast as possible and approch native code performances as much as possi
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
 
 
+---
+
+## Integration in Bespoke
+
+* Currently addressed by: nil
+
+[Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
+Benedict Gaster work (https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the BespokeSynth integration. So possibly this work could be directly merged.
+An more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discused here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
+
+---
+
+## Integration in Cables.jl
+
+Cables is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind.
+Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
+
+The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl.
+
+---
+
+## Integration in HISE
+
+HISE is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
+
+The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+This is currently [discused here](https://github.com/christophhart/HISE/issues/224).
 
