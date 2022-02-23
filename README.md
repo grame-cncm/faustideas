@@ -27,8 +27,6 @@ section below.
 ## List
 
 * [Improve the Faust Website](#improve-the-faust-website)
-* [Move Library Documentation to the Libraries Repo and Try to Automate Doc Generation on the GH-pages Branch](#move-library-documentation)
-* [Rewrite the Faust Documentation in Markdown ](#rewrite-the-faust-documentation-in-markdown)
 * [Implement Jonathan Abel's Modal Reverb](#implement-jonathan-abels-modal-reverb)
 * [Improved UI Declarations](#improved-ui-declarations)
 * [TensorFlow Support](#tensorflow-support)
@@ -51,25 +49,6 @@ There's lots of work to do here, in particular:
 * Make things more obvious
 * Improve the overall design/theme, the new Faust logo should be more visible
 * Highlight the web editor: make it a central component of the website
-
----
-
-## Move Library Documentation to the Libraries Repo and Try to Automate Doc Generation on the GH-pages Branch
-
-* Currently addressed by: nil
-
-Just do it...
-
----
-
-## Rewrite the Faust Documentation in Markdown 
-
-* Currently addressed by: Romain
-
-The main reason for doing this is to be able to have a portable html version
-of the documentation. This is very important as having a doc in this format
-will allow for a better listing by web search engines. Obviously, this will
-imply some compromises and be a fair amount of work but it is really worth it.
 
 ---
 
@@ -137,7 +116,7 @@ reformatting.
 
 ## TensorFlow Support
 
-* Currently addressed by: Tim O'Brien
+* Currently addressed by: nil
 
 Be able to generate TensorFlow code with Faust.
 
@@ -195,7 +174,7 @@ To run as fast as possible and approch native code performances as much as possi
 
 * Currently addressed by: nil
 
-Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
+Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
 
 
 
