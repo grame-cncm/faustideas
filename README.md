@@ -44,14 +44,10 @@ section below.
 
 * Currently addressed by: Romain and Yann
 
-This should be done as part of the Longyou grottoes project. The "final goal"
-would be to create an interactive website where users can process the sound of
-their microphone to apply the acoustics of this ancient space. Modal reverb
-would allow to interpolate between IRs and change some of the parameters of
-the space in real-time. It'd be nice if this could be reproducible so we need
-to think about a way to nicely generate these reverbs from an impulse response.
-This tool could be similar to `mesh2faust` or could come as part of a toolkit
-in matlab/octave/pyhton, etc.  
+This should be done as part of the Longyou grottoes project. The "final goal" would be to create an interactive website where users can process the sound of
+their microphone to apply the acoustics of this ancient space. Modal reverb would allow to interpolate between IRs and change some of the parameters of
+the space in real-time. It'd be nice if this could be reproducible so we need to think about a way to nicely generate these reverbs from an impulse response.
+This tool could be similar to `mesh2faust` or could come as part of a toolkit in matlab/octave/pyhton, etc.  
 
 ---
 
@@ -59,16 +55,12 @@ in matlab/octave/pyhton, etc.
 
 * Currently addressed by: Romain and Yann
 
-Essentially allow for specific UI elements to have metadatas associated to them
-outside of their declaration. As part of that, we want to implement a system
-to further customize UI elements. 
+Essentially allow for specific UI elements to have metadatas associated to them outside of their declaration. As part of that, we want to implement a system to further customize UI elements. 
 
 ### Potential Implementation
 
-Several approaches are being considered to further customize UI elements. The 
-first one would consist of being able to declare a "CSS" allowing for the use
-of CSS code. Another approach (more generic and not limited to the web) would
-allow for the declaration of UI-specific metadata inspired by CSS. 
+Several approaches are being considered to further customize UI elements. The first one would consist of being able to declare a "CSS" allowing for the use
+of CSS code. Another approach (more generic and not limited to the web) would allow for the declaration of UI-specific metadata inspired by CSS. 
 
 ```
 declare UI "
@@ -92,13 +84,7 @@ process = hgroup("synth",os.sawtooth(f)*g);
 
 ```
 
-Of course, it would still be possible to declare metadatas within the UI
-declaration (this system would be fully backward compatible). Internally,
-we'd have to parse the metadata and create a corpus of supported CSS metadatas
-knowing that interfaces would be based on a specific kind of layout (e.g.,
-grid layout). Once again, another option would be to allow to specify "pure
-CSS" giving access to all the CSS features without having to do some 
-reformatting. 
+Of course, it would still be possible to declare metadatas within the UI declaration (this system would be fully backward compatible). Internally, we'd have to parse the metadata and create a corpus of supported CSS metadatas knowing that interfaces would be based on a specific kind of layout (e.g., grid layout). Once again, another option would be to allow to specify "pure CSS" giving access to all the CSS features without having to do some reformatting. 
 
 ---
 
@@ -114,21 +100,14 @@ Be able to generate TensorFlow code with Faust.
 
 * Currently addressed by: nil
 
-Linear algebra operations are currently poorly supported in Faust. Having a
-way to conveniently express matrices would improvement. As part of that,
-linear algebra/matrix operations (e.g., inversion, multiplication, determinant,
-etc.) primitives could be added to the language.
+Linear algebra operations are currently poorly supported in Faust. Having a way to conveniently express matrices would improvement. As part of that, linear algebra/matrix operations (e.g., inversion, multiplication, determinant, etc.) primitives could be added to the language.
 
 ### Potential Implementation
 
 Matrices could be expressed using the Faust-multirate `vectorize` primitives
 by creating vectors of vectors.
 
-It would be interesting to try to implement matrix operations from scratch in 
-Faust. Although it might be hard and not so optimized, thus a more pragmatic
-solution would be to implement them as primitives. That would be a fair amount
-of work as this would imply that the corresponding code for each language
-supported by Faust would have to be supported. 
+It would be interesting to try to implement matrix operations from scratch in  Faust. Although it might be hard and not so optimized, thus a more pragmatic solution would be to implement them as primitives. That would be a fair amount of work as this would imply that the corresponding code for each language supported by Faust would have to be supported. 
 
 ---
 
@@ -164,7 +143,6 @@ To run as fast as possible and approch native code performances as much as possi
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
 
-
 ---
 
 ## Integration in Bespoke
@@ -173,7 +151,7 @@ Faust distribution already contains some testing tools, like `faust2plot` or `fa
 
 [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
 Benedict Gaster work (https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the BespokeSynth integration. So possibly this work could be directly merged.
-An more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discused here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
+An more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
 
 ---
 
@@ -191,8 +169,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
 
 The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
-This is currently [discused here](https://github.com/christophhart/HISE/issues/224).
-
+This is currently [discussed here](https://github.com/christophhart/HISE/issues/224).
 
 ---
 
