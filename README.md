@@ -26,19 +26,20 @@ section below.
 
 ## List
 
-* [Implement Jonathan Abel's Modal Reverb](#implement-jonathan-abels-modal-reverb)
-* [Improved UI Declarations](#improved-ui-declarations)
-* [TensorFlow Support](#tensorflow-support)
-* [Improved Linear Algebra Support](#improved-linear-algebra-support)
-* [Finish the DX7 Implementation](#finish-the-dx7-implementation)
-* [Trigonometric simplifications](#trigonometric-simplifications)
-* [WebAssembly specific optimisations](#webassembly-optimisations)
-* [Testing tools on the Web](#testing-tools)
-* [Integration in Bespoke](#integration-in-bespoke)
-* [Integration in Cables.jl](#integration-in-cables-jl)
-* [Integration in HISE](#integration-in-hise)
-* [Improve faust2audiokit](#improve-faust2audiokit)
----
+- [Implement Jonathan Abel's Modal Reverb](#implement*jonathan-abels*modal-reverb)
+- [Improved UI Declarations](#improved-ui-declarations)
+- [TensorFlow Support](#tensorflow-support)
+- [Improved Linear Algebra Support](#improved-linear-algebra-support)
+- [Finish the DX7 Implementation](#finish-the-dx7-implementation)
+- [Trigonometric simplifications](#trigonometric-simplifications)
+- [WebAssembly specific optimisations](#webassembly-specific-optimisations)
+- [Testing tools on the Web](#testing-tools-on-the-web)
+- [Integration in Bespoke](#integration-in-bespoke)
+- [Integration in Cables.jl](#integration-in-cablesjl)
+- [Integration in HISE](#integration-in-hise)
+- [Improve faust2audiokit](#improve-faust2audiokit)
+- [Faust programming by examples](#faust-programming-by-examples)
+
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -49,7 +50,6 @@ their microphone to apply the acoustics of this ancient space. Modal reverb woul
 the space in real-time. It'd be nice if this could be reproducible so we need to think about a way to nicely generate these reverbs from an impulse response.
 This tool could be similar to `mesh2faust` or could come as part of a toolkit in matlab/octave/pyhton, etc.  
 
----
 
 ## Improved UI Declarations
 
@@ -178,3 +178,9 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 The [faust2audiokit](https://github.com/grame-cncm/faust/tree/master-dev/architecture/audiokit) tool transforms a Faust DSP program into a fully working AudioKit node. The result can be a monophonic DSP or a MIDI controllable polyphonic one (when the DSP describes an instrument, following the freq, gain, gate parameter naming convention).
 
 The project consist in improving and finishing the tool.
+
+## Faust programming by examples
+
+The objective is to develop a new approach to Faust programming, not textual or graphical, but based on DAW-like examples. This programming principle is analogue to the one described in the article *"real time composition in Elody"* (https://hal.archives-ouvertes.fr/hal-02158910/document). This approach is based on the idea of manipulating and editing virtual "audio files" which represent the real time audio inputs and outputs. 
+
+To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`.
