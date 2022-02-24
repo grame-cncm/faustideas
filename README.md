@@ -39,7 +39,7 @@ section below.
 - [Integration in HISE](#integration-in-hise)
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Faust programming by examples](#faust-programming-by-examples)
-- [Graphical language built on top of the signal API](#graphical-language-built-on-top-of-the-signal-api)
+- [Graphical language built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 
 
 ## Implement Jonathan Abel's Modal Reverb
@@ -200,10 +200,10 @@ To take a simple monophonic example, let's call these two virtual audio files `I
 
 ---
 
-## Graphical language built on top of the signal API
+## Languages built on top of the signal API
 
 * Currently addressed by: nil
 
 The [signal API](https://faustdoc.grame.fr/tutorials/signal-api/) opens an intermediate access inside the Faust compilation chain. Generating complex expressions by directly using it can quickly become really tricky and unpracticable. So a language created on top of the signal API is usually needed. This is exactly what the Block Diagram Algebra is all about, and the entire Faust language itself.
 
-But some other approaches can possibly be tested. The [Elementary audio language](https://www.elementary.audio) for instance is built over a [similar signal](https://docs.elementary.audio/guides/making_sound) language and uses JavaScript as the upper layer language to help create complex signal graphs programmatically. The project consits in exploring how a graphical language could be built on top of the signal API and be compiled to efficient code using the lower part of the Faust compilation chain. 
+But some other approaches can possibly be tested. The [Elementary audio language](https://www.elementary.audio) for instance is built over a [similar signal](https://docs.elementary.audio/guides/making_sound) language and uses JavaScript as the upper layer language to help create complex signal graphs programmatically. The project consits in exploring various approaches to build a language on top of the signal API. It could be a textual one (like JavaScript, Haskell or scripting languages...) or a purely graphical tool. 
