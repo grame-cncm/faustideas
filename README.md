@@ -39,7 +39,7 @@ section below.
 - [Integration in HISE](#integration-in-hise)
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Faust programming by examples](#faust-programming-by-examples)
-- [Alternative anguages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
+- [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
 
 
 ## Implement Jonathan Abel's Modal Reverb
