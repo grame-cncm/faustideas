@@ -39,6 +39,7 @@ section below.
 - [Integration in HISE](#integration-in-hise)
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Faust programming by examples](#faust-programming-by-examples)
+- [Graphical language built on top of the signal API](#graphical-language-built-on-top-of-the-signal-api)
 
 
 ## Implement Jonathan Abel's Modal Reverb
@@ -179,8 +180,18 @@ The [faust2audiokit](https://github.com/grame-cncm/faust/tree/master-dev/archite
 
 The project consist in improving and finishing the tool.
 
+---
+
 ## Faust programming by examples
 
 The objective is to develop a new approach to Faust programming, not textual or graphical, but based on DAW-like examples. This programming principle is analogue to the one described in the article *"real time composition in Elody"* (https://hal.archives-ouvertes.fr/hal-02158910/document). This approach is based on the idea of manipulating and editing virtual "audio files" which represent the real time audio inputs and outputs. 
 
-To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`.
+To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`. The project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. 
+
+---
+
+## Graphical language built on top of the signal API
+
+The [signal API](https://faustdoc.grame.fr/tutorials/signal-api/) opens an intermediate access inside the Faust compilation chain. Generating complex expressions by directly using it can quickly become really tricky and unpracticable. So a language created on top of the signal API is usually needed. This is exactly what the Block Diagram Algebra is all about, and the entire Faust language itself.
+
+But some other approaches can possibly be tested. The [Elementary audio language](https://www.elementary.audio) for instance is built over a [similar signal](https://docs.elementary.audio/guides/making_sound) language and uses JavaScript as the upper layer language to help create complex signal graphs programmatically. The project consits in exploring how a graphical language could be built on top of the signal API and be compiled to efficient code using the lower part of the Faust compilation chain. 
