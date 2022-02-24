@@ -114,6 +114,8 @@ It would be interesting to try to implement matrix operations from scratch in  F
 
 ## Finish the DX7 Implementation
 
+* Currently addressed by: nil
+
 Essentially, finish `dx7.lib`. It might be worth looking at these elements to
 make this happen:
 
@@ -158,6 +160,8 @@ An more ambitious approach would be to directly embed the Faust compiler (using 
 
 ## Integration in Cables.jl
 
+* Currently addressed by: nil
+
 [Cables](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind.
 Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
 
@@ -166,6 +170,8 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 ---
 
 ## Integration in HISE
+
+* Currently addressed by: nil
 
 [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
 
@@ -176,6 +182,8 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 ## Improve faust2audiokit
 
+* Currently addressed by: nil
+
 The [faust2audiokit](https://github.com/grame-cncm/faust/tree/master-dev/architecture/audiokit) tool transforms a Faust DSP program into a fully working AudioKit node. The result can be a monophonic DSP or a MIDI controllable polyphonic one (when the DSP describes an instrument, following the freq, gain, gate parameter naming convention).
 
 The project consist in improving and finishing the tool.
@@ -184,6 +192,8 @@ The project consist in improving and finishing the tool.
 
 ## Faust programming by examples
 
+* Currently addressed by: nil
+
 The objective is to develop a new approach to Faust programming, not textual or graphical, but based on DAW-like examples. This programming principle is analogue to the one described in the article *"real time composition in Elody"* (https://hal.archives-ouvertes.fr/hal-02158910/document). This approach is based on the idea of manipulating and editing virtual "audio files" which represent the real time audio inputs and outputs. 
 
 To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`. The project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. 
@@ -191,6 +201,8 @@ To take a simple monophonic example, let's call these two virtual audio files `I
 ---
 
 ## Graphical language built on top of the signal API
+
+* Currently addressed by: nil
 
 The [signal API](https://faustdoc.grame.fr/tutorials/signal-api/) opens an intermediate access inside the Faust compilation chain. Generating complex expressions by directly using it can quickly become really tricky and unpracticable. So a language created on top of the signal API is usually needed. This is exactly what the Block Diagram Algebra is all about, and the entire Faust language itself.
 
