@@ -26,25 +26,6 @@ section below.
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Testing tools on the Web](#testing-tools-on-the-web)
 
-## Google Summer of Code possible projects
-
-The application process for GSoC consists of next steps:
-
-- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
-- join to [Faust Slack channel](https://faustaudio.slack.com) and/or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord
-- search mentor for chosen project in mailing list discuss
-- get invite to chosen project in Faust github organization
-- submit the application/proposal including all requirements at the Google Summer of Code Site
-
-Possible projects:
-
-- [Integration in Bespoke](#integration-in-bespoke)
-- [Integration in Cables.jl](#integration-in-cablesjl)
-- [Integration in HISE](#integration-in-hise)
-- [Faust programming by examples](#faust-programming-by-examples)
-- [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
-
-
 ## Implement Jonathan Abel's Modal Reverb
 
 * Currently addressed by: Romain and Yann
@@ -161,7 +142,25 @@ Faust distribution already contains some testing tools, like `faust2plot` or `fa
 
 ---
 
+
 # Google Summer of Code possible projects
+
+The application process for GSoC consists of next steps:
+
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
+- join to [Faust Slack channel](https://faustaudio.slack.com) and/or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord
+- search mentor for chosen project in mailing list discuss
+- get invite to chosen project in Faust github organization
+- submit the application/proposal including all requirements at the Google Summer of Code Site
+
+Possible projects:
+
+- [Integration in Bespoke](#integration-in-bespoke)
+- [Integration in Cables.jl](#integration-in-cablesjl)
+- [Integration in HISE](#integration-in-hise)
+- [Faust programming by examples](#faust-programming-by-examples)
+- [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
+
 
 ## Integration in Bespoke
 
