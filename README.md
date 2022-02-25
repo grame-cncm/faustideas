@@ -27,8 +27,8 @@ Possible projects:
 *Expected size of project:* 175 hours
 
 *More detailed description of the project:* [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
-Benedict Gaster work (https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the BespokeSynth integration. So possibly this work could be directly merged.
-An more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
+[Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be directly merged.
+A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
 
 *Expected outcomes:* the result will a Bespoke plugin embeding the libfaust library and allowing DSP program to be edited, dynamically compiled, and run in the platform
 
@@ -44,8 +44,7 @@ An more ambitious approach would be to directly embed the Faust compiler (using 
 
 *Expected size of project:* 175 hours
 
-*More detailed description of the project:* [Cables](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind.
-Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
+*More detailed description of the project:* [Cables](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind. Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
 
 The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl.
 
