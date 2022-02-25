@@ -85,7 +85,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`. 
 
-**Expected outcomes:** the project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. 
+**Expected outcomes:** the project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. A propotype coded in TypseScript, JavaScript or any other scripting languages will be developed.
 
 **Skills required/preferred:** C++ programming, possibly TypseScript + JavaScript or other scripting languages.
 
