@@ -18,6 +18,7 @@ Possible projects:
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
 
+---
 
 ## Integration in Bespoke
 
