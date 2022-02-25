@@ -30,7 +30,7 @@ Possible projects:
 [Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be directly merged.
 A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
 
-**Expected outcomes:** the result will a Bespoke plugin embeding the libfaust library and allowing DSP program to be edited, dynamically compiled, and run in the platform
+**Expected outcomes:** the result will a Bespoke plugin embeding the libfaust library and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, graphical programming 
 
@@ -48,7 +48,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl.
 
-**Expected outcomes:** the result will a Cable.ji plugin embeding the libfaust WASM library, and allowing DSP program to be edited, dynamically compiled, and run in the platform
+**Expected outcomes:** the result will a Cable.ji plugin embeding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, Web technologies
 
@@ -67,7 +67,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224).
 
-**Expected outcomes:** the result will a HISE plugin embeding the libfaust WASM library, and allowing DSP program to be edited, dynamically compiled, and run in the platform
+**Expected outcomes:** the result will a HISE plugin embeding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, knowledge of the JUCE framework
 
