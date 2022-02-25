@@ -22,19 +22,19 @@ Possible projects:
 
 ## Integration in Bespoke
 
-*Mentor:* Stéphane Letz
+**Mentor:** Stéphane Letz
 
-*Expected size of project:* 175 hours
+**Expected size of project:** 175 hours
 
-*More detailed description of the project:* [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
+**More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
 [Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be directly merged.
 A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
 
-*Expected outcomes:* the result will a Bespoke plugin embeding the libfaust library and allowing DSP program to be edited, dynamically compiled, and run in the platform
+**Expected outcomes:** the result will a Bespoke plugin embeding the libfaust library and allowing DSP program to be edited, dynamically compiled, and run in the platform
 
-*Skills required/preferred:* C++ programming, graphical programming 
+**Skills required/preferred:** C++ programming, graphical programming 
 
-*An easy, medium or hard difficulty rating of each project:* medium
+**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 
