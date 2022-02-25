@@ -1,4 +1,116 @@
 
+
+# Google Summer of Code possible projects
+
+The application process for GSoC consists of next steps:
+
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
+- join to [Faust Slack channel](https://faustaudio.slack.com) and/or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord
+- search mentor for chosen project in mailing list discuss
+- get invite to chosen project in Faust github organization
+- submit the application/proposal including all requirements at the Google Summer of Code Site
+
+Possible projects:
+
+- [Integration in Bespoke](#integration-in-bespoke)
+- [Integration in Cables.jl](#integration-in-cablesjl)
+- [Integration in HISE](#integration-in-hise)
+- [Faust programming by examples](#faust-programming-by-examples)
+- [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
+
+
+## Integration in Bespoke
+
+*Mentor:* Stéphane Letz
+
+*Expected size of project:* 175 hours
+
+*More detailed description of the project:* [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
+Benedict Gaster work (https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the BespokeSynth integration. So possibly this work could be directly merged.
+An more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
+
+*Expected outcomes:* the result will a Bespoke plugin embeding the libfaust library and allowing DSP program to be edited, dynamically compiled, and run in the platform
+
+*Skills required/preferred:* C++ programming, graphical programming 
+
+*An easy, medium or hard difficulty rating of each project:* medium
+
+---
+
+## Integration in Cables.jl
+
+*Mentor:* Stéphane Letz
+
+*Expected size of project:* 175 hours
+
+*More detailed description of the project:* [Cables](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind.
+Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
+
+The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl.
+
+*Expected outcomes:* the result will a Cable.ji plugin embeding the libfaust WASM library, and allowing DSP program to be edited, dynamically compiled, and run in the platform
+
+*Skills required/preferred:* C++ programming, Web technologies
+
+*An easy, medium or hard difficulty rating of each project:* medium
+
+---
+
+## Integration in HISE
+
+*Mentor* Stéphane Letz
+
+*Expected size of project:* 175 hours
+
+*More detailed description of the project:* [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
+
+The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+This is currently [discussed here](https://github.com/christophhart/HISE/issues/224).
+
+*Expected outcomes:* the result will a HISE plugin embeding the libfaust WASM library, and allowing DSP program to be edited, dynamically compiled, and run in the platform
+
+*Skills required/preferred:* C++ programming, knowledge of the JUCE framework
+
+*An easy, medium or hard difficulty rating of each project:* medium
+
+---
+
+## Faust programming by examples
+
+*Mentors:* Yann Orlarey and Stéphane Letz
+
+*Expected size of project:* 350 hours
+
+*More detailed description of the project:* The objective is to develop a new approach to Faust programming, not textual or graphical, but based on DAW-like examples. This programming principle is analogue to the one described in the article [Real time Composition in Elody](https://hal.archives-ouvertes.fr/hal-02158910/document). This approach is based on the idea of manipulating and editing virtual "audio files" which represent the real time audio inputs and outputs. 
+
+To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`. 
+
+*Expected outcomes:* the project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. 
+
+*Skills required/preferred:* C++ programming, possibly TypseScript + JavaScript or other scripting languages.
+
+*An easy, medium or hard difficulty rating of each project:* hard
+
+---
+
+## Languages built on top of the signal API
+
+*Mentors:* Yann Orlarey and Stéphane Letz
+
+*Expected size of project:* 350 hours
+
+*More detailed description of the project:* The [signal API](https://faustdoc.grame.fr/tutorials/signal-api/) opens an intermediate access inside the Faust compilation chain. Generating complex expressions by directly using it can quickly become really tricky and unpracticable. So a language created on top of the signal API is usually needed. This is exactly what the Block Diagram Algebra is all about, and the entire Faust language itself.
+
+But some other approaches can possibly be tested. The [Elementary audio language](https://www.elementary.audio) for instance is built over a [similar signal](https://docs.elementary.audio/guides/making_sound) language and uses JavaScript as the upper layer language to help create complex signal graphs programmatically. 
+
+*Expected outcomes:* the project consits in exploring various approaches to build a language on top of the signal API. It could be a textual one (like JavaScript, Haskell or scripting languages...) or a purely graphical tool. 
+
+*Skills required/preferred:* C++ programming, possibly TypseScript + JavaScript, Haskell or other functional languages.
+
+*An easy, medium or hard difficulty rating of each project:* hard
+
+---
+
 # Faust ideas
 
 This repository hosts the "TODO/ideas list" for the [Faust programming 
@@ -139,115 +251,3 @@ The project consist in improving and finishing the tool.
 * Currently addressed by: nil
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
-
----
-
-
-# Google Summer of Code possible projects
-
-The application process for GSoC consists of next steps:
-
-- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
-- join to [Faust Slack channel](https://faustaudio.slack.com) and/or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord
-- search mentor for chosen project in mailing list discuss
-- get invite to chosen project in Faust github organization
-- submit the application/proposal including all requirements at the Google Summer of Code Site
-
-Possible projects:
-
-- [Integration in Bespoke](#integration-in-bespoke)
-- [Integration in Cables.jl](#integration-in-cablesjl)
-- [Integration in HISE](#integration-in-hise)
-- [Faust programming by examples](#faust-programming-by-examples)
-- [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
-
-
-## Integration in Bespoke
-
-*Mentor:* Stéphane Letz
-
-*Expected size of project:* 175 hours
-
-*More detailed description of the project:* [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
-Benedict Gaster work (https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the BespokeSynth integration. So possibly this work could be directly merged.
-An more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317).
-
-*Expected outcomes:* the result will a Bespoke plugin embeding the libfaust library and allowing DSP program to be edited, dynamically compiled, and run in the platform
-
-*Skills required/preferred:* C++ programming, graphical programming 
-
-*An easy, medium or hard difficulty rating of each project:* medium
-
----
-
-## Integration in Cables.jl
-
-*Mentor:* Stéphane Letz
-
-*Expected size of project:* 175 hours
-
-*More detailed description of the project:* [Cables](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind.
-Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
-
-The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl.
-
-*Expected outcomes:* the result will a Cable.ji plugin embeding the libfaust WASM library, and allowing DSP program to be edited, dynamically compiled, and run in the platform
-
-*Skills required/preferred:* C++ programming, Web technologies
-
-*An easy, medium or hard difficulty rating of each project:* medium
-
----
-
-## Integration in HISE
-
-*Mentor* Stéphane Letz
-
-*Expected size of project:* 175 hours
-
-*More detailed description of the project:* [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
-
-The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
-This is currently [discussed here](https://github.com/christophhart/HISE/issues/224).
-
-*Expected outcomes:* the result will a HISE plugin embeding the libfaust WASM library, and allowing DSP program to be edited, dynamically compiled, and run in the platform
-
-*Skills required/preferred:* C++ programming, knowledge of the JUCE framework
-
-*An easy, medium or hard difficulty rating of each project:* medium
-
----
-
-## Faust programming by examples
-
-*Mentors:* Yann Orlarey and Stéphane Letz
-
-*Expected size of project:* 350 hours
-
-*More detailed description of the project:* The objective is to develop a new approach to Faust programming, not textual or graphical, but based on DAW-like examples. This programming principle is analogue to the one described in the article [Real time Composition in Elody](https://hal.archives-ouvertes.fr/hal-02158910/document). This approach is based on the idea of manipulating and editing virtual "audio files" which represent the real time audio inputs and outputs. 
-
-To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`. 
-
-*Expected outcomes:* the project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. 
-
-*Skills required/preferred:* C++ programming, possibly TypseScript + JavaScript or other scripting languages.
-
-*An easy, medium or hard difficulty rating of each project:* hard
-
----
-
-## Languages built on top of the signal API
-
-*Mentors:* Yann Orlarey and Stéphane Letz
-
-*Expected size of project:* 350 hours
-
-*More detailed description of the project:* The [signal API](https://faustdoc.grame.fr/tutorials/signal-api/) opens an intermediate access inside the Faust compilation chain. Generating complex expressions by directly using it can quickly become really tricky and unpracticable. So a language created on top of the signal API is usually needed. This is exactly what the Block Diagram Algebra is all about, and the entire Faust language itself.
-
-But some other approaches can possibly be tested. The [Elementary audio language](https://www.elementary.audio) for instance is built over a [similar signal](https://docs.elementary.audio/guides/making_sound) language and uses JavaScript as the upper layer language to help create complex signal graphs programmatically. 
-
-*Expected outcomes:* the project consits in exploring various approaches to build a language on top of the signal API. It could be a textual one (like JavaScript, Haskell or scripting languages...) or a purely graphical tool. 
-
-*Skills required/preferred:* C++ programming, possibly TypseScript + JavaScript, Haskell or other functional languages.
-
-*An easy, medium or hard difficulty rating of each project:* hard
