@@ -17,7 +17,6 @@ Possible projects:
 - [Integration in HISE](#integration-in-hise)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
-
 ---
 
 ## Integration in Bespoke
@@ -137,6 +136,7 @@ section below.
 - [WebAssembly specific optimisations](#webassembly-specific-optimisations)
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Testing tools on the Web](#testing-tools-on-the-web)
+- [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -251,3 +251,40 @@ The project consist in improving and finishing the tool.
 * Currently addressed by: nil
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
+
+## Packaging system for Faust libraries
+
+* Currently addressed by: nil
+
+The idea is to develop a packaging system to facilitate the integration of Faust libraries in a DSP project. The inspiration comes from the [Julia](https://www.julialang.org) language with the [JuliaHub](https://juliahub.com/) project and/or the [Rust](https://www.rust-lang.org/) language with the [Cargo](https://doc.rust-lang.org/cargo/) package manager. 
+
+### Requirements:
+
+- load packages containing Faust sources, either in .dsp format or in .lib format
+- be able to load sets of files (typically a library that is written with several .lib files)
+- isolate packages in different environments to avoid name conflicts
+- notion of a centralized directory on GitHub, where contributions can be made in the form of Pull Request. publishing tool (with search by content) of this directory, general, like fausthub (inspired for example by Juliahub https://juliahub.com/lp/).
+- at each PR, test of the syntax of the code (with GiHub actions)
+- cache management: typically 1) the package is loaded the 1st time and kept in a cache, 2) then the compiler uses the version in the cache. See the question of new version management?
+- automatic generation of the documentation from the lib files (with the existing mills), automatic deployment
+
+### Syntax proposal
+
+#### Simple version
+
+`package("foo")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/librarie.lib")`
+
+#### Version with constraint on version number
+
+`package("foo", "3.4")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/3.4/librarie.lib")`
+
+`package("foo").bar`
+
+or else: 
+
+`foo = package("foo")` and `foo.bar` in the DSP code
+
+### Tools to describe packages:
+	
+- look at the package format of Rust or Julia: .toml file, src folders, tests
+- look at the TOML format (https://toml.io/en/), used by Rust and Julia
