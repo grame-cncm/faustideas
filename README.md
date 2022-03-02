@@ -252,13 +252,15 @@ The project consist in improving and finishing the tool.
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
 
+---
+
 ## Packaging system for Faust libraries
 
 * Currently addressed by: nil
 
 The idea is to develop a packaging system to facilitate the integration of Faust libraries in a DSP project. The inspiration comes from the [Julia](https://www.julialang.org) language with the [JuliaHub](https://juliahub.com/) project and/or the [Rust](https://www.rust-lang.org/) language with the [Cargo](https://doc.rust-lang.org/cargo/) package manager. 
 
-### Requirements:
+### Requirements
 
 - load packages containing Faust sources, either in .dsp format or in .lib format
 - be able to load sets of files (typically a library that is written with several .lib files)
@@ -284,7 +286,7 @@ or else:
 
 `foo = package("foo")` and `foo.bar` in the DSP code
 
-### Tools to describe packages:
+### Tools to describe packages
 	
 - look at the package format of Rust or Julia: .toml file, src folders, tests
 - look at the TOML format (https://toml.io/en/), used by Rust and Julia
