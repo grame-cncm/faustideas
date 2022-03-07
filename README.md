@@ -5,8 +5,8 @@
 The application process for GSoC consists of next steps:
 
 - become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
-- join to [Faust Slack channel](https://faustaudio.slack.com) and/or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord
-- search mentor for chosen project in mailing list discuss
+- join to [Faust Slack channel](https://faustaudio.slack.com) or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
+- search mentor for chosen project in mailing list discussions
 - get invite to chosen project in Faust github organization
 - submit the application/proposal including all requirements at the Google Summer of Code Site
 
@@ -86,14 +86,14 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 #### Requirements
 
-- load packages containing Faust sources, either in .dsp format or in .lib format
-- be able to load sets of files (typically a library that is written with several .lib files)
-- isolate packages in different environments to avoid name conflicts
+- load packages containing Faust sources, either in .dsp or in .lib format
+- be able to load sets of files (typically a library that is written as several .lib files)
+- isolate packages in different environments, to avoid name conflicts
 - notion of a centralized directory on GitHub, where contributions can be made in the form of Pull Requests. Publishing tool (with search by content) of this directory, general, like **fausthub** (inspired for example by Juliahub https://juliahub.com/lp/).
-- at each PR, test of the syntax of the code (with GitHub actions)
-- cache management: typically 1) the package is loaded the 1st time and kept in a cache, 2) then the compiler uses the version in the cache. See the question of new version management?
+- at each PR, test of the syntax of the code with GitHub actions
+- cache management: typically 1) the package is loaded the 1st time and kept in a cache, 2) then the compiler uses the version in the cache. Work on the question of new version management.
 - automatic generation of the documentation from the lib files (stating from the existing tools and possibly adapting them), automatic deployment
-- preservation semantic: we want to be able to keep a project as a DSP file with all its dependend libraries with specific version numbers   
+- preservation semantic: we want to be able to keep a project as a DSP file with all its needed libraries with specific version numbers   
 
 #### Syntax proposal
 
