@@ -120,7 +120,7 @@ or else:
 - a working insfrastructure with a server hosting the published packages
 - an extended Faust compiler able to access the server
 
-**Skills required/preferred:** C++ programming
+**Skills required/preferred:** C++ programming, server/client technology
 
 **An easy, medium or hard difficulty rating of each project:** hard
 
