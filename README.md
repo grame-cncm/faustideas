@@ -13,8 +13,8 @@ The application process for GSoC consists of next steps:
 Possible projects:
 
 - [Integration in Bespoke](#integration-in-bespoke)
-- [Integration in Cables.jl](#integration-in-cablesjl)
 - [Integration in HISE](#integration-in-hise)
+- [Integration in Cables.jl](#integration-in-cablesjl)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
@@ -26,31 +26,13 @@ Possible projects:
 
 **Expected size of project:** 175 hours
 
-**More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. Bespoke is a software modular synthesizer. It contains a bunch of modules, which you can connect together to create sounds. 
-[Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be directly merged.
+**More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. 
+[Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be checked and directly merged.
 A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
 **Expected outcomes:** the result will a Bespoke plugin embedding the libfaust library and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, graphical programming 
-
-**An easy, medium or hard difficulty rating of each project:** medium
-
----
-
-## Integration in Cables.jl
-
-**Mentor:** Stéphane Letz
-
-**Expected size of project:** 175 hours
-
-**More detailed description of the project:** [Cables.gl](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind. Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
-
-The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl. A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
-
-**Expected outcomes:** the result will a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
-
-**Skills required/preferred:** C++ programming, Web technologies
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -73,6 +55,23 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
+---
+
+## Integration in Cables.jl
+
+**Mentor:** Stéphane Letz
+
+**Expected size of project:** 175 hours
+
+**More detailed description of the project:** [Cables.gl](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind. Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
+
+The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl. A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
+
+**Expected outcomes:** the result will a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+
+**Skills required/preferred:** TypeScript/JavaScript programming, Web technologies
+
+**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 
