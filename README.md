@@ -84,7 +84,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **More detailed description of the project:** The idea is to develop a packaging system to facilitate the integration of Faust libraries in a DSP project. The inspiration comes from the [Julia](https://www.julialang.org) language with the [JuliaHub](https://juliahub.com/) project and/or the [Rust](https://www.rust-lang.org/) language with the [Cargo](https://doc.rust-lang.org/cargo/) package manager. 
 
-### Requirements
+#### Requirements
 
 - load packages containing Faust sources, either in .dsp format or in .lib format
 - be able to load sets of files (typically a library that is written with several .lib files)
@@ -95,13 +95,13 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 - automatic generation of the documentation from the lib files (stating from the existing tools and possibly adapting them), automatic deployment
 - preservation semantic: we want to be able to keep a project as a DSP file with all its dependend libraries with specific version numbers   
 
-### Syntax proposal
+#### Syntax proposal
 
-#### Simple version
+##### Simple version
 
 `package("foo")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/librarie.lib")`
 
-#### Version with constraint on version number
+##### Version with constraint on version number
 
 `package("foo", "3.4")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/3.4/librarie.lib")`
 
@@ -111,7 +111,7 @@ or else:
 
 `foo = package("foo")` and `foo.bar` in the DSP code
 
-### Tools to describe packages
+#### Tools to describe packages
 	
 - look at the package format of Rust or Julia: .toml file, src folders, tests
 - look at the TOML format (https://toml.io/en/), used by Rust and Julia
