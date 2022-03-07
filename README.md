@@ -15,6 +15,7 @@ Possible projects:
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in Cables.jl](#integration-in-cablesjl)
 - [Integration in HISE](#integration-in-hise)
+- [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
 ---
@@ -188,7 +189,6 @@ section below.
 - [WebAssembly specific optimisations](#webassembly-specific-optimisations)
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Testing tools on the Web](#testing-tools-on-the-web)
-- [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 
 ## Implement Jonathan Abel's Modal Reverb
 
