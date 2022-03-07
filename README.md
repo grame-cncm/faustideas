@@ -66,11 +66,63 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
-**Expected outcomes:** the result will a HISE plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will be a HISE plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, knowledge of the JUCE framework
 
 **An easy, medium or hard difficulty rating of each project:** medium
+
+
+---
+
+## Packaging system for Faust libraries
+
+**Mentors:** Yann Orlarey and Stéphane Letz
+
+**Expected size of project:** 350 hours
+
+**More detailed description of the project:** The idea is to develop a packaging system to facilitate the integration of Faust libraries in a DSP project. The inspiration comes from the [Julia](https://www.julialang.org) language with the [JuliaHub](https://juliahub.com/) project and/or the [Rust](https://www.rust-lang.org/) language with the [Cargo](https://doc.rust-lang.org/cargo/) package manager. 
+
+### Requirements
+
+- load packages containing Faust sources, either in .dsp format or in .lib format
+- be able to load sets of files (typically a library that is written with several .lib files)
+- isolate packages in different environments to avoid name conflicts
+- notion of a centralized directory on GitHub, where contributions can be made in the form of Pull Requests. Publishing tool (with search by content) of this directory, general, like **fausthub** (inspired for example by Juliahub https://juliahub.com/lp/).
+- at each PR, test of the syntax of the code (with GitHub actions)
+- cache management: typically 1) the package is loaded the 1st time and kept in a cache, 2) then the compiler uses the version in the cache. See the question of new version management?
+- automatic generation of the documentation from the lib files (stating from the existing tools and possibly adapting them), automatic deployment
+- preservation semantic: we want to be able to keep a project as a DSP file with all its dependend libraries with specific version numbers   
+
+### Syntax proposal
+
+#### Simple version
+
+`package("foo")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/librarie.lib")`
+
+#### Version with constraint on version number
+
+`package("foo", "3.4")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/3.4/librarie.lib")`
+
+`package("foo").bar`
+
+or else: 
+
+`foo = package("foo")` and `foo.bar` in the DSP code
+
+### Tools to describe packages
+	
+- look at the package format of Rust or Julia: .toml file, src folders, tests
+- look at the TOML format (https://toml.io/en/), used by Rust and Julia
+
+**Expected outcomes:** 
+
+- a working insfrastructure with a server hosting the published packages
+- an extended Faust compiler able to access the server
+
+**Skills required/preferred:** C++ programming
+
+**An easy, medium or hard difficulty rating of each project:** hard
 
 ---
 
@@ -251,42 +303,3 @@ The project consist in improving and finishing the tool.
 * Currently addressed by: nil
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
-
----
-
-## Packaging system for Faust libraries
-
-* Currently addressed by: nil
-
-The idea is to develop a packaging system to facilitate the integration of Faust libraries in a DSP project. The inspiration comes from the [Julia](https://www.julialang.org) language with the [JuliaHub](https://juliahub.com/) project and/or the [Rust](https://www.rust-lang.org/) language with the [Cargo](https://doc.rust-lang.org/cargo/) package manager. 
-
-### Requirements
-
-- load packages containing Faust sources, either in .dsp format or in .lib format
-- be able to load sets of files (typically a library that is written with several .lib files)
-- isolate packages in different environments to avoid name conflicts
-- notion of a centralized directory on GitHub, where contributions can be made in the form of Pull Request. publishing tool (with search by content) of this directory, general, like fausthub (inspired for example by Juliahub https://juliahub.com/lp/).
-- at each PR, test of the syntax of the code (with GiHub actions)
-- cache management: typically 1) the package is loaded the 1st time and kept in a cache, 2) then the compiler uses the version in the cache. See the question of new version management?
-- automatic generation of the documentation from the lib files (with the existing mills), automatic deployment
-
-### Syntax proposal
-
-#### Simple version
-
-`package("foo")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/librarie.lib")`
-
-#### Version with constraint on version number
-
-`package("foo", "3.4")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/3.4/librarie.lib")`
-
-`package("foo").bar`
-
-or else: 
-
-`foo = package("foo")` and `foo.bar` in the DSP code
-
-### Tools to describe packages
-	
-- look at the package format of Rust or Julia: .toml file, src folders, tests
-- look at the TOML format (https://toml.io/en/), used by Rust and Julia
