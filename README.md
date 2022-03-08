@@ -84,7 +84,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **More detailed description of the project:** A VST plugin using the libfaust + LLVM JIT to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [Amati](https://github.com/glocq/Amati) project could be used as a starting point. 
 
-**Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com 
+**Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) 
 
 **Skills required/preferred:** C++ programming, knowledge of the JUCE framework
 
