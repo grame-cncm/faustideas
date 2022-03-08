@@ -15,6 +15,7 @@ Possible projects:
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in HISE](#integration-in-hise)
 - [Integration in Cables.jl](#integration-in-cablesjl)
+- [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
@@ -51,7 +52,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **Expected outcomes:** the result will be a HISE plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-**Skills required/preferred:** C++ programming, knowledge of the JUCE framework
+**Skills required/preferred:** C++ programming, knowledge of the [JUCE framework](https://juce.com)
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -67,9 +68,25 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl. A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
-**Expected outcomes:** the result will a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will be a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** TypeScript/JavaScript programming, Web technologies
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
+--
+
+## VST plugin embedding the dynamic compiler
+
+**Mentor:** Stéphane Letz
+
+**Expected size of project:** 175 possible 350 hours
+
+**More detailed description of the project:** A VST plugin using the libfaust + LLVM JIT to do DSP live coding in any VST aware host. FX and monophoic or polyphonic synthesizes can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [Amati](https://github.com/glocq/Amati) could be used as a starting point. 
+
+**Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com 
+
+**Skills required/preferred:** C++ programming, knowledge of the JUCE framework
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
