@@ -17,6 +17,7 @@ The application process for GSoC consists of the next steps:
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in HISE](#integration-in-hise)
 - [Integration in Cables.jl](#integration-in-cablesjl)
+- [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
@@ -78,13 +79,29 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ---
 
+### PluginGuiMagic architecture 
+
+**Mentor:** Stéphane Letz
+
+**Expected size of project:** 175 hours
+
+**More detailed description of the project:** [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) is a WYSWYG runtime design system for [JUCE](https://juce.com) plugins. The foleys_plugin_magic module allows to have a generated UI, that can be edited at runtime using advanced layout and styling options. It also adds visualisers to display signals, levels and spectra with no extra coding involved. The project is to develop new C++ [architecture files](https://faustdoc.grame.fr/manual/architectures/) to ease the use of PGM in the [faust2juce](https://github.com/grame-cncm/faust/tree/master-dev/architecture/juce) tool.
+
+**Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool.
+
+**Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module.
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
+---
+
 ### VST plugin embedding the dynamic compiler
 
 **Mentor:** Stéphane Letz
 
 **Expected size of project:** 175 possibly 350 hours
 
-**More detailed description of the project:** A VST plugin using the libfaust + LLVM JIT to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [Amati](https://github.com/glocq/Amati) project could be used as a starting point. 
+**More detailed description of the project:** A VST plugin using the libfaust + LLVM JIT to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [pMix](https://github.com/olilarkin/pMix2) and [Amati](https://github.com/glocq/Amati) projects can be used as starting points. An integration with the [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) architecture could possibly be added. 
 
 **Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) 
 
