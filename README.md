@@ -2,7 +2,9 @@
 
 # Google Summer of Code possible projects
 
-The application process for GSoC consists of next steps:
+## Discovering the Faust ecosystem
+
+The application process for GSoC consists of the next steps:
 
 - become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
 - join to [Faust Slack channel](https://faustaudio.slack.com) or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
@@ -10,7 +12,7 @@ The application process for GSoC consists of next steps:
 - get invite to chosen project in Faust github organization
 - submit the application/proposal including all requirements at the Google Summer of Code Site
 
-Possible projects:
+## Possible projects:
 
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in HISE](#integration-in-hise)
@@ -21,7 +23,7 @@ Possible projects:
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
 ---
 
-## Integration in Bespoke
+### Integration in Bespoke
 
 **Mentor:** Stéphane Letz
 
@@ -39,7 +41,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 ---
 
-## Integration in HISE
+### Integration in HISE
 
 **Mentor:** Stéphane Letz
 
@@ -58,7 +60,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 ---
 
-## Integration in Cables.jl
+### Integration in Cables.jl
 
 **Mentor:** Stéphane Letz
 
@@ -76,7 +78,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ---
 
-## VST plugin embedding the dynamic compiler
+### VST plugin embedding the dynamic compiler
 
 **Mentor:** Stéphane Letz
 
@@ -92,7 +94,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ---
 
-## Packaging system for Faust libraries
+### Packaging system for Faust libraries
 
 **Mentors:** Yann Orlarey and Stéphane Letz
 
@@ -143,7 +145,7 @@ or else:
 
 ---
 
-## Faust programming by examples
+### Faust programming by examples
 
 **Mentors:** Yann Orlarey and Stéphane Letz
 
@@ -161,7 +163,7 @@ To take a simple monophonic example, let's call these two virtual audio files `I
 
 ---
 
-## Languages built on top of the signal API
+### Languages built on top of the signal API
 
 **Mentors:** Yann Orlarey and Stéphane Letz
 
