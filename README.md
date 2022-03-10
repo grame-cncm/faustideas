@@ -19,6 +19,7 @@ The application process for GSoC consists of the next steps:
 - [Integration in Cables.jl](#integration-in-cablesjl)
 - [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
+- [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
@@ -77,6 +78,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
+
 ---
 
 ### PluginGuiMagic architecture 
@@ -108,6 +110,27 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 **Skills required/preferred:** C++ programming, knowledge of the JUCE framework
 
 **An easy, medium or hard difficulty rating of each project:** medium
+
+---
+
+### Integration in Audiokinetic Wwise 
+
+**Mentor:** Stéphane Letz
+
+**Expected size of project:** 350 hours
+
+**More detailed description of the project:** [Audiokinetic](https://www.audiokinetic.com/en/) is the leading global provider of the most advanced and scalable cross platform interactive audio solutions. A trusted technology partner to the world’s largest developers, OEMs, and audio production companies, its flagship product Wwise is the gold standard interactive audio engine on the market. 
+    [Wwise](https://www.audiokinetic.com/en/products/wwise) features a complete suite of design and development tools, making it easy to prototype and bring to life your creative vision for audio, no matter the scale of your project. 
+    The project is to integrate Faust in the Wwise architecture, both as a static `faust2wwise` tool as well as an integration of the libfaust + LLVM JIT dynamic compiler technology in a plugin
+
+**Expected outcomes:** the result will 
+- a new `faust2wwise` tool with the associates C++ archiecture files
+- a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding
+
+**Skills required/preferred:** C++ programming, knowledge of the Audiokinetic Wwise archiecture
+
+**An easy, medium or hard difficulty rating of each project:** hard
+
 
 ---
 
