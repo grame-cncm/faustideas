@@ -9,6 +9,7 @@ The application process for GSoC consists of the next steps:
 - become acquainted with the [Faust language and ecosystem](https://faust.grame.fr)
 - join to [Faust Slack channel](https://faustaudio.slack.com) and #gsoc channel, or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord, or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
 - search mentor for chosen project in mailing list discussions
+- read our [Contributing guidelines](https://github.com/grame-cncm/faust/wiki/Contributing)
 - get invite to chosen project in Faust github organization
 - submit the application/proposal including all requirements at the Google Summer of Code Site
 
