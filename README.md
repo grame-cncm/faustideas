@@ -31,7 +31,7 @@ The application process has several steps. Before contacting anybody verify that
   * In general what is your taste in terms of programming? language, methodology, team work, etc.
   * Is there anything that prevents you from working full time on the project during the program period?
   * How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other Faust and its ecosystem projects?
-  * Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+  * Are you more interested in the Faust language and its ecosystem, or do you feel more like a hacker?
   * What are your long-term wishes in terms of job?
 
 
