@@ -14,6 +14,7 @@ The application process for GSoC consists of the next steps:
 
 ## Possible projects:
 
+- [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in HISE](#integration-in-hise)
 - [Integration in Cables.jl](#integration-in-cablesjl)
@@ -23,6 +24,25 @@ The application process for GSoC consists of the next steps:
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
+
+---
+
+### Integration in Surge
+
+**Mentor:** Stéphane Letz
+
+**Expected size of project:** 175 hours
+
+The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
+
+The project would be to develop a `faust2surge` script able to do Faust DSP => C++ code ==> Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
+
+**Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
+
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
 ---
 
 ### Integration in Bespoke
@@ -35,7 +55,7 @@ The application process for GSoC consists of the next steps:
 [Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be checked and directly merged.
 A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
-**Expected outcomes:** the result will a Bespoke plugin embedding the libfaust library and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming
 
@@ -54,7 +74,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
-**Expected outcomes:** the result will be a HISE plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will be a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
 
@@ -77,7 +97,6 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 **Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming
 
 **An easy, medium or hard difficulty rating of each project:** medium
-
 
 ---
 
