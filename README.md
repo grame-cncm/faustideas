@@ -35,7 +35,7 @@ The application process for GSoC consists of the next steps:
 
 The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
 
-The project would be to develop a `faust2surge` script able to do Faust DSP => C++ code ==> Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
+The project would be to develop a `faust2surge` script to compile a DSP program in a Surge plugin, by doing the DSP ==> C++ code ==> Surge plugin chain. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
 
 **Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
 
