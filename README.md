@@ -37,7 +37,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 **Expected outcomes:** the result will a Bespoke plugin embedding the libfaust library and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-**Skills required/preferred:** C++ programming, graphical programming 
+**Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -56,7 +56,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **Expected outcomes:** the result will be a HISE plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-**Skills required/preferred:** C++ programming, knowledge of the [JUCE framework](https://juce.com)
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -74,7 +74,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected outcomes:** the result will be a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-**Skills required/preferred:** TypeScript/JavaScript programming, Web technologies
+**Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -91,7 +91,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool.
 
-**Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module.
+**Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module, audio and Faust programming
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -107,7 +107,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) 
 
-**Skills required/preferred:** C++ programming, knowledge of the JUCE framework
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the JUCE framework
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -127,7 +127,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 - a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin
 - a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding
 
-**Skills required/preferred:** C++ programming, knowledge of the Audiokinetic Wwise archiecture
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise archiecture
 
 **An easy, medium or hard difficulty rating of each project:** hard
 
