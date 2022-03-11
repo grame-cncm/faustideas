@@ -265,6 +265,7 @@ section below.
 - [Trigonometric simplifications](#trigonometric-simplifications)
 - [WebAssembly specific optimisations](#webassembly-specific-optimisations)
 - [Improve faust2audiokit](#improve-faust2audiokit)
+- [Improve faust2vcvrack](#improve-faust2vcvrack)
 - [Testing tools on the Web](#testing-tools-on-the-web)
 
 ## Implement Jonathan Abel's Modal Reverb
@@ -371,7 +372,17 @@ To run as fast as possible and approch native code performances as much as possi
 
 The [faust2audiokit](https://github.com/grame-cncm/faust/tree/master-dev/architecture/audiokit) tool transforms a Faust DSP program into a fully working AudioKit node. The result can be a monophonic DSP or a MIDI controllable polyphonic one (when the DSP describes an instrument, following the freq, gain, gate parameter naming convention).
 
-The project consist in improving and finishing the tool.
+The project consists in improving and finishing the tool.
+
+---
+
+## Improve faust2vcvrack
+
+* Currently addressed by: nil
+
+The [faust2vcvrack](https://github.com/grame-cncm/faust/tree/master-dev/architecture/vcvrack) The faust2vcvrack tool compiles a Faust DSP program in a folder containing the VCV Rack plugin C++ source code and a Makefile to compile it. By default the resulting C++ code is compiled and installed in the VCV Rack application:
+
+The project consists in improving the tool, particulary the automatically created graphical user interface which is ugly for now. 
 
 ---
 
