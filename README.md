@@ -13,6 +13,28 @@ The application process for GSoC consists of the next steps:
 - get invite to chosen project in Faust github organization
 - submit the application/proposal including all requirements at the Google Summer of Code Site
 
+## Information Candidates Should Supply
+
+The application process has several steps. Before contacting anybody verify that you are eligible, that is that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor of the project you are interested in. You have to convince him that you are the right person to get the job done. The next step is to work out more details and to contact the mentoring organization by providing the following information by email to [research@grame.fr](mailto:research@grame.fr):
+
+* Project:
+  * Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating Faust and its ecosystem as a whole.
+  * Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
+  * Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
+  * Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+
+* Personal data:
+  * First name, last name, affiliation and geographical location.
+  * A brief list of the main studies and programming courses attended, with ranking.
+  * List of the most important software projects contributed and success.
+  * Which are your best skills in terms of programming and scientific computing?
+  * In general what is your taste in terms of programming? language, methodology, team work, etc.
+  * Is there anything that prevents you from working full time on the project during the program period?
+  * How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other Faust and its ecosystem projects?
+  * Are you more interested in the theory/scientific aspect of CGAL, or do you feel more like a hacker?
+  * What are your long-term wishes in terms of job?
+
+
 ## Possible projects:
 
 - [Integration in Surge](#integration-in-surge)
@@ -30,7 +52,7 @@ The application process for GSoC consists of the next steps:
 
 ### Integration in Surge
 
-**Mentor:** Stéphane Letz
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 175 hours
 
@@ -48,7 +70,7 @@ The project would be to develop a `faust2surge` script to compile a DSP program 
 
 ### Integration in Bespoke
 
-**Mentor:** Stéphane Letz
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 175 hours
 
@@ -66,7 +88,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 ### Integration in HISE
 
-**Mentor:** Christoph Hart and Stéphane Letz
+**Mentor:** Christoph Hart and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 175 maybe 350 hours
 
@@ -85,7 +107,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 ### Integration in Cables.gl
 
-**Mentor:** Stéphane Letz
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 175 hours
 
@@ -103,7 +125,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ### PluginGuiMagic architecture 
 
-**Mentor:** Stéphane Letz
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 175 hours
 
@@ -119,7 +141,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ### VST plugin embedding the dynamic compiler
 
-**Mentor:** Stéphane Letz
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 175 possibly 350 hours
 
@@ -135,7 +157,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ### Integration in Audiokinetic Wwise 
 
-**Mentor:** Stéphane Letz
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
@@ -156,7 +178,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ### Packaging system for Faust libraries
 
-**Mentors:** Yann Orlarey and Stéphane Letz
+**Mentors:** [Yann Orlarey](mailto:orlarey@grame.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
@@ -207,7 +229,7 @@ or else:
 
 ### Faust programming by examples
 
-**Mentors:** Yann Orlarey and Stéphane Letz
+**Mentors:** [Yann Orlarey](mailto:orlarey@grame.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
@@ -225,7 +247,7 @@ To take a simple monophonic example, let's call these two virtual audio files `I
 
 ### Languages built on top of the signal API
 
-**Mentors:** Yann Orlarey and Stéphane Letz
+**Mentors:** [Yann Orlarey](mailto:orlarey@grame.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
