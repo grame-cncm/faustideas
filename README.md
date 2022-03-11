@@ -17,7 +17,7 @@ The application process for GSoC consists of the next steps:
 - [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in HISE](#integration-in-hise)
-- [Integration in Cables.jl](#integration-in-cablesjl)
+- [Integration in Cables.gl](#integration-in-cablesjl)
 - [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
@@ -82,7 +82,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 ---
 
-### Integration in Cables.jl
+### Integration in Cables.gl
 
 **Mentor:** Stéphane Letz
 
@@ -90,7 +90,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **More detailed description of the project:** [Cables.gl](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind. Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation.
 
-The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.jl. A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
+The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.gl. A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
 **Expected outcomes:** the result will be a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
