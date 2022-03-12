@@ -7,8 +7,7 @@
 The application process for GSoC consists of the next steps:
 
 - become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/made-with-faust/) page can help understanding the variety of projects that have been developed using Faust. 
-- join to [Faust Slack channel](https://faustaudio.slack.com) and #gsoc channel, or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord, or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
-- search mentor for chosen project in mailing list discussions
+- join to [Faust Slack channel](https://faustaudio.slack.com) and #gsoc channel where you can reach the mentors and ask questions about the GSoC program, or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord, or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
 - read our [Contributing guidelines](https://github.com/grame-cncm/faust/wiki/Contributing)
 - get invite to chosen project in Faust github organization
 - submit the application/proposal including all requirements at the Google Summer of Code Site
@@ -20,14 +19,13 @@ The application process has several steps. Before contacting anybody verify that
 * Project:
   * Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating Faust and its ecosystem as a whole.
   * Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
-  * Explain how the solution will be available to the user, in which form. Do not forget the documentation, unitary tests and cross-platform aspects.
   * Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
 
 * Personal data:
   * First name, last name, affiliation and geographical location.
   * A brief list of the main studies and programming courses attended, with ranking.
   * List of the most important software projects contributed and success.
-  * Which are your best skills in terms of programming and scientific computing?
+  * Which are your best skills in terms of programming ?
   * In general what is your taste in terms of programming? language, methodology, team work, etc.
   * Is there anything that prevents you from working full time on the project during the program period?
   * How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other Faust and its ecosystem projects?
