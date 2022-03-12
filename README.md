@@ -183,7 +183,9 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
     The project is to integrate Faust in the Wwise architecture, both as a static `faust2wwise` tool as well as an integration of the libfaust + LLVM JIT dynamic compiler technology in a plugin
 
 **Expected outcomes:** the result will be: 
+
 - a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin
+
 - a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise archiecture
@@ -236,6 +238,7 @@ or else:
 **Expected outcomes:** 
 
 - a working insfrastructure with a server hosting the published packages
+
 - an extended Faust compiler able to access the server
 
 **Skills required/preferred:** C++ programming, server/client technology
