@@ -104,7 +104,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 - a second step is to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 
-- a third step is to to a HISE IDE integration
+- a third step is to do a HISE IDE integration
 
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
