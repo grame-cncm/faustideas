@@ -58,7 +58,7 @@ The application process has several steps. Before contacting anybody verify that
 
 The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
 
-The project would be to develop a `faust2surge` script to compile a DSP program in a Surge plugin, by doing the DSP ==> C++ code ==> Surge plugin chain. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
+The project would be to develop a `faust2surge` script to to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
 
 **Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
 
@@ -82,12 +82,13 @@ An alternative and complementary solution would we to create a `faust2bespoke` t
 A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
 **Expected outcomes:** the result will be:
+
 - a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules
 - a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming
 
-**An easy, medium or hard difficulty rating of each project:** medium
+**An easy, medium or hard difficulty rating of each project:** medium to hard
 
 ---
 
@@ -99,10 +100,18 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 **More detailed description of the project:** [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
 
-The project would be to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+- a first step is to create a `faust2hise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in a HISE scriptnode.
+
+- a second step is to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+
+- a third step is to to a HISE IDE integration
+
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
-**Expected outcomes:** the result will be a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will be:
+
+- a`faust2hise` tool to compile Faust DSP code in Bespoke modules
+- a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
 
