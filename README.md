@@ -58,7 +58,7 @@ The application process has several steps. Before contacting anybody verify that
 
 The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
 
-The project would be to develop a `faust2surge` script to to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
+The project would be to develop a `faust2surge` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
 
 **Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
 
