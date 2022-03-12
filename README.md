@@ -85,6 +85,7 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 **Expected outcomes:** the result will be:
 
 - a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules
+
 - a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming
@@ -112,6 +113,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 **Expected outcomes:** the result will be:
 
 - a`faust2hise` tool to compile Faust DSP code in Bespoke modules
+
 - a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
