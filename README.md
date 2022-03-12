@@ -95,7 +95,7 @@ A more ambitious approach would be to directly embed the Faust compiler (using t
 
 **Mentor:** Christoph Hart and [Stéphane Letz](mailto:letz@grame.fr)
 
-**Expected size of project:** 175 maybe 350 hours
+**Expected size of project:** 175 possibly 350 hours
 
 **More detailed description of the project:** [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
 
@@ -106,7 +106,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
 
-**An easy, medium or hard difficulty rating of each project:** medium
+**An easy, medium or hard difficulty rating of each project:** medium to hard
 
 ---
 
