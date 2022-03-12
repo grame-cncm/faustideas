@@ -76,7 +76,9 @@ The project would be to develop a `faust2surge` script to compile a DSP program 
 
 **More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. 
 [Benedict Gaster work](https://github.com/bgaster/BespokeSynth) uses WebAssembly as the compilation target language, and has already done the Bespoke Synth integration. So possibly this work could be checked and directly merged. 
+
 An alternative and complementary solution would we to create a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules.
+
 A more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
 **Expected outcomes:** the result will be:
