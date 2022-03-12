@@ -76,7 +76,7 @@ The project would be to develop a `faust2surge` tool (like https://faustdoc.gram
 
 **More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. 
 
-- the project would be to develop a we to create a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules
+- the project would be to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules
 
 - a more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. 
 
