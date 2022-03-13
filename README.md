@@ -57,7 +57,7 @@ The application process has several steps. Before contacting anybody verify that
 
 The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
 
-The project would be to develop a `faust2surge` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
+The project is to develop a `faust2surge` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
 
 **Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
 
@@ -75,9 +75,9 @@ The project would be to develop a `faust2surge` tool (like https://faustdoc.gram
 
 **More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. 
 
-- the project would be to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules.
+- the project is to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules.
 
-- a more ambitious approach would be to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)) with would even produce faster code. 
+- a complementatry approach is to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
@@ -179,7 +179,12 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **More detailed description of the project:** [Audiokinetic](https://www.audiokinetic.com/en/) is the leading global provider of the most advanced and scalable cross platform interactive audio solutions. A trusted technology partner to the world’s largest developers, OEMs, and audio production companies, its flagship product Wwise is the gold standard interactive audio engine on the market. 
     [Wwise](https://www.audiokinetic.com/en/products/wwise) features a complete suite of design and development tools, making it easy to prototype and bring to life your creative vision for audio, no matter the scale of your project. 
-    The project is to integrate Faust in the Wwise architecture, both as a static `faust2wwise` tool as well as an integration of the [libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/) dynamic compiler technology in a plugin
+    
+The project is to integrate Faust in the Wwise architecture:
+    
+- the project is to develop a `faust2wwise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in WWise modules.
+
+- a complementatry approach would be to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Expected outcomes:** the result will be: 
 
@@ -190,7 +195,6 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise architecture
 
 **An easy, medium or hard difficulty rating of each project:** hard
-
 
 ---
 
