@@ -180,8 +180,6 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 **More detailed description of the project:** [Audiokinetic](https://www.audiokinetic.com/en/) is the leading global provider of the most advanced and scalable cross platform interactive audio solutions. A trusted technology partner to the world’s largest developers, OEMs, and audio production companies, its flagship product Wwise is the gold standard interactive audio engine on the market. 
     [Wwise](https://www.audiokinetic.com/en/products/wwise) features a complete suite of design and development tools, making it easy to prototype and bring to life your creative vision for audio, no matter the scale of your project. 
     
-The project is to integrate Faust in the Wwise architecture:
-    
 - the project is to develop a `faust2wwise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in WWise modules.
 
 - a complementatry approach would be to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
