@@ -186,6 +186,8 @@ The project is to integrate Faust in the Wwise architecture:
 
 - a complementatry approach would be to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
+Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work.
+
 **Expected outcomes:** the result will be: 
 
 - a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin.
