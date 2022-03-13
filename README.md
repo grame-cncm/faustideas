@@ -111,7 +111,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **Expected outcomes:** the result will be:
 
-- a`faust2hise` tool to compile Faust DSP code in Bespoke modules
+- a`faust2hise` tool to compile Faust DSP code in Bespoke modules.
 
 - a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
@@ -183,11 +183,11 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected outcomes:** the result will be: 
 
-- a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin
+- a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin.
 
-- a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding
+- a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding.
 
-**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise archiecture
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise architecture
 
 **An easy, medium or hard difficulty rating of each project:** hard
 
