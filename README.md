@@ -77,7 +77,7 @@ The project would be to develop a `faust2surge` tool (like https://faustdoc.gram
 
 - the project would be to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules.
 
-- a more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. 
+- a more ambitious approach would be to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)) with would even produce faster code. 
 
 This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
@@ -103,7 +103,7 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 
 - a first step is to create a `faust2hise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in a HISE scriptnode.
 
-- a second step is to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+- a second step is to integrate the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 
 - a third step is to do a HISE IDE integration.
 
@@ -161,7 +161,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected size of project:** 175 hours
 
-**More detailed description of the project:** A VST plugin using the libfaust + LLVM JIT to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [pMix](https://github.com/olilarkin/pMix2) and [Amati](https://github.com/glocq/Amati) projects can be used as starting points. An integration with the [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) architecture could possibly be added. 
+**More detailed description of the project:** A VST plugin using the [libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/) to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [pMix](https://github.com/olilarkin/pMix2) and [Amati](https://github.com/glocq/Amati) projects can be used as starting points. An integration with the [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) architecture could possibly be added. 
 
 **Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) 
 
@@ -179,7 +179,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **More detailed description of the project:** [Audiokinetic](https://www.audiokinetic.com/en/) is the leading global provider of the most advanced and scalable cross platform interactive audio solutions. A trusted technology partner to the world’s largest developers, OEMs, and audio production companies, its flagship product Wwise is the gold standard interactive audio engine on the market. 
     [Wwise](https://www.audiokinetic.com/en/products/wwise) features a complete suite of design and development tools, making it easy to prototype and bring to life your creative vision for audio, no matter the scale of your project. 
-    The project is to integrate Faust in the Wwise architecture, both as a static `faust2wwise` tool as well as an integration of the libfaust + LLVM JIT dynamic compiler technology in a plugin
+    The project is to integrate Faust in the Wwise architecture, both as a static `faust2wwise` tool as well as an integration of the [libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/) dynamic compiler technology in a plugin
 
 **Expected outcomes:** the result will be: 
 
