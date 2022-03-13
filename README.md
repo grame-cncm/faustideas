@@ -182,7 +182,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
     
 - the project is to develop a `faust2wwise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Wwise modules.
 
-- a complementatry approach would be to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a complementatry approach is to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work.
 
