@@ -75,15 +75,15 @@ The project would be to develop a `faust2surge` tool (like https://faustdoc.gram
 
 **More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. 
 
-- the project would be to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules
+- the project would be to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules.
 
 - a more ambitious approach would be to directly embed the Faust compiler (using the libfaust + LLVM JIT way) with would even produce faster code. 
 
-This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example
+This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
 **Expected outcomes:** the result will be:
 
-- a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules
+- a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules.
 
 - a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
@@ -105,7 +105,7 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 
 - a second step is to integrate the Faust compiler (using the libfaust + LLVM JIT way) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 
-- a third step is to do a HISE IDE integration
+- a third step is to do a HISE IDE integration.
 
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
