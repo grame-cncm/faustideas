@@ -131,7 +131,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.gl. 
 
-**Expected outcomes:** the result will be a Cable.ji plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming
 
