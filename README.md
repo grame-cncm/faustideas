@@ -55,7 +55,7 @@ The application process has several steps. Before contacting anybody verify that
 
 **Expected size of project:** 175 hours
 
-The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
+The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). Use the [Discord channel](https://discord.gg/aFQDdMV) to connect to their community.
 
 The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
@@ -73,7 +73,7 @@ The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://fau
 
 **Expected size of project:** 175 hours
 
-**More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. 
+**More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. Use the [Discord channel](https://discord.gg/YdTMkvvpZZ) to connect to their community.
 
 - the project is to develop a `faust2bespoke` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Bespoke modules.
 
@@ -99,7 +99,7 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 
 **Expected size of project:** 175 possibly 350 hours
 
-**More detailed description of the project:** [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS.
+**More detailed description of the project:** [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS. Use the [HISE Forum](https://forum.hise.audio) to connect to their community.
 
 - a first step is to create a `faust2hise` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a HISE scriptnode.
 
