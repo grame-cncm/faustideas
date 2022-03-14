@@ -77,7 +77,7 @@ The project is to develop a `faust2surge` tool (like https://faustdoc.grame.fr/m
 
 - the project is to develop a `faust2bespoke` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Bespoke modules.
 
-- a complementatry approach is to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a complementatry approach is to directly embed the Faust compiler ([using the libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
@@ -103,7 +103,7 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 
 - a first step is to create a `faust2hise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in a HISE scriptnode.
 
-- a second step is to integrate the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+- a second step is to integrate the Faust compiler ([using the libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
 
 - a third step is to do a HISE IDE integration.
 
@@ -182,7 +182,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
     
 - the project is to develop a `faust2wwise` tool (like https://faustdoc.grame.fr/manual/tools/) to *statically* compile Faust DSP code in Wwise modules.
 
-- a complementatry approach is to directly embed the Faust compiler ([using the libfaust + LLVM JIT way](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a complementatry approach is to directly embed the Faust compiler ([using the libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work.
 
