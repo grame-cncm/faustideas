@@ -57,7 +57,7 @@ The application process has several steps. Before contacting anybody verify that
 
 The Surge Synth Team is a group of musicians, developers, testers, documenters, and general volunteer open source enthusiasts who randomly assembled to work on the [Surge Synthesizer](https://surge-synth-team.org). 
 
-The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). 
+The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
 **Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
 
@@ -79,7 +79,7 @@ The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://fau
 
 - a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
+This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
 **Expected outcomes:** the result will be:
 
@@ -107,7 +107,7 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 
 - a third step is to do a HISE IDE integration.
 
-This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
+This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
 **Expected outcomes:** the result will be:
 
@@ -184,7 +184,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 - a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work.
+Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work. You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
 **Expected outcomes:** the result will be: 
 
