@@ -141,7 +141,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 ### PluginGuiMagic architecture 
 
-**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr) and [Daniel Walz](daniel@foleysfinest.com)
 
 **Expected size of project:** 175 hours
 
