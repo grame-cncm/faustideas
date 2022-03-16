@@ -110,7 +110,7 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 **Expected outcomes:** the result will be:
 
-- a`faust2godot` tool to compile Faust DSP code in Bespoke modules.
+- a`faust2godot` tool to compile Faust DSP code in Godot modules.
 
 - a Godot plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
