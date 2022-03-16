@@ -38,6 +38,7 @@ The application process has several steps. Before contacting anybody verify that
 
 - [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
+- [Integration in Godot](#integration-in-godot)
 - [Integration in HISE](#integration-in-hise)
 - [Integration in Cables.gl](#integration-in-cablesjl)
 - [PluginGuiMagic architecture ](#pluginguimagic-architecture)
@@ -88,6 +89,32 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 - a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
 **Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming
+
+**An easy, medium or hard difficulty rating of each project:** medium to hard
+
+---
+
+### Integration in Godot
+
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
+
+**Expected size of project:** 175 hours
+
+**More detailed description of the project:** [Godot Engine](https://godotengine.org) is a feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface. It provides a comprehensive set of common tools, so that users can focus on making games without having to reinvent the wheel. 
+
+- the project is to develop a `faust2godot` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Godot modules.
+
+- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+
+You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
+
+**Expected outcomes:** the result will be:
+
+- a`faust2godot` tool to compile Faust DSP code in Bespoke modules.
+
+- a Godot plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+
+**Skills required/preferred:** C++ programming, audio and Faust programming
 
 **An easy, medium or hard difficulty rating of each project:** medium to hard
 
