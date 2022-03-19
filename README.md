@@ -92,6 +92,9 @@ This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/
 
 **An easy, medium or hard difficulty rating of each project:** medium to hard
 
+References: 
+
+- [Bespoke Anywhere](https://nime.pubpub.org/pub/8jaqbl7m/release/1?readingCollection=bd12ca41)
 ---
 
 ### Integration in Godot
