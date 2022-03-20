@@ -36,6 +36,7 @@ The application process has several steps. Before contacting anybody verify that
 
 ## Possible projects:
 
+- [Support for CLAP format](#support-for-clap-format)
 - [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in Godot](#integration-in-godot)
@@ -47,6 +48,25 @@ The application process has several steps. Before contacting anybody verify that
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Alternative languages built on top of the signal API](#alternative-languages-built-on-top-of-the-signal-api)
+
+---
+
+### Support for CLAP format
+
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
+
+**Expected size of project:** 175 hours
+
+[CLAP](https://github.com/free-audio/clap#learn-about-clap) is Audio Plugin format (as pure C api), liberally licensed (MIT), entirely developers in the open (GitHub), with support from commercial developers ([u-he](https://u-he.com), [Bitwig](https://www.bitwig.com/de/), more). 
+CLAP has many design goals, but a primary one was to allow developers to build their base plugin layer using a properly open clean C standard, to replace the VST2 API which most folks base their plugin model on, and then project into other systems.
+
+The project is to develop a `faust2clap` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a CLAP plugin. You'll have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). Look at additional [CLAP projects](https://github.com/free-audio).
+
+**Expected outcomes:** the result will be a `faust2clap` script to compile a DSP program in a CLAP plugin. 
+
+**Skills required/preferred:** C++ programming, audio and Faust programming
+
+**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 
