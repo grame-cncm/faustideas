@@ -57,14 +57,14 @@ The application process has several steps. Before contacting anybody verify that
 
 **Expected size of project:** 175 hours
 
-[CLAP](https://github.com/free-audio/clap#learn-about-clap) is Audio Plugin format (as pure C api), liberally licensed (MIT), entirely developers in the open (GitHub), with support from commercial developers ([u-he](https://u-he.com), [Bitwig](https://www.bitwig.com/de/), more). 
+[CLAP](https://github.com/free-audio/clap#learn-about-clap) is an Audio Plugin format (as pure C api), liberally licensed (MIT), entirely developers in the open (GitHub), with support from commercial developers ([u-he](https://u-he.com), [Bitwig](https://www.bitwig.com/de/), more). 
 CLAP has many design goals, but a primary one was to allow developers to build their base plugin layer using a properly open clean C standard, to replace the VST2 API which most folks base their plugin model on, and then project into other systems.
 
 The project is to develop a `faust2clap` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a CLAP plugin. You'll have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). Look at additional [CLAP projects](https://github.com/free-audio).
 
-**Expected outcomes:** the result will be a `faust2clap` script to compile a DSP program in a CLAP plugin. 
+**Expected outcomes:** the result will be a `faust2clap` script to compile a DSP program in a CLAP plugin
 
-**Skills required/preferred:** C++ programming, audio and Faust programming
+**Skills required/preferred:** C++ programming, audio and Faust programming.
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -80,9 +80,9 @@ The Surge Synth Team is a group of musicians, developers, testers, documenters, 
 
 The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
-**Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin. 
+**Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin 
 
-**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com).
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -96,19 +96,19 @@ The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://fau
 
 **More detailed description of the project:** [Bespoke](https://www.bespokesynth.com) is a modular DAW for Mac, Windows, and Linux. It contains a bunch of modules, which you can connect together to create sounds. Use the [Discord channel](https://discord.gg/YdTMkvvpZZ) to connect to their community. The integration could follow the two steps:
 
-- develop a `faust2bespoke` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Bespoke modules.
+- develop a `faust2bespoke` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Bespoke modules
 
-- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
 This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
 **Expected outcomes:** the result will be:
 
-- a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules.
+- a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules
 
-- a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a Bespoke plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
-**Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming
+**Skills required/preferred:** C++ programming, graphical programming, audio and Faust programming.
 
 **An easy, medium or hard difficulty rating of each project:** medium to hard
 
@@ -125,19 +125,19 @@ References:
 
 **More detailed description of the project:** [Godot Engine](https://godotengine.org) is a feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface. It provides a comprehensive set of common tools, so that users can focus on making games without having to reinvent the wheel. The integration could follow the two steps:
 
-- develop a `faust2godot` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Godot modules.
+- develop a `faust2godot` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Godot modules
 
-- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
 You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
 **Expected outcomes:** the result will be:
 
-- a`faust2godot` tool to compile Faust DSP code in Godot modules.
+- a`faust2godot` tool to compile Faust DSP code in Godot modules
 
-- a Godot plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a Godot plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
-**Skills required/preferred:** C++ programming, audio and Faust programming
+**Skills required/preferred:** C++ programming, audio and Faust programming.
 
 **An easy, medium or hard difficulty rating of each project:** medium to hard
 
@@ -151,21 +151,21 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 **More detailed description of the project:** [HISE](http://hise.audio) is a cross-platform open source audio application for building virtual instruments. It emphasizes on sampling, but includes some basic synthesis features for making hybrid instruments as well as audio effects. You can export the instruments as VST/AU/AAX plugins or as standalone application for Windows / macOS or iOS. Use the [HISE Forum](https://forum.hise.audio) to connect to their community. The integration could follow the three steps:
 
-- a first step is to create a `faust2hise` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a HISE scriptnode.
+- a first step is to create a `faust2hise` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a HISE scriptnode
 
-- a second step is to integrate the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP.
+- a second step is to integrate the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)) into HISE for live editing and then used to generate C++ at compile time. This would allow for much more complex effects development without need to delve into C++ DSP
 
-- a third step is to do a HISE IDE integration.
+- a third step is to do a HISE IDE integration
 
 This is currently [discussed here](https://github.com/christophhart/HISE/issues/224). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.  
 
 **Expected outcomes:** the result will be:
 
-- a`faust2hise` tool to compile Faust DSP code in Bespoke modules.
+- a`faust2hise` tool to compile Faust DSP code in Bespoke modules
 
-- a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
-**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com)
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com).
 
 **An easy, medium or hard difficulty rating of each project:** medium to hard
 
@@ -183,7 +183,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected outcomes:** the result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
-**Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming
+**Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming.
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -197,9 +197,9 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **More detailed description of the project:** [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) is a WYSWYG runtime design system for [JUCE](https://juce.com) plugins. The foleys_plugin_magic module allows to have a generated UI, that can be edited at runtime using advanced layout and styling options. It also adds visualisers to display signals, levels and spectra with no extra coding involved. The project is to develop new C++ [architecture files](https://faustdoc.grame.fr/manual/architectures/) to ease the use of PGM in the [faust2juce](https://github.com/grame-cncm/faust/tree/master-dev/architecture/juce) tool.
 
-**Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool.
+**Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool
 
-**Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module, audio and Faust programming
+**Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module, audio and Faust programming.
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -215,7 +215,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) 
 
-**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the JUCE framework
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the JUCE framework.
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
@@ -230,19 +230,19 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 **More detailed description of the project:** [Audiokinetic](https://www.audiokinetic.com/en/) is the leading global provider of the most advanced and scalable cross platform interactive audio solutions. A trusted technology partner to the world’s largest developers, OEMs, and audio production companies, its flagship product Wwise is the gold standard interactive audio engine on the market. 
     [Wwise](https://www.audiokinetic.com/en/products/wwise) features a complete suite of design and development tools, making it easy to prototype and bring to life your creative vision for audio, no matter the scale of your project. The integration could follow the two steps:
     
-- develop a `faust2wwise` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Wwise modules.
+- develop a `faust2wwise` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Wwise modules
 
-- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
 Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work. You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
 **Expected outcomes:** the result will be: 
 
-- a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin.
+- a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin
 
-- a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding.
+- a plugin embedding the libfaust + LLVM JIT dynamic compiler technology to allow Faust DSP live-coding
 
-**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise architecture
+**Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise architecture.
 
 **An easy, medium or hard difficulty rating of each project:** hard
 
@@ -295,7 +295,7 @@ or else:
 
 - an extended Faust compiler able to access the server
 
-**Skills required/preferred:** C++ programming, server/client technology
+**Skills required/preferred:** C++ programming, server/client technology.
 
 **An easy, medium or hard difficulty rating of each project:** hard
 
