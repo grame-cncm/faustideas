@@ -62,7 +62,7 @@ CLAP has many design goals, but a primary one was to allow developers to build t
 
 The project is to develop a `faust2clap` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a CLAP plugin. You'll have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). Look at additional [CLAP projects](https://github.com/free-audio).
 
-**Expected outcomes:** the result will be a `faust2clap` script to compile a DSP program in a CLAP plugin
+**Expected outcomes:** the result will be a `faust2clap` script to compile a DSP program in a CLAP plugin.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming.
 
@@ -80,7 +80,7 @@ The Surge Synth Team is a group of musicians, developers, testers, documenters, 
 
 The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
-**Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin 
+**Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com).
 
@@ -197,7 +197,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **More detailed description of the project:** [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) is a WYSWYG runtime design system for [JUCE](https://juce.com) plugins. The foleys_plugin_magic module allows to have a generated UI, that can be edited at runtime using advanced layout and styling options. It also adds visualisers to display signals, levels and spectra with no extra coding involved. The project is to develop new C++ [architecture files](https://faustdoc.grame.fr/manual/architectures/) to ease the use of PGM in the [faust2juce](https://github.com/grame-cncm/faust/tree/master-dev/architecture/juce) tool.
 
-**Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool
+**Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool.
 
 **Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module, audio and Faust programming.
 
@@ -213,7 +213,7 @@ The project would be to integrate the [Faust Web Audio Library](https://www.npmj
 
 **More detailed description of the project:** A VST plugin using the [libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/) to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [pMix](https://github.com/olilarkin/pMix2) and [Amati](https://github.com/glocq/Amati) projects can be used as starting points. An integration with the [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) architecture could possibly be added. 
 
-**Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) 
+**Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) .
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the JUCE framework.
 
