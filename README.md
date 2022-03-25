@@ -42,7 +42,7 @@ The application process has several steps. Before contacting anybody verify that
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in Godot](#integration-in-godot)
 - [Integration in HISE](#integration-in-hise)
-- [Integration in Cables.gl](#integration-in-cablesjl)
+- [Integration in Cables.gl](#integration-in-cablesgl)
 - [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
