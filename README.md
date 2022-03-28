@@ -59,7 +59,7 @@ The application process has several steps. Before contacting anybody verify that
 **Expected size of project:** 175 hours
 
 [CLAP](https://github.com/free-audio/clap#learn-about-clap) is an Audio Plugin format (as pure C api), liberally licensed (MIT), entirely developers in the open (GitHub), with support from commercial developers ([u-he](https://u-he.com), [Bitwig](https://www.bitwig.com/de/), more). 
-CLAP has many design goals, but a primary one was to allow developers to build their base plugin layer using a properly open clean C standard, to replace the VST2 API which most folks base their plugin model on, and then project into other systems.
+CLAP has many design goals, but a primary one was to allow developers to build their base plugin layer using a properly open clean C standard, to replace the VST2 API which most folks base their plugin model on, and then project into other systems. An extensive discussion can be [accessed here](https://www.kvraudio.com/forum/viewtopic.php?t=574861).
 
 The project is to develop a `faust2clap` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a CLAP plugin. You'll have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). Look at additional [CLAP projects](https://github.com/free-audio).
 
