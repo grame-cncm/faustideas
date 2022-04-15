@@ -162,7 +162,7 @@ This is currently [discussed here](https://github.com/christophhart/HISE/issues/
 
 **Expected outcomes:** the result will be:
 
-- a`faust2hise` tool to compile Faust DSP code in Bespoke modules
+- a`faust2hise` tool to compile Faust DSP code in HISE scriptnodes
 
 - a HISE plugin embedding the libfaust + LLVM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
