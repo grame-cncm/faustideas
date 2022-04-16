@@ -48,7 +48,7 @@ The application process has several steps. Before contacting anybody verify that
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
-- [Alternative languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
+- [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 
 ---
 
