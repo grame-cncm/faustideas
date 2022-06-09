@@ -46,6 +46,7 @@ The application process has several steps. Before contacting anybody verify that
 - [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
+- [Integration in BELA](#integration-in-bela)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
@@ -246,6 +247,22 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the Audiokinetic Wwise architecture.
 
 **An easy, medium or hard difficulty rating of each project:** hard
+
+---
+
+### Integration in BELA
+
+**Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
+
+**Expected size of project:** 175 hours
+
+**More detailed description of the project:** [BELA](https://bela.io)is a maker platform for creating beautiful interaction. Designed for artists, musicians, researchers and makers, Bela brings the power of ultra-low latency interactive audio and sensors to your digital projects. A Faust/BELA integration has already been done in a `faust2bela` tool.
+
+**Expected outcomes:** the result will be: 
+
+- and impprove `faust2bela` tool
+
+- a fully integrated Faust/BELA IDE that would allow to design and experiment Faust code in the Web plaform (using the dynamic compilation chain), then compile it in C++ and deploy it on the BELA board. Monophonic DSP and MIDI controllable polyphonic instruments should be supported. 
 
 ---
 
