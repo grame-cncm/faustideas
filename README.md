@@ -145,7 +145,9 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 ---
 
-### Integration in HISE (done during summer 2022 see: https://forum.hise.audio/topic/6505/faust-is-here/33)
+### Integration in HISE 
+
+Done during summer 2022 see: https://forum.hise.audio/topic/6505/faust-is-here/33.
 
 **Mentor:** Christoph Hart and [Stéphane Letz](mailto:letz@grame.fr)
 
