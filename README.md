@@ -100,7 +100,7 @@ The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://fau
 
 - develop a `faust2bespoke` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in Bespoke modules
 
-- a complementatry approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform
+- a complementary approach is to directly embed the Faust compiler ([using libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/)), allowing DSP programs to be edited, dynamically compiled, and run in the platform
 
 This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
