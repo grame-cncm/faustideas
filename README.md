@@ -1,6 +1,6 @@
 
 
-# Google Summer of Code possible project
+# Google Summer of Code possible projects
 
 ## Discovering the Faust ecosystem
 
