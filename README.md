@@ -236,6 +236,8 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 - a fully integrated Faust/BELA IDE that would allow to design and experiment Faust code in the Web plaform (using the dynamic WebAssembly based compilation chain), then compile it in C++ and deploy it on the BELA board. Monophonic DSP and MIDI controllable polyphonic instruments should be supported. 
 
+---
+
 ### Integration in openFramework
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
