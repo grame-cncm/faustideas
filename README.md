@@ -242,7 +242,7 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 **Expected size of project:** 175 hours
 
-**More detailed description of the project:** [openFrameworks](https://openframeworks.cc/about/) is an open source C++ toolkit designed to assist the creative process by providing a simple and intuitive framework for experimentation. It allows to access a lot of additional extensions and libraries in the form of [addons](https://ofxaddons.com). The project is to explore how Faust can be integated in the framework, either statically (using the C++ generated code from a DSP program), or possibly embeding the [libfaust](https://faustdoc.grame.fr/manual/embedding/) compiler. Adapted architecture files will be developed.   
+**More detailed description of the project:** [openFrameworks](https://openframeworks.cc/about/) is an open source C++ toolkit designed to assist the creative process by providing a simple and intuitive framework for experimentation. It allows to access a lot of additional extensions and libraries in the form of [addons](https://ofxaddons.com). The project is to explore how Faust can be integated in the framework, either statically (using the C++ generated code from a DSP program), or possibly embedding the [libfaust](https://faustdoc.grame.fr/manual/embedding/) compiler. Adapted architecture files will be developed.   
 
 **Expected outcomes:** the result will be a set of C++ architecture files and openFrameworks demo examples explaining how to use them.
 
