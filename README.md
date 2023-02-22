@@ -6,8 +6,8 @@
 
 The application process for GSoC consists of the next steps:
 
-- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/made-with-faust/) page can help understanding the variety of projects that have been developed using Faust. 
-- join to [Faust Slack channel](https://faustaudio.slack.com) and #gsoc channel where you can reach the mentors and ask questions about the GSoC program, or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord, or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. 
+- join to [Faust Slack channel](https://faustaudio.slack.com), or [this link](https://join.slack.com/t/faustaudio/shared_invite/zt-a624szlz-fL4v2DTR~ZGlI7wARryT7g) and #gsoc channel where you can reach the mentors and ask questions about the GSoC program, or #faust channel on [The Audio Programmer](https://theaudioprogrammer.com/community) discord, or the [Faust Mailing Lists](https://faust.grame.fr/community/help/)
 - read the [GSoC guide for students](https://developers.google.com/open-source/gsoc/resources/guide). Develop your understanding of the various stages of the program. Read this [blog post](https://sayak.dev/gsoc-faqs/)
 - check the [GSoC contribution timeline](https://developers.google.com/open-source/gsoc/timeline)
 - read our [Contributing guidelines](https://github.com/grame-cncm/faust/wiki/Contributing)
@@ -19,7 +19,7 @@ The application process for GSoC consists of the next steps:
 The application process has several steps. Before contacting anybody verify that you are eligible, that is that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor of the project you are interested in. You have to convince him that you are the right person to get the job done. The next step is to work out more details and to contact the mentoring organization by providing the following information by email to [research@grame.fr](mailto:research@grame.fr):
 
 * Project:
-  * Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, we are pretty open as long as this serves the goal of consolidating Faust and its ecosystem as a whole.
+  * Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, **we are pretty open as long as this serves the goal of consolidating Faust and its ecosystem as a whole**.
   * Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
   * Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
 
