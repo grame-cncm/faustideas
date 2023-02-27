@@ -339,6 +339,13 @@ But some other approaches can possibly be tested. The [Elementary audio language
 
 ---
 
+## Past GSoC editions
+
+### 2022: Integration in HISE
+    
+Faust Integration in HISE aimed at integrating support for the Faust audio programming language into HISE, an extensive framework for the creation of sample-based virtual musical instruments. The project has been [completed](https://resonant-bytes.de/blog/gsoc-final-submission/) by [Roman Sommer](https://resonant-bytes.de/about/) with the help of [Christoph Hart](https://github.com/christophhart) as mentor.
+
+
 # Faust ideas
 
 This repository hosts the "TODO/ideas list" for the [Faust programming 
