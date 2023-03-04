@@ -6,7 +6,7 @@
 
 The application process for GSoC consists of the next steps:
 
-- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. 
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. Read also the [technical documentation](https://faustdoc.grame.fr)
 - join the [Faust discord server](https://discord.gg/Cm4qDyGS) and #gsoc channel, or the [Faust Slack channel](https://faustaudio.slack.com), or [this link](https://join.slack.com/t/faustaudio/shared_invite/zt-a624szlz-fL4v2DTR~ZGlI7wARryT7g) and #gsoc channel where you can reach the mentors and ask questions about the GSoC program
 - read the [GSoC guide for students](https://developers.google.com/open-source/gsoc/resources/guide). Develop your understanding of the various stages of the program. Read this [blog post](https://sayak.dev/gsoc-faqs/)
 - check the [GSoC contribution timeline](https://developers.google.com/open-source/gsoc/timeline)
