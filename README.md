@@ -155,7 +155,7 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 The project would be to integrate the [Faust Web Audio Library](https://github.com/grame-cncm/faust2webaudio) to dynamically compile and run Faust DSP programs in Cables.gl. 
 
-**Expected outcomes:** the result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
+**Expected outcomes:** the result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and controlled with an adapted Graphical User Interface. 
 
 **Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming.
 
