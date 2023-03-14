@@ -153,7 +153,7 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 **More detailed description of the project:** [Cables.gl](https://cables.gl) is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments. You are provided with a set of operators, such as mathematical functions, shapes, materials and post processing effects. Connect these to each other with virtual cables to create the experience you have in mind. Easily export your piece of work at any time. Embed it into your website or use it for any kind of creative installation. Use the [Discord channel](https://discord.com/invite/AGTarWv) to connect to their community.
 
-The project would be to integrate the [Faust Web Audio Library](https://www.npmjs.com/package/@grame/libfaust) to dynamically compile and run Faust DSP programs in Cables.gl. 
+The project would be to integrate the [Faust Web Audio Library](https://github.com/grame-cncm/faust2webaudio) to dynamically compile and run Faust DSP programs in Cables.gl. 
 
 **Expected outcomes:** the result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and run in the platform.
 
