@@ -312,7 +312,7 @@ or else:
 
 **More detailed description of the project:** Gradient computation is a key concept in machine learning. It is a mathematical process that finds the direction in which a function should be modified to minimize some measure of error. In machine learning, the gradient is used to adjust model weights to minimize the difference between model predictions and actual values. To do this, the gradient is calculated for each observation in the training data, and used to adjust the model weights to reduce the error measure.
 
-[Automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) is a process for calculating the derivative of a numerical or analytical function, i.e. for estimating how the function evolves at each point (see Simon Peyton Jones [Automatic Differentiation for Dummies](https://www.youtube.com/watch?v=FtnkqIsfNQc) video. This technique is used to enable gradient calculation.
+[Automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) is a process for calculating the derivative of a numerical or analytical function, i.e. for estimating how the function evolves at each point. (see Simon Peyton Jones [Automatic Differentiation for Dummies](https://www.youtube.com/watch?v=FtnkqIsfNQc)video). This technique is used to enable gradient calculation.
 
 The compiler currently has a [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html) backend contributed by [David Braun](https://dirt.design/portfolio/) and usable in the [DawDreamer](https://github.com/DBraun/DawDreamer) project, and presented [here](https://twitter.com/DoItRealTime/status/1583042473227452416).
 
