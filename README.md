@@ -48,6 +48,7 @@ The application process has several steps. Before contacting anybody verify that
 - [Integration in BELA](#integration-in-bela)
 - [Integration in openFramework](#integration-in-openframework)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
+- [Automatic differentiation in the Compiler](#automatic-differentiation-in-the-compiler)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 
@@ -64,7 +65,7 @@ CLAP has many design goals, but a primary one was to allow developers to build t
 
 The project is to develop a `faust2clap` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a CLAP plugin. You'll have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). Look at additional [CLAP projects](https://github.com/free-audio).
 
-**Expected outcomes:** the result will be a `faust2clap` script to compile a DSP program in a CLAP plugin.
+**Expected outcomes:** The result will be a `faust2clap` script to compile a DSP program in a CLAP plugin.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming.
 
@@ -82,7 +83,7 @@ The Surge Synth Team is a group of musicians, developers, testers, documenters, 
 
 The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://faustdoc.grame.fr/manual/tools/) and [Developing a faust2xx Script](https://faustdoc.grame.fr/manual/architectures/#developing-a-faust2xx-script)) to *statically* compile Faust DSP code in a Surge plugin. This is currently [discussed here](https://github.com/surge-synthesizer/surge/issues/3669#issuecomment-967062337). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
-**Expected outcomes:** the result will be a `faust2surge` script to compile a DSP program in a Surge plugin.
+**Expected outcomes:** The result will be a `faust2surge` script to compile a DSP program in a Surge plugin.
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the [JUCE framework](https://juce.com).
 
@@ -104,7 +105,7 @@ The project is to develop a `faust2surge` tool (see [faust2xx Tools](https://fau
 
 This is currently [discussed here](https://github.com/BespokeSynth/BespokeSynth/issues/317). You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
-**Expected outcomes:** the result will be:
+**Expected outcomes:** The result will be:
 
 - a`faust2bespoke` tool to compile Faust DSP code in Bespoke modules
 
@@ -133,7 +134,7 @@ References:
 
 You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/). A recent [Faust integration in TouchDesigner](https://github.com/DBraun/TD-Faust/) can be studied as an example.
 
-**Expected outcomes:** the result will be:
+**Expected outcomes:** The result will be:
 
 - a`faust2godot` tool to compile Faust DSP code in Godot modules
 
@@ -155,7 +156,7 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 The project would be to integrate the [Faust Web Audio Library](https://github.com/grame-cncm/faust2webaudio) to dynamically compile and run Faust DSP programs in Cables.gl. 
 
-**Expected outcomes:** the result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and controlled with an adapted Graphical User Interface. 
+**Expected outcomes:** The result will be a Cable.gl plugin embedding the libfaust WASM library, and allowing DSP programs to be edited, dynamically compiled, and controlled with an adapted Graphical User Interface. 
 
 **Skills required/preferred:** TypeScript/JavaScript programming, Web technologies, audio and Faust programming.
 
@@ -171,7 +172,7 @@ The project would be to integrate the [Faust Web Audio Library](https://github.c
 
 **More detailed description of the project:** [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) is a WYSWYG runtime design system for [JUCE](https://juce.com) plugins. The foleys_plugin_magic module allows to have a generated UI, that can be edited at runtime using advanced layout and styling options. It also adds visualisers to display signals, levels and spectra with no extra coding involved. The project is to develop new C++ [architecture files](https://faustdoc.grame.fr/manual/architectures/) to ease the use of PGM in the [faust2juce](https://github.com/grame-cncm/faust/tree/master-dev/architecture/juce) tool.
 
-**Expected outcomes:** the result will be set of C++ architecture files and an improved `faust2juce` tool.
+**Expected outcomes:** The result will be set of C++ architecture files and an improved `faust2juce` tool.
 
 **Skills required/preferred:** C++ programming, knowledge of the JUCE framework, knowledge of the foleys_plugin_magic module, audio and Faust programming.
 
@@ -187,7 +188,7 @@ The project would be to integrate the [Faust Web Audio Library](https://github.c
 
 **More detailed description of the project:** A VST plugin using the [libfaust + LLVM JIT](https://faustdoc.grame.fr/manual/embedding/) to do DSP live coding in any VST aware host. FX and monophonic or polyphonic synthesizers can be written. The source code can be edited and recompiled on the fly. The GUI has to be automatically created. The [pMix](https://github.com/olilarkin/pMix2) and [Amati](https://github.com/glocq/Amati) projects can be used as starting points. An integration with the [PluginGuiMagic](https://foleysfinest.com/developer/pluginguimagic/) architecture could possibly be added. 
 
-**Expected outcomes:** the result will be a VST plugin developed with the [JUCE framework](https://juce.com) .
+**Expected outcomes:** The result will be a VST plugin developed with the [JUCE framework](https://juce.com) .
 
 **Skills required/preferred:** C++ programming, audio and Faust programming, knowledge of the JUCE framework.
 
@@ -210,7 +211,7 @@ The project would be to integrate the [Faust Web Audio Library](https://github.c
 
 Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary work. You'll probably have to develop or adapt [C++ architecture files](https://faustdoc.grame.fr/manual/architectures/).
 
-**Expected outcomes:** the result will be: 
+**Expected outcomes:** The result will be: 
 
 - a new `faust2wwise` tool with the associated C++ architecture files to compile a DSP project in a ready to use Wwise plugin
 
@@ -230,7 +231,7 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 **More detailed description of the project:** [BELA](https://bela.io) is a maker platform for creating beautiful interaction. Designed for artists, musicians, researchers and makers, Bela brings the power of ultra-low latency interactive audio and sensors to your digital projects. A Faust/BELA integration has already been done in a `faust2bela` tool.
 
-**Expected outcomes:** the result will be: 
+**Expected outcomes:** The result will be: 
 
 - an improved `faust2bela` tool
 
@@ -246,13 +247,13 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 **More detailed description of the project:** [openFrameworks](https://openframeworks.cc/about/) is an open source C++ toolkit designed to assist the creative process by providing a simple and intuitive framework for experimentation. It allows to access a lot of additional extensions and libraries in the form of [addons](https://ofxaddons.com). The project is to explore how Faust can be integated in the framework as an [ofxFaust](https://forum.openframeworks.cc/t/developing-a-faust-addon) addon, either statically (using the C++ generated code from a DSP program), or possibly embedding the [libfaust](https://faustdoc.grame.fr/manual/embedding/) compiler. Adapted architecture files will have to be developed.   
 
-**Expected outcomes:** the result will be a new **ofxFaust** and openFrameworks demo examples explaining how to use it.
+**Expected outcomes:** The result will be a new **ofxFaust** and openFrameworks demo examples explaining how to use it.
 
 ---
 
 ### Packaging system for Faust libraries
 
-**Mentors:** [Yann Orlarey](mailto:orlarey@grame.fr) and [Stéphane Letz](mailto:letz@grame.fr)
+**Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
@@ -303,9 +304,29 @@ or else:
 
 ---
 
+### Automatic differentiation in the Compiler
+
+**Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
+
+**Expected size of project:** 350 hours
+
+**More detailed description of the project:** Gradient computation is a key concept in machine learning. It is a mathematical process that finds the direction in which a function should be modified to minimize some measure of error. In machine learning, the gradient is used to adjust model weights to minimize the difference between model predictions and actual values. To do this, the gradient is calculated for each observation in the training data, and used to adjust the model weights to reduce the error measure.
+
+[Automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) is a process for calculating the derivative of a numerical or analytical function, i.e. for estimating how the function evolves at each point. This technique is used to enable gradient calculation.
+
+The compiler currently has a [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html) backend contributed by [David Braun](https://dirt.design/portfolio/) and usable in the [DawDreamer](https://github.com/DBraun/DawDreamer) project, and presented [here](https://twitter.com/DoItRealTime/status/1583042473227452416).
+
+**Expected outcomes:** The goal of the project will be to add Automatic differentiation directly in the compiler, probably in the so-called [Signal](https://faustdoc.grame.fr/tutorials/signal-api/) stage, so that differentiated versions of the **compute** function could be directly generated, in all possible backends. The two forward and reverse accumulation modes will have to be studied.  
+
+**Skills required/preferred:** Very strong mathematical bachground, C++ programming.
+
+**An easy, medium or hard difficulty rating of each project:** hard
+
+---
+
 ### Faust programming by examples
 
-**Mentors:** [Yann Orlarey](mailto:orlarey@grame.fr) and [Stéphane Letz](mailto:letz@grame.fr)
+**Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
@@ -313,7 +334,7 @@ or else:
 
 To take a simple monophonic example, let's call these two virtual audio files `INPUT` and `OUTPUT`. Let's note `t:file` the fact of placing in the DAW a file `file`at time `t` in seconds and `t:file*0.75` the fact of placing in the DAW a file at time `t` but also controlling its sound level. So the DAW construction `{0:INPUT, 1:OUTPUT*0.75}` corresponds to a realtime echo whose Faust translation is `process = + ~ (@(ma.SR):*(0.75));`. 
 
-**Expected outcomes:** the project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. A prototype coded in TypeScript, JavaScript or any other scripting languages will be developed.
+**Expected outcomes:** The project consists in exploring this model and see how standard DAW editing actions can be translated in Faust DSP programs. A prototype coded in TypeScript, JavaScript or any other scripting languages will be developed.
 
 **Skills required/preferred:** C++ programming, possibly TypeScript + JavaScript or other scripting languages.
 
@@ -323,7 +344,7 @@ To take a simple monophonic example, let's call these two virtual audio files `I
 
 ### Languages built on top of the signal API
 
-**Mentors:** [Yann Orlarey](mailto:orlarey@grame.fr) and [Stéphane Letz](mailto:letz@grame.fr)
+**Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
 **Expected size of project:** 350 hours
 
@@ -331,7 +352,7 @@ To take a simple monophonic example, let's call these two virtual audio files `I
 
 But some other approaches can possibly be tested. The [Elementary audio language](https://www.elementary.audio) for instance is built over a [similar signal](https://docs.elementary.audio/guides/making_sound) language and uses JavaScript as the upper layer language to help create complex signal graphs programmatically. 
 
-**Expected outcomes:** the project consits in exploring various approaches to build a language on top of the signal API. It could be a textual one (like JavaScript, Haskell or scripting languages...) or a purely graphical tool. 
+**Expected outcomes:** The project consits in exploring various approaches to build a language on top of the signal API. It could be a textual one (like JavaScript, Haskell or scripting languages...) or a purely graphical tool. 
 
 **Skills required/preferred:** C++ programming, possibly TypeScript + JavaScript, Haskell or other functional languages.
 
