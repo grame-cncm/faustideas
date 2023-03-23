@@ -318,7 +318,7 @@ The compiler currently has a [JAX](https://jax.readthedocs.io/en/latest/notebook
 
 **Expected outcomes:** The goal of the project will be to add Automatic differentiation directly in the compiler, probably in the so-called [Signal](https://faustdoc.grame.fr/tutorials/signal-api/) stage, so that differentiated versions of the **compute** function could be directly generated, in all possible backends. The two forward and reverse accumulation modes will have to be studied.  
 
-**Skills required/preferred:** Very strong mathematical bachground, C++ programming.
+**Skills required/preferred:** Very strong mathematical background, C++ programming.
 
 **An easy, medium or hard difficulty rating of each project:** hard
 
