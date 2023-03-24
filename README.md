@@ -309,7 +309,7 @@ or else:
 
 **Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
-**Expected size of project:** 350 hours
+**Expected size of project:** 175 hours
 
 **More detailed description of the project:** Gradient computation is a key concept in machine learning. It is a mathematical process that finds the direction in which a function should be modified to minimize some measure of error. In machine learning, the gradient is used to adjust model weights to minimize the difference between model predictions and actual values. To do this, the gradient is calculated for each observation in the training data, and used to adjust the model weights to reduce the error measure.
 
@@ -321,7 +321,7 @@ The compiler currently has a [JAX](https://jax.readthedocs.io/en/latest/notebook
 
 **Skills required/preferred:** Very strong mathematical background, C++ programming.
 
-**An easy, medium or hard difficulty rating of each project:** hard
+**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 
