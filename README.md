@@ -268,7 +268,7 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 - notion of a centralized directory on GitHub, where contributions can be made in the form of Pull Requests. Publishing tool (with search by content) of this directory, general, like **fausthub** (inspired for example by Juliahub https://juliahub.com/lp/).
 - at each PR, test of the syntax of the code with GitHub actions
 - cache management: typically 1) the package is loaded the 1st time and kept in a cache, 2) then the compiler uses the version in the cache. Work on the question of new version management.
-- automatic generation of the documentation from the lib files (stating from the existing tools and possibly adapting them), automatic deployment
+- automatic generation of the documentation from the lib files (starting from the existing tools and possibly adapting them), automatic deployment
 - preservation semantic: we want to be able to keep a project as a DSP file with all its needed libraries with specific version numbers   
 
 #### Syntax proposal
