@@ -1,1 +1,24 @@
-index.html
+#include <iostream>
+#include <cmath>
+
+// Function to compute (3x^2 + 2x - 1)
+double compute(double x) {
+    return 3 * x * x + 2 * x - 1;
+}
+
+// Function to compute the derivative of the compute function
+double computeDerivative(double x) {
+    return 6 * x + 2;
+}
+
+int main() {
+    double x = 2.0;
+    double y = compute(x);
+    double dy_dx = computeDerivative(x);
+    
+    std::cout << "Input: x = " << x << std::endl;
+    std::cout << "Output: y = " << y << std::endl;
+    std::cout << "Derivative: dy/dx = " << dy_dx << std::endl;
+    
+    return 0;
+}
