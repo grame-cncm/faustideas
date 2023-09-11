@@ -395,6 +395,7 @@ section below.
 - [Improve faust2audiokit](#improve-faust2audiokit)
 - [Improve faust2vcvrack](#improve-faust2vcvrack)
 - [Testing tools on the Web](#testing-tools-on-the-web)
+- [Progressive Web applications for iOS and Android](#progressive-web-applications-for-ios-and-android)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -519,3 +520,9 @@ The project consists in improving the tool, particulary the automatically create
 * Currently addressed by: nil
 
 Faust distribution already contains some testing tools, like `faust2plot` or `faust2octave`.etc. It would be great to have them running in a Web page (or some extension of the same idea). For signal generators/processors, several output formats (oscilloscope, spectrogramme...), and for processors several calibrated input signals (dirac impulse, ramp, sinusoide..) would be available.
+
+---
+
+## Progressive Web applications for iOS and Android
+
+Faust code can easily be distributed as self-contained Web pages containing the Faust DSP code as a statically compiled Web Audio node. The project is to improve the current model to deploy the pages as [Progressive Web applications](https://en.wikipedia.org/wiki/Progressive_web_app). The [faustwasm](https://github.com/grame-cncm/faustwasm) package will be improved to allow this new kind of deployment model. The use of [movement sensors](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) will be added in the architecture to keep the same capability currently found in the native applications. Deployment on iOS and Android machines will be tested.
