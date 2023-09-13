@@ -362,7 +362,7 @@ An Interpreter backend that uses the Faust Byte Code (FBC) intermediate represen
 
 - interpreted in a Virtual Machine (so pure interpretation, which is slow but can be instrumented and provide all sort of interesting debugging informations, with a typical [use-case here](https://faustdoc.grame.fr/tutorials/debugging/)
 - compiled to LLVM IR then JITted, [done here]( https://github.com/grame-cncm/faust/blob/master-dev/compiler/generator/interpreter/fbc_llvm_compiler.hh)
-- compiled to MIR representation (https://github.com/vnmakarov/mir), the JITted, [done here](https://github.com/grame-cncm/faust/blob/master-dev/compiler/generator/interpreter/fbc_mir_compiler.hh)
+- compiled to [MIR representation](https://github.com/vnmakarov/mir), the JITted, [done here](https://github.com/grame-cncm/faust/blob/master-dev/compiler/generator/interpreter/fbc_mir_compiler.hh)
 
 The interpreter backend in libfaust is described [this 2018 paper](https://hal.science/hal-02158929v1).
 
