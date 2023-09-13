@@ -50,6 +50,7 @@ The application process has several steps. Before contacting anybody verify that
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
+- [RISC-V backend in the compiler](#risc-v-backend-in-the-faust-compiler)
 
 ---
 
@@ -340,6 +341,42 @@ But some other approaches can possibly be tested. The [Elementary audio language
 
 ---
 
+### RISC-V backend in the Faust compiler
+
+**Mentors:** [Stéphane Letz](mailto:letz@grame.fr) and [Romain Michon]((mailto:michon@grame.fr)
+
+[RISC-V](https://en.wikipedia.org/wiki/RISC-V), or Reduced Instruction Set Computer, is an open-source and royalty-free instruction set architecture (ISA) designed for a wide range of computing devices. Here are ten key points to describe RISC-V:
+
+- Open Source: RISC-V is an open-source ISA, allowing anyone to use, modify, and contribute to its development without licensing fees or restrictions.
+- Simplicity: It follows a reduced instruction set computer (RISC) design philosophy, emphasizing a simple and streamlined instruction set.
+- Modular Design: RISC-V's modular structure allows for customization, enabling designers to tailor the ISA to specific applications or performance requirements.
+- Scalability: It supports both 32-bit and 64-bit versions, making it suitable for various computing platforms, from embedded systems to high-performance servers.
+- Extensible: RISC-V allows for the addition of custom instructions, making it adaptable to evolving technology trends and specialized tasks.
+- Energy Efficiency: Its simple design and focus on efficiency make it suitable for low-power devices, reducing energy consumption.
+- Wide Industry Support: RISC-V has gained significant support from industry leaders, academic institutions, and open-source communities.
+- Standardization: The RISC-V ISA is defined by a formal specification, ensuring compatibility and portability across different implementations.
+- Versatility: RISC-V has applications in a wide range of fields, including smartphones, IoT devices, data centers, and supercomputers.
+- Growing Ecosystem: RISC-V has a growing ecosystem of software tools, compilers, and hardware implementations, making it increasingly attractive for both academia and industry.
+
+An Interpreter backend that uses the Faust Byte Code (FBC) intermediate representation has been developer. This FBC is then either:
+
+- interpreted in a Virtual Machine (so pure interpretation, which is slow but can be instrumented and provide all sort of interesting debugging informations, with a use-case here: https://faustdoc.grame.fr/tutorials/debugging/)
+- compiled to LLVM IR then JITted (done here: https://github.com/grame-cncm/faust/blob/master-dev/compiler/generator/interpreter/fbc_llvm_compiler.hh)
+- compiled to MIR representation (https://github.com/vnmakarov/mir), the JITted done here: https://github.com/grame-cncm/faust/blob/master-dev/compiler/generator/interpreter/fbc_mir_compiler.hh)
+
+The interpreter backend in libfaust is described [this 2028 paper](https://hal.science/hal-02158929v1).
+
+The project is to develop a Faust Byte Code ==> RISC-V backend. A template compiler is described here: https://github.com/grame-cncm/faust/blob/master-dev/compiler/generator/interpreter/fbc_template_compiler.hh, with the different opcodes that would be needed to support.
+
+**Expected size of project:** 175 hours
+
+**Expected outcomes:** The project aims in developing a new backend in the compiler and test it. 
+
+**Skills required/preferred:** C++ programming, knowledge in compilation.
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
+---
 ## Past GSoC editions
 
 ### 2023 Automatic Differentiation in the Faust Compiler and Better Faust on the Web
