@@ -48,7 +48,6 @@ The application process has several steps. Before contacting anybody verify that
 - [Integration in BELA](#integration-in-bela)
 - [Integration in openFramework](#integration-in-openframework)
 - [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
-- [Automatic differentiation in the Compiler](#automatic-differentiation-in-the-compiler)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 
@@ -305,26 +304,6 @@ or else:
 
 ---
 
-### Automatic differentiation in the Compiler
-
-**Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
-
-**Expected size of project:** 175 hours
-
-**More detailed description of the project:** Gradient computation is a key concept in machine learning. It is a mathematical process that finds the direction in which a function should be modified to minimize some measure of error. In machine learning, the gradient is used to adjust model weights to minimize the difference between model predictions and actual values. To do this, the gradient is calculated for each observation in the training data, and used to adjust the model weights to reduce the error measure.
-
-[Automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) is a process for calculating the derivative of a numerical or analytical function, i.e. for estimating how the function evolves at each point. (see Simon Peyton Jones [Automatic Differentiation for Dummies](https://www.youtube.com/watch?v=FtnkqIsfNQc) video). This technique is used to enable gradient calculation.
-
-The compiler currently has a [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html) backend contributed by [David Braun](https://dirt.design/portfolio/) and usable in the [DawDreamer](https://github.com/DBraun/DawDreamer) project, and presented [here](https://twitter.com/DoItRealTime/status/1583042473227452416).
-
-**Expected outcomes:** The goal of the project will be to add Automatic differentiation directly in the compiler, probably in the so-called [Signal](https://faustdoc.grame.fr/tutorials/signal-api/) stage, so that differentiated versions of the **compute** function could be directly generated, in all possible backends. The two forward and reverse accumulation modes will have to be studied.  
-
-**Skills required/preferred:** Very strong mathematical background, C++ programming.
-
-**An easy, medium or hard difficulty rating of each project:** medium
-
----
-
 ### Faust programming by examples
 
 **Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
@@ -362,6 +341,12 @@ But some other approaches can possibly be tested. The [Elementary audio language
 ---
 
 ## Past GSoC editions
+
+### 2023 Automatic Differentiation in the Faust Compiler and Better Faust on the Web
+
+- **Automatic Differentiation in the Faust Compiler** aimed at adding Automatic differentiation directly in the compiler, so that gradient calculation can be carried out natively in Faust, with applications in Machine Learning algorithms. The project was worked  by [Thomas Rushton](https://github.com/hatchjaw) and completed with this [Pull Request](https://github.com/grame-cncm/faust/pull/939), and finally integrated in the Faust [master-branch](https://github.com/grame-cncm/faust/commit/681a303b8ddc9ef2e67c2cc5d5df83f27323b865). 
+
+- **Better Faust on the Web** aimed at enhancing Faust’s support for the web platform, and was worked on by [Ian Clester](https://ijc8.me/). Transitioning the Faust web tools to a rewritten TypeScript version has been completed and deployed in updated versions of the [Faust editor](https://fausteditor.grame.fr) and [Faust playground](https://faustplayground.grame.fr) and soon in the [Faust Web IDE](https://faustide.grame.fr) with this [Pull Request](https://github.com/grame-cncm/faustide/pull/72). A Faust web component embedding the libfaust JS/WebAssembly compiler has been [developed](https://github.com/ijc8/faust-web-component) and will be used soon in the [Faust documentation](https://faustdoc.grame.fr). The development is fully detailed in this [blog post](https://ijc8.me/2023/08/27/gsoc-faust/). 
 
 ### 2022: Integration in HISE
     
