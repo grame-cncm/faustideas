@@ -418,6 +418,7 @@ section below.
 - [Improve faust2vcvrack](#improve-faust2vcvrack)
 - [Testing tools on the Web](#testing-tools-on-the-web)
 - [Progressive Web applications for iOS and Android](#progressive-web-applications-for-ios-and-android)
+- [A tool to generate Faust web components as NPM packages](#a-tool-to-generate-faust-web-components-as-npm-packages)
 
 ## Implement Jonathan Abel's Modal Reverb
 
