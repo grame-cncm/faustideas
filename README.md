@@ -565,7 +565,7 @@ The [Max/MSP pfft~](https://docs.cycling74.com/max8/refpages/pfft~) object is de
 
 This model has been tested and implemented by [Shihong Ren](https://github.com/Fr0stbyteR) for Faust and can be tested on a [customized version of the Faust IDE](https://faustide.shren.site/). The FFT input part process the temporal signal, delivers a tripplet of signals (real, imaginary, and current bin index), uses regular Faust DSP code working on this tripplet of signals, and finally do the iFFT process to produce temporal signals. 
 
-Here is a noise reduction algorithem written with this model withen by Shihong.
+Here is a noise reduction algorithm using this model written by Shihong.
 
 It is actually a simplified version of the commonly used spectral denoise (10.1109/TASSP.1979.1163209). When the user hits the button, the algorithm learns the current spectrum as a reference of the background noise. Then, subtract from every input spectrum, the power of this background noise spectrum (for each FFT bin).
 
