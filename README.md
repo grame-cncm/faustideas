@@ -419,6 +419,7 @@ section below.
 - [Testing tools on the Web](#testing-tools-on-the-web)
 - [Progressive Web applications for iOS and Android](#progressive-web-applications-for-ios-and-android)
 - [A tool to generate Faust web components as NPM packages](#a-tool-to-generate-faust-web-components-as-npm-packages)
+- [PFFT like wrapper for Faust DSP code](#pfft-like-wrapper-for-faust-dsp-code
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -555,3 +556,66 @@ Faust code can easily be distributed as self-contained Web pages containing the 
 ## A tool to generate Faust web components as NPM packages 
 
 Faust code can easily be distributed as self-contained Web pages containing the Faust DSP code as a statically compiled Web Audio node. The project is to improve the current model to deploy the pages as ready to use NPM packages. The [faustwasm](https://github.com/grame-cncm/faustwasm) package will be improved to allow this new kind of deployment model. A `faust2webnpm` tool to compile a Faust DSP program will be developed, with [polyphonic](https://faustdoc.grame.fr/manual/midi/#configuring-and-activating-polyphony) and [polyphonic with global effect](https://faustdoc.grame.fr/manual/midi/#audio-effects-and-polyphonic-synthesizer) suuport.
+
+---
+
+## PFFT like wrapper for Faust DSP code
+
+The [Max/MSP pfft~](https://docs.cycling74.com/max8/refpages/pfft~) object is designed to simplify spectral audio processing using the Fast Fourier Transform (FFT). In addition to performing the FFT and the Inverse Fast Fourier Transform (IFFT), pfft~ (with the help of its companion fftin~ and fftout~ objects) manages the necessary signal windowing, overlapping and adding needed to create a real-time Short Term Fourier Transform (STFT) analysis/resynthesis system.
+
+This model has been tested and implemented by [Shihong Ren](https://github.com/Fr0stbyteR). The FFT part would deliver a tripplet of signals: the real, imaginary, and curret bin index. 
+
+The goal of the project is to use the same model for Faust code by writing a C++ wrapper that would add FFT and iFFT processing around the Faust DSP code. This can possibly be done bu extending the [ffunction](https://faustdoc.grame.fr/manual/syntax/#foreign-function-declaration) primitive to a mode general version that would deliver a list od output values (instead of a single one).
+
+Here is a noise reduction algorithem written with this model withen by Shihong.
+
+It is actually a simplified version of the commonly used spectral denoise (10.1109/TASSP.1979.1163209). When the user hits the button, the algorithm learns the current spectrum as a reference of the background noise. Then, subtract from every input spectrum, the power of this background noise spectrum (for each FFT bin).
+
+The Faust FFT DSP has 3 inputs: real part/imaginary part/current bin (as in pfft~ in Max). Each input gets sequentially a complex number as information about each FFT bin. The first part of the code gets the current FFT setup and defines necessary functions for calculating FFT info:
+
+```
+import("stdfaust.lib");
+
+fftSize = hslider("fftSize", 1024, 2, 16384, 1);       // global variable set by the processor itself
+fftHopSize = hslider("fftHopSize", 1024, 2, 16384, 1); // global variable set by the processor itself
+bufferSize = fftSize / 2 + 1; // Bins from 0Hz to Nyquist freq
+freqPerBin = ma.SR / fftSize;
+binToFreq = *(freqPerBin);
+freqToBin = /(freqPerBin);
+
+cartopol(x, y) = x * x + y * y : sqrt, atan2(y, x);  // cartesian to polar
+poltocar(r, theta) = r * cos(theta), r * sin(theta); // polar to cartesian
+
+then UI components:
+freezeBtn = checkbox("Capture");
+reduceSld = hslider("Reduce", 0, 0, 2, 0.01);
+https://github.com/Fr0stbyteR
+```
+
+Here is a function to freeze the last spectrum, when the checkbox is on, instead of bypassing the input, it puts the last received full spectrum buffer into a feedback loop:
+
+```
+freeze(rIn, iIn, bin) = out with { // 3 inputs for each audio channel: real, imaginary, current bin
+    freezeSignal(sig, frz) = orig + freezed with {
+        orig = sig * (1 - frz);
+        freezed = orig : @(bufferSize) : + ~ (*(frz) : @(bufferSize - 1)) * frz;
+    };
+    out = freezeSignal(rIn, freezeBtn), freezeSignal(iIn, freezeBtn);
+};
+```
+
+Finally the main processor, getting the current magnitude value and subtract the freezed spectrum's corresponding magnitude, then output the resulting spectrum for IFFT.
+
+```
+fftproc(rIn, iIn, bin) = out, out with { // 3 inputs for each audio channel: real, imaginary, current bin
+    pol = cartopol(rIn, iIn);
+    mag = pol : _, !;
+    phase = pol : !, _;
+    pol_freezed = freeze(rIn, iIn, bin) : cartopol;
+    mag_freezed = pol_freezed : _, !;
+    phase_freezed = pol_freezed : !, _;
+
+    out = poltocar(mag * (1 - freezeBtn) + (mag - mag_freezed * reduceSld) * freezeBtn : max(0), phase);
+};
+process = fftproc;
+```
