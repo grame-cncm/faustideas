@@ -618,4 +618,4 @@ fftproc(rIn, iIn, bin) = out, out with { // 3 inputs for each audio channel: rea
 process = fftproc;
 ```
 
-The goal of the project is to use the same model for Faust code by writing a C++ wrapper that would add FFT and iFFT processing around the Faust DSP code. This can possibly be done bu extending the [ffunction](https://faustdoc.grame.fr/manual/syntax/#foreign-function-declaration) primitive to a mode general version that would deliver a list of output values (instead of a single one).
+The goal of the project is to use the same model for Faust code by writing a C++ wrapper that would add FFT and iFFT processing around the Faust DSP code. This can possibly be done by extending the [ffunction](https://faustdoc.grame.fr/manual/syntax/#foreign-function-declaration) primitive to a mode general version that would deliver a list of output values (instead of a single one).
