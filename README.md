@@ -563,9 +563,7 @@ Faust code can easily be distributed as self-contained Web pages containing the 
 
 The [Max/MSP pfft~](https://docs.cycling74.com/max8/refpages/pfft~) object is designed to simplify spectral audio processing using the Fast Fourier Transform (FFT). In addition to performing the FFT and the Inverse Fast Fourier Transform (IFFT), pfft~ (with the help of its companion fftin~ and fftout~ objects) manages the necessary signal windowing, overlapping and adding needed to create a real-time Short Term Fourier Transform (STFT) analysis/resynthesis system.
 
-This model has been tested and implemented by [Shihong Ren](https://github.com/Fr0stbyteR) for Faust. The FFT input part process the temporal signal, delivers a tripplet of signals (real, imaginary, and current bin index), uses regular Faust DSP code working on this tripplet of signals, and finally do the iFFT process to produce temporal signals. 
-
-The goal of the project is to use the same model for Faust code by writing a C++ wrapper that would add FFT and iFFT processing around the Faust DSP code. This can possibly be done bu extending the [ffunction](https://faustdoc.grame.fr/manual/syntax/#foreign-function-declaration) primitive to a mode general version that would deliver a list of output values (instead of a single one).
+This model has been tested and implemented by [Shihong Ren](https://github.com/Fr0stbyteR) for Faust and can be tested on a [customized version of the Faust IDE](https://faustide.shren.site/). The FFT input part process the temporal signal, delivers a tripplet of signals (real, imaginary, and current bin index), uses regular Faust DSP code working on this tripplet of signals, and finally do the iFFT process to produce temporal signals. 
 
 Here is a noise reduction algorithem written with this model withen by Shihong.
 
@@ -619,3 +617,5 @@ fftproc(rIn, iIn, bin) = out, out with { // 3 inputs for each audio channel: rea
 };
 process = fftproc;
 ```
+
+The goal of the project is to use the same model for Faust code by writing a C++ wrapper that would add FFT and iFFT processing around the Faust DSP code. This can possibly be done bu extending the [ffunction](https://faustdoc.grame.fr/manual/syntax/#foreign-function-declaration) primitive to a mode general version that would deliver a list of output values (instead of a single one).
