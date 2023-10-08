@@ -583,11 +583,13 @@ freqToBin = /(freqPerBin);
 
 cartopol(x, y) = x * x + y * y : sqrt, atan2(y, x);  // cartesian to polar
 poltocar(r, theta) = r * cos(theta), r * sin(theta); // polar to cartesian
+```
 
 then UI components:
+
+```
 freezeBtn = checkbox("Capture");
 reduceSld = hslider("Reduce", 0, 0, 2, 0.01);
-https://github.com/Fr0stbyteR
 ```
 
 Here is a function to freeze the last spectrum, when the checkbox is on, instead of bypassing the input, it puts the last received full spectrum buffer into a feedback loop:
