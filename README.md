@@ -633,7 +633,7 @@ The primary objective of the project is to enable hot reloadability for soundfil
 
 - **code generation improvement**: the code generation process should be refined to facilitate an "atomic switch to the new soundfile" while the DSP code is in execution. This ensures a seamless transition between different sound resources without interrupting the ongoing processing.
 
-- **soundfile loader architecture enhancement**: the architecture of the soundfile loader, detailed in [SoundUI.h](see https://github.com/grame-cncm/faust/blob/master-dev/architecture/faust/gui/SoundUI.h), needs to be upgraded. This upgrade should introduce the capability for users to interactively change the loaded soundfile, potentially through a graphical user interface (GUI) element.
+- **soundfile loader architecture enhancement**: the architecture of the soundfile loader, detailed in [SoundUI.h](https://github.com/grame-cncm/faust/blob/master-dev/architecture/faust/gui/SoundUI.h), needs to be upgraded. This upgrade should introduce the capability for users to interactively change the loaded soundfile, potentially through a graphical user interface (GUI) element.
 
 For instance, integrating a GUI item within the application can empower users to select and switch soundfiles effortlessly during runtime.
 
