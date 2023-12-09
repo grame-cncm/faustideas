@@ -420,6 +420,7 @@ section below.
 - [Progressive Web applications for iOS and Android](#progressive-web-applications-for-ios-and-android)
 - [A tool to generate Faust web components as NPM packages](#a-tool-to-generate-faust-web-components-as-npm-packages)
 - [PFFT like wrapper for Faust DSP code](#pfft-like-wrapper-for-faust-dsp-code)
+- [Hot reloadable soundfiles](#hot-reloadable-soundfiles)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -621,3 +622,21 @@ process = fftproc;
 ```
 
 The goal of the project is to use the same model for Faust code by writing a C++ wrapper that would add FFT and iFFT processing around the Faust DSP code. This can possibly be done by extending the [ffunction](https://faustdoc.grame.fr/manual/syntax/#foreign-function-declaration) primitive to a mode general version that would deliver a list of output values (instead of a single one), or if not possible, develop a dsp wrapper architecture file that would add the FFT/iFFT process around the Faust DSP code.
+
+---
+
+## Hot reloadable soundfiles
+
+The [soundfile](https://faustdoc.grame.fr/manual/syntax/#soundfile-primitive) primitive currently provides access to a predefined list of external sound resources. These soundfiles are loaded once during the application's initialization and cannot be modified dynamically during runtime.
+
+The primary objective of the project is to enable hot reloadability for soundfiles, allowing users to change them on the fly while the DSP code is actively running. To achieve this, two key aspects need enhancement:
+
+- code generation improvement: the code generation process should be refined to facilitate an "atomic switch to the new soundfile" while the DSP code is in execution. This ensures a seamless transition between different sound resources without interrupting the ongoing processing.
+
+- soundfile loader architecture Eenhancement: the architecture of the soundfile loader, detailed in [SoundUI.h]((see https://github.com/grame-cncm/faust/blob/master-dev/architecture/faust/gui/SoundUI.h)), needs to be upgraded. This upgrade should introduce the capability for users to interactively change the loaded soundfile, potentially through a graphical user interface (GUI) element.
+
+For instance, integrating a GUI item within the application can empower users to select and switch soundfiles effortlessly during runtime.
+
+Additionally, a possible solution involves implementing a purely memory-based loader. This loader would *emulate soundfiles as audio buffers in memory*, allowing for dynamic changes to the loaded soundfiles without requiring a complete reload of resources. This approach enhances flexibility and responsiveness by enabling real-time alterations to the sound resource being processed.
+
+By addressing these aspects, the project aims to elevate the functionality of the soundfile primitive, providing users with the ability to seamlessly modify soundfiles while the DSP application is actively running.
