@@ -409,7 +409,6 @@ section below.
 
 - [Implement Jonathan Abel's Modal Reverb](#implement*jonathan-abels*modal-reverb)
 - [Improved UI Declarations](#improved-ui-declarations)
-- [TensorFlow Support](#tensorflow-support)
 - [Improved Linear Algebra Support](#improved-linear-algebra-support)
 - [Finish the DX7 Implementation](#finish-the-dx7-implementation)
 - [Trigonometric simplifications](#trigonometric-simplifications)
@@ -467,14 +466,6 @@ process = hgroup("synth",os.sawtooth(f)*g);
 ```
 
 Of course, it would still be possible to declare metadatas within the UI declaration (this system would be fully backward compatible). Internally, we'd have to parse the metadata and create a corpus of supported CSS metadatas knowing that interfaces would be based on a specific kind of layout (e.g., grid layout). Once again, another option would be to allow to specify "pure CSS" giving access to all the CSS features without having to do some reformatting. 
-
----
-
-## TensorFlow Support
-
-* Currently addressed by: nil
-
-Be able to generate TensorFlow code with Faust.
 
 ---
 
