@@ -646,7 +646,6 @@ By addressing these aspects, the project aims to elevate the functionality of th
 
 ## WebGPU audio architecture
 
-[WebGPU audio](https://www.webgpuaudio.com/docs/intro) architecture is a model to use WebGL language to compute and render audio on the Web platform: audio Synthesis uses rough streaming architecture to get chunks out of WebGPU and send control buffers to control a WebGPU compute shader.
+[WebGPU audio](https://www.webgpuaudio.com/docs/intro) architecture is an innovative model to use the WebGL language to compute and render audio on the Web platform: audio Synthesis uses rough streaming architecture to get chunks out of WebGPU and send control buffers to control a WebGPU compute shader.
 
-The primary objective of the project is to develop a [WebGSL](https://www.w3.org/TR/WGSL/) backend for Faust, and an adapted architecture file to render the computed audio using the [Web Audio API](https://www.w3.org/TR/webaudio/), as demonstrated [here](https://gist.github.com/JolifantoBambla/0a4e9c2a0a8bc475f081bc6f9d1aa1a8). Benckmarks will have to be done to estimate the perfomances of the model, compared to the current [AudioWorklet and WebAssebly](https://faustdoc.grame.fr/manual/deploying/) solution.
- 
+The primary objective of the project is to develop a [WebGSL](https://www.w3.org/TR/WGSL/) backend for Faust, and an customized architecture file to render the computed audio using the [Web Audio API](https://www.w3.org/TR/webaudio/), as demonstrated in [the current demonstration](https://gist.github.com/JolifantoBambla/0a4e9c2a0a8bc475f081bc6f9d1aa1a8). To validate the efficacy of this model, benchmarks are planned. These will assess the performance of the WebGPU audio architecture, comparing it against the existing standards of [AudioWorklet and WebAssembly](https://faustdoc.grame.fr/manual/deploying/) solutions.
