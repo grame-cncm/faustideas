@@ -640,3 +640,39 @@ By addressing these aspects, the project aims to elevate the functionality of th
 The [WebGPU audio](https://www.webgpuaudio.com/docs/intro) architecture represents an innovative model to use the WebGL language to compute and render audio on the Web platform: audio Synthesis uses rough streaming architecture to get chunks out of WebGPU and send control buffers to control a WebGPU compute shader.
 
 The primary objective of the project is to develop a [WebGSL](https://www.w3.org/TR/WGSL/) backend for Faust, and an customized architecture file to render the computed audio using the [Web Audio API](https://www.w3.org/TR/webaudio/), as demonstrated in [the current demonstration](https://gist.github.com/JolifantoBambla/0a4e9c2a0a8bc475f081bc6f9d1aa1a8). To validate the efficacy of this model, benchmarks are planned. These will assess the performance of the WebGPU audio architecture, comparing it against the existing standards of [AudioWorklet and WebAssembly](https://faustdoc.grame.fr/manual/deploying/) solutions.
+
+## Invertible functions
+
+* Currently addressed by: nil
+
+There could be a new primitive to automatically compute the inverse of a function. If the function can't be inverted at compile-time, then an error should be raised. Having access to the inverse would be useful when a user writes a custom scale function and wants to know its inverse. For example, the user might have an hslider whose visible range is [0-1], but the effective value is scaled:
+```faust
+scale = pow(_,5)*32*1000; // take [0-1] (unitless) and remap into [0-32000] milliseconds
+scaleInverse = inverse(scale);
+h = hslider("attack", scaleInverse(50), 0, 1, .01);
+process = h : scale;
+```
+
+In the code above, we achieve three things:
+* The `attack` parameter is "normalized" between 0 and 1, which is useful for modular synthesis.
+* We have a custom `scale` function that remaps from [0-1] to a meaningful milliseconds unit.
+* We set 50 milliseconds as the default `attack`.
+
+Note that `scaleInverse` will effectively be `scaleInverse = _/(32*1000) : pow(_,1./5);` However, some functions are not invertible, or require assumptions. For example, the inverse of `pow(_,2)` is **plus or minus** `sqrt(_)`.
+
+Other use cases could involve automatically inverting custom scales that use `ba.midikey2hz`.
+
+In a more advanced example, it might be possible to invert a function that takes multiple arguments, while only inverting over the last argument.
+
+Example:
+
+```faust
+func(a, b, c, x) = a+2*b+3*c+x;
+funcInverse = inverse(func);
+// funcInverse(a, b, c, y) now solves for x in y=func(a, b, c, x)
+process = _ : funcInverse(1, 1, 1) : _;
+```
+
+This would be useful for numerical integration methods (see [en.adsr_bias](https://github.com/grame-cncm/faustlibraries/blob/e06f27dd86e110b9f8dcd0b355ee4fb3173c045d/envelopes.lib#L223)).
+
+---
