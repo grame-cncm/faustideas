@@ -421,6 +421,7 @@ section below.
 - [A tool to generate Faust web components as NPM packages](#a-tool-to-generate-faust-web-components-as-npm-packages)
 - [PFFT like wrapper for Faust DSP code](#pfft-like-wrapper-for-faust-dsp-code)
 - [Hot reloadable soundfiles](#hot-reloadable-soundfiles)
+- [WebGPU audio architecture](#webgpu-audio-architecture)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -640,3 +641,12 @@ For instance, integrating a GUI item within the application can empower users to
 Additionally, a possible solution involves implementing a purely memory-based loader. This loader would *emulate soundfiles as audio buffers in memory*, allowing for dynamic changes to the loaded soundfiles without requiring a complete reload of resources. This approach enhances flexibility and responsiveness by enabling real-time alterations to the sound resource being processed.
 
 By addressing these aspects, the project aims to elevate the functionality of the soundfile primitive, providing users with the ability to seamlessly modify soundfiles while the DSP application is actively running.
+
+---
+
+## WebGPU audio architecture
+
+[WebGPU audio](https://www.webgpuaudio.com/docs/intro) architecture is a model to use WebGL language to compute and render audio on the Web platform: audio Synthesis uses rough streaming architecture to get chunks out of WebGPU and send control buffers to control a WebGPU compute shader.
+
+The primary objective of the project is to develop a [WebGSL](https://www.w3.org/TR/WGSL/) backend for Faust, and an adapted architecture file to render the computed audio using the [Web Audio API](https://www.w3.org/TR/webaudio/), as demonstrated [here](https://gist.github.com/JolifantoBambla/0a4e9c2a0a8bc475f081bc6f9d1aa1a8). Benckmarks will have to be done to estimate the perfomances of the model, compared to the current [AudioWorklet and WebAssebly](https://faustdoc.grame.fr/manual/deploying/) solution.
+ 
