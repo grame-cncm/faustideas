@@ -683,4 +683,4 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 
 ## faust2nih tool 
 
-[NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nih` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. This [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) can be used as a starting point.
+[NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nih` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. This [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) can be used as a starting point. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
