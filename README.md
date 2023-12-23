@@ -422,6 +422,7 @@ section below.
 - [Hot reloadable soundfiles](#hot-reloadable-soundfiles)
 - [WebGPU audio architecture](#webgpu-audio-architecture)
 - [Invertible functions](#invertible-functions)
+- [faust2nih tool](#faust2nih-tool)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -679,3 +680,7 @@ process = _ : funcInverse(1, 1, 1) : _;
 This would be useful for numerical integration methods (see [en.adsr_bias](https://github.com/grame-cncm/faustlibraries/blob/e06f27dd86e110b9f8dcd0b355ee4fb3173c045d/envelopes.lib#L223)).
 
 ---
+
+## faust2nih tool 
+
+[NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nih` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. This [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) can be used as a starting point.
