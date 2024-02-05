@@ -708,14 +708,14 @@ Example:
 import("stdfaust.lib");
 
 // scale takes something in [0,1] and remaps to whatever you want.
-// Here we have scale(0)==FREQ_MIN and scale(1)==FREQ_MAX
-scale(x) = it.interpolate_linear(x, log(FREQ_MIN), log(FREQ_MAX)) : exp
+// Here we have scale(0)==freqMin and scale(1)==freqMax
+scale(x) = it.interpolate_linear(x, log(freqMin), log(freqMax)) : exp
 with {
-  FREQ_MIN = 8;
-  FREQ_MAX = 20050;
+  freqMin = 8;
+  freqMax = 20050;
 };
 
-init = 0.1
+init = 0.1;
 step = 0.01;
 
 cutoff = modulation*.2 : clipslider("cutoff [unit:Hz]", 0.1, scale, step, _);
