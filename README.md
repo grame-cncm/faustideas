@@ -51,6 +51,7 @@ The application process has several steps. Before contacting anybody verify that
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 - [RISC-V backend in the Faust compiler](#risc-v-backend-in-the-faust-compiler)
+- [Developing modular synthesis using widget modulation](#developing-modular-synthesis-using-widget-modulation)
 
 Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
@@ -384,6 +385,33 @@ The project is to develop a Faust Byte Code ==> RISC-V backend. A template compi
 **An easy, medium or hard difficulty rating of each project:** medium
 
 ---
+
+### Developing modular synthesis using widget modulation  
+
+**Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
+
+[Widget modulation](https://faustdoc.grame.fr/manual/syntax/#widget-modulation) acts on the widgets of an existing Faust expression, but without requiring any manual modifications of the expression's code. This operation is done directly by the compiler, according to a list of target widgets and associated modulators. Target widgets are specified by their label, as used in the graphical user interface. Modulators are Faust expressions that describe how to transform the signal produced by widgets. 
+
+The project would be to develop a set of [modular synthesizers](https://en.wikipedia.org/wiki/Modular_synthesizer), typically by choosing and adapting existing functions in the [Faust Libraries](https://faustlibraries.grame.fr), each of them with a pretty GUI, to be combined in a pack like model. The widget modulation syntax will be used to prepare the widgets to be modulable. The implementation will be done using web technologies, and in particular [FaustWasm](https://github.com/grame-cncm/faustwasm), a high-level API that wraps around Faust compiler. Here is a list of possible steps:  
+
+- choose and adapt existing functions in the Faust Libraries and add a pretty GUI with [User Interface Primitives](https://faustdoc.grame.fr/manual/syntax/#user-interface-primitives-and-configuration) to create modules including oscillators (which generate sound), filters (which modify sound by frequency), amplifiers (which control the volume), and modulators (like LFOs and envelopes, which affect other parameters over time)
+
+- create sequencing modules, vital for composition in modular synthesis. It allows users to create a series of notes (a sequence) that can be sent to an oscillator to produce rhythmic patterns or melodies
+
+- define a library of modulation circuits, using the [lowest/highest](#TODO) primitives of the language, and define adapted signal mappings
+
+- create a global GUI to rack all used modules as in [VCV Rack](https://vcvrack.com), and develop the connection logic needed between all considered modules  
+
+**Expected size of project:** 350 hours
+
+**Expected outcomes:** The project aims in developing new libaries for Modular synthesis
+
+**Skills required/preferred:** Faust programming, web programming
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
+---
+
 ## Past GSoC editions
 
 ### 2023 Automatic Differentiation in the Faust Compiler and Better Faust on the Web
