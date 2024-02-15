@@ -400,7 +400,7 @@ The project would be to develop a set of [modular synthesizers](https://en.wikip
 
 - define a library of modulation circuits, using the [lowest/highest](#TODO) primitives of the language, and define adapted signal mappings
 
-- create a global GUI to rack all used modules as in [VCV Rack](https://vcvrack.com), using Web technologies, and develop the connection logic needed between all considered modules  
+- create a global GUI to rack all used modules as in [VCV Rack](https://vcvrack.com), using Web technologies, and develop the connection logic needed between all considered modules, compiled and connected as separated Faust [Web Audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) nodes
 
 **Expected size of project:** 350 hours
 
