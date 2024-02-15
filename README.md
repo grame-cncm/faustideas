@@ -392,7 +392,7 @@ The project is to develop a Faust Byte Code ==> RISC-V backend. A template compi
 
 [Widget modulation](https://faustdoc.grame.fr/manual/syntax/#widget-modulation) acts on the widgets of an existing Faust expression, but without requiring any manual modifications of the expression's code. This operation is done directly by the compiler, according to a list of target widgets and associated modulators. Target widgets are specified by their label, as used in the graphical user interface. Modulators are Faust expressions that describe how to transform the signal produced by widgets. 
 
-The project would be to develop a set of [modular synthesizers](https://en.wikipedia.org/wiki/Modular_synthesizer), typically by choosing and adapting existing functions in the [Faust Libraries](https://faustlibraries.grame.fr), each of them with a pretty GUI, to be combined in a pack like model. The widget modulation syntax will be used to prepare the widgets to be modulable. The implementation will be done using web technologies, and in particular [FaustWasm](https://github.com/grame-cncm/faustwasm), a high-level API that wraps around Faust compiler. Here is a list of possible steps:  
+The project would be to develop a set of [modular synthesizers](https://en.wikipedia.org/wiki/Modular_synthesizer), typically by choosing and adapting existing functions in the [Faust Libraries](https://faustlibraries.grame.fr), each of them with a pretty GUI, to be combined in a patch like model. The widget modulation syntax will be used to prepare the widgets to be modulable. The implementation will be done using web technologies, and in particular [FaustWasm](https://github.com/grame-cncm/faustwasm), a high-level API that wraps around Faust compiler. Here is a list of possible steps:  
 
 - choose and adapt existing functions in the Faust Libraries and add a pretty GUI with [User Interface Primitives](https://faustdoc.grame.fr/manual/syntax/#user-interface-primitives-and-configuration) to create modules including oscillators (which generate sound), filters (which modify sound by frequency), amplifiers (which control the volume), and modulators (like LFOs and envelopes, which affect other parameters over time)
 
@@ -400,7 +400,7 @@ The project would be to develop a set of [modular synthesizers](https://en.wikip
 
 - define a library of modulation circuits, using the [lowest/highest](#TODO) primitives of the language, and define adapted signal mappings
 
-- create a global GUI to rack all used modules as in [VCV Rack](https://vcvrack.com), and develop the connection logic needed between all considered modules  
+- create a global GUI to rack all used modules as in [VCV Rack](https://vcvrack.com), using Web technologies, and develop the connection logic needed between all considered modules  
 
 **Expected size of project:** 350 hours
 
