@@ -507,9 +507,9 @@ make this happen:
 
 ## Trigonometric simplifications
 
-* Currently addressed by: nil (suggested by [Pierre Leconte](https://github.com/grame-cncm/faust/issues/59))
+* Currently addressed by: nil (suggested by [Pierre Lecomte](https://github.com/grame-cncm/faust/issues/59))
 
-For some applications, trigonometric functions (spherical harmonics) are used, and depending on the algorithm, the output formula could be very complicated. However, in a lot of cases, trigonometric identities could help to simplify drastically the expressions.
+For some applications, trigonometric functions (spherical harmonics) are used, and depending on the algorithm, the output formula could be very complicated. However, in a lot of cases, trigonometric identities could help to drastically simplify the expressions.
 
 ---
 
