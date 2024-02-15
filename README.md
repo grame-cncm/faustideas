@@ -52,6 +52,7 @@ The application process has several steps. Before contacting anybody verify that
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 - [RISC-V backend in the Faust compiler](#risc-v-backend-in-the-faust-compiler)
 
+Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 ---
 
 ### Support for CLAP format
@@ -555,7 +556,7 @@ Faust code can easily be distributed as self-contained Web pages containing the 
 
 ## A tool to generate Faust web components as NPM packages 
 
-Faust code can easily be distributed as self-contained Web pages containing the Faust DSP code as a statically compiled Web Audio node. The project is to improve the current model to deploy the pages as ready to use NPM packages. The [faustwasm](https://github.com/grame-cncm/faustwasm) package will be improved to allow this new kind of deployment model. A `faust2webnpm` tool to compile a Faust DSP program will be developed, with [polyphonic](https://faustdoc.grame.fr/manual/midi/#configuring-and-activating-polyphony) and [polyphonic with global effect](https://faustdoc.grame.fr/manual/midi/#audio-effects-and-polyphonic-synthesizer) support.
+Faust code can easily be distributed as self-contained Web pages containing the Faust DSP code as a statically compiled Web Audio node. The project is to improve the current model to deploy the pages as ready-to-use NPM packages. The [faustwasm](https://github.com/grame-cncm/faustwasm) package will be improved to allow this new kind of deployment model. A `faust2webnpm` tool to compile a Faust DSP program will be developed, with [polyphonic](https://faustdoc.grame.fr/manual/midi/#configuring-and-activating-polyphony) and [polyphonic with global effect](https://faustdoc.grame.fr/manual/midi/#audio-effects-and-polyphonic-synthesizer) support.
 
 ---
 
