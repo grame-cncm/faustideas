@@ -405,9 +405,9 @@ The project would be to develop a set of [modular synthesizers](https://en.wikip
 
 **Expected size of project:** 350 hours
 
-**Expected outcomes:** The project aims in developing new libaries for Modular synthesis
+**Expected outcomes:** The project aims in developing new libraries for modular synthesis and a prototype Web application. 
 
-**Skills required/preferred:** Faust programming, web programming
+**Skills required/preferred:** Faust programming, Web programming
 
 **An easy, medium or hard difficulty rating of each project:** medium
 
