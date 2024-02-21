@@ -2,17 +2,19 @@
 
 # Google Summer of Code possible projects
 
+This page contains a list of possible GSoC projects, with a preliminary section explaining the prerequisites to follow before working on a real project.
+
 ## Discovering the Faust ecosystem
 
 The application process for GSoC consists of the next steps:
 
-- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. Read also the [technical documentation](https://faustdoc.grame.fr)
-- join the [Faust discord server](https://discord.gg/RzuFg6B8zA) and #gsoc channel
-- read the [GSoC guide for students](https://developers.google.com/open-source/gsoc/resources/guide). Develop your understanding of the various stages of the program. Read this [blog post](https://sayak.dev/gsoc-faqs/)
-- check the [GSoC contribution timeline](https://developers.google.com/open-source/gsoc/timeline)
-- read our [Contributing guidelines](https://github.com/grame-cncm/faust/wiki/Contributing)
-- get invite to chosen project in Faust github organization
-- submit the application/proposal including all requirements at the Google Summer of Code Site
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. Read also the [technical documentation](https://faustdoc.grame.fr).
+- join the [Faust discord server](https://discord.gg/RzuFg6B8zA) and #gsoc channel.
+- read the [GSoC guide for students](https://developers.google.com/open-source/gsoc/resources/guide). Develop your understanding of the various stages of the program. Read this [blog post](https://sayak.dev/gsoc-faqs/).
+- check the [GSoC contribution timeline](https://developers.google.com/open-source/gsoc/timeline).
+- read our [Contributing guidelines](https://github.com/grame-cncm/faust/wiki/Contributing).
+- get invite to chosen project in Faust github organization.
+- submit the application/proposal including all requirements at the Google Summer of Code Site.
 
 ## Information Candidates Should Supply
 
@@ -33,7 +35,6 @@ The application process has several steps. Before contacting anybody verify that
   * How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other Faust and its ecosystem projects?
   * Are you more interested in the Faust language and its ecosystem, or do you feel more like a hacker?
   * What are your long-term wishes in terms of job?
-
 
 ## Possible projects:
 
