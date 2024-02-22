@@ -459,6 +459,7 @@ section below.
 - [WebGPU audio architecture](#webgpu-audio-architecture)
 - [Invertible functions](#invertible-functions)
 - [faust2nih tool](#faust2nih-tool)
+- [Backend for MOJO](#backend-for-mojo)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -720,3 +721,12 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 ## faust2nih tool 
 
 [NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nih` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. This [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) can be used as a starting point. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
+
+---
+
+## Backend for MOJO 
+
+[Mojo](https://www.modular.com/max/mojo) is a new programming language that bridges the gap between research and production by combining the best of Python syntax with systems programming and metaprogramming. Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models. With Mojo, you can write portable code that’s faster than C and seamlessly inter-op with the Python ecosystem.
+
+The primary objective of the project is to [develop a backend](https://github.com/grame-cncm/faust/tree/master-dev/compiler/generator/template) for this new language, and measure how the generated code behaves (doing various benchmarks). 
+
