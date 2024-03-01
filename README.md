@@ -38,6 +38,7 @@ The application process has several steps. Before contacting anybody verify that
 
 ## Possible projects:
 
+- [Differentiable DSP in Faust](#differentiable-dsp-in-faust)
 - [Support for CLAP format](#support-for-clap-format)
 - [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
@@ -55,6 +56,41 @@ The application process has several steps. Before contacting anybody verify that
 - [Developing modular synthesis using widget modulation](#developing-modular-synthesis-using-widget-modulation)
 
 Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
+
+---
+### Differentiable DSP in Faust
+
+**Mentors:** [Thomas Rushton](thomas.rushton@inria.fr), [Stéphane Letz](mailto:letz@grame.fr), 
+and [Yann Orlarey](orlarey@gmail.com)  
+
+**Expected size of project:** 175 hours
+
+Differentiable programming is a technique whereby a program can be differentiated with respect to its inputs, permitting the computation of the sensitivity of the program's outputs to changes in its inputs.
+
+Partial derivatives of a program can be found analytically via [automatic differentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) and, coupled with an appropriate loss function, used to perform gradient descent.
+Differentiable programming has consequently become a key tool in solving machine learning problems.
+
+Differentiable digital signal processing ([DDSP](https://intro2ddsp.github.io/background/what-is-ddsp.html)) is the specific application of differentiable programming to audio tasks. DDSP has emerged as a key component in machine learning approaches to problems such as source separation, timbre transfer, parameter estimation, etc. DDSP is reliant on a programming language with a supporting framework for automatic differentiation. In Python, this is provided by libraries such as TensorFlow and JAX; other languages, [Swift](https://github.com/apple/swift/blob/main/docs/DifferentiableProgramming.md) for example, may feature native support.
+
+We would like to explore the possibility of implementing automatic differentiation in Faust; the successful implementation of a Faust library for differentiable programming would permit the application of Faust to DDSP 
+problems. Exploratory [work](https://github.com/hatchjaw/faust-ddsp) on such a library has begun; one aim is to turn this into a comprehensive package of support for differentiable Faust programs.
+
+Related work, concerned with adding automatic differentiation capabilities to the Faust compiler, was conducted for a [previous edition](https://github.com/grame-cncm/faust/pull/939) of GSoC. Also consult David Braun's [DawDreamer](https://github.com/DBraun/DawDreamer) project, which uses Faust's [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html) backend.
+
+**Expected outcomes:**
+
+- creation of an automatic differentiation library describing derivatives for 
+  all of Faust's operators, helper functions for generalising the creation of 
+  differentiable Faust programs, a variety of time- and frequency-domain loss 
+  functions, etc.;
+- development of a series of practical applications of the new library;
+- a new autodiff (or machine learning) architecture file, to support the 
+  training of machine learning models and the generation of parameter weights;
+- a means to use the generated weights for real-time inference.
+
+**Skills required/preferred:** Faust programming, machine learning
+
+**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 
