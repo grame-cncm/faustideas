@@ -60,8 +60,8 @@ Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 ---
 ### Differentiable DSP in Faust
 
-**Mentors:** [Thomas Rushton](thomas.rushton@inria.fr), [Stéphane Letz](mailto:letz@grame.fr), 
-and [Yann Orlarey](orlarey@gmail.com)  
+**Mentors:** [Thomas Rushton](mailto:thomas.rushton@inria.fr), [Stéphane Letz](mailto:letz@grame.fr), 
+and [Yann Orlarey](mailto:orlarey@gmail.com)  
 
 **Expected size of project:** 175 hours
 
