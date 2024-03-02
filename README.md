@@ -38,6 +38,7 @@ The application process has several steps. Before contacting anybody verify that
 
 ## Possible projects:
 
+- [Backend for MOJO](#backend-for-mojo)
 - [Differentiable DSP in Faust](#differentiable-dsp-in-faust)
 - [Support for CLAP format](#support-for-clap-format)
 - [Integration in Surge](#integration-in-surge)
@@ -58,10 +59,29 @@ The application process has several steps. Before contacting anybody verify that
 Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
 ---
+### Backend for MOJO 
+
+**Mentors:** [Stéphane Letz](mailto:letz@grame.fr) and [Yann Orlarey](mailto:orlarey@gmail.com)  
+
+**Expected size of project:** 175 hours
+
+[Mojo](https://www.modular.com/max/mojo) is a new programming language that bridges the gap between research and production by combining the best of Python syntax with systems programming and metaprogramming. Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models. With Mojo, you can write portable code that’s faster than C and seamlessly inter-op with the Python ecosystem.
+
+The primary objective of the project is to [develop a backend](https://github.com/grame-cncm/faust/tree/master-dev/compiler/generator/template) for this new language, add architecture files, and measure how the generated code behaves doing various benchmarks. 
+
+**Expected outcomes:**
+
+- a new backend to generate MOJO code 
+- development of MOJO architecture files to create benchmarks and measure the speed of the generated code 
+
+**Skills required/preferred:** C++ and basic Python programming, Faust programming
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
+---
 ### Differentiable DSP in Faust
 
-**Mentors:** [Thomas Rushton](mailto:thomas.rushton@inria.fr), [Stéphane Letz](mailto:letz@grame.fr), 
-and [Yann Orlarey](mailto:orlarey@gmail.com)  
+**Mentors:** [Thomas Rushton](mailto:thomas.rushton@inria.fr), [David Braun](David Braun <db1224@princeton.edu>), [Stéphane Letz](mailto:letz@grame.fr), and [Yann Orlarey](mailto:orlarey@gmail.com)  
 
 **Expected size of project:** 175 hours
 
@@ -495,7 +515,6 @@ section below.
 - [WebGPU audio architecture](#webgpu-audio-architecture)
 - [Invertible functions](#invertible-functions)
 - [faust2nih tool](#faust2nih-tool)
-- [Backend for MOJO](#backend-for-mojo)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -757,12 +776,4 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 ## faust2nih tool 
 
 [NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nih` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. This [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) can be used as a starting point. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
-
----
-
-## Backend for MOJO 
-
-[Mojo](https://www.modular.com/max/mojo) is a new programming language that bridges the gap between research and production by combining the best of Python syntax with systems programming and metaprogramming. Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models. With Mojo, you can write portable code that’s faster than C and seamlessly inter-op with the Python ecosystem.
-
-The primary objective of the project is to [develop a backend](https://github.com/grame-cncm/faust/tree/master-dev/compiler/generator/template) for this new language, and measure how the generated code behaves (doing various benchmarks). 
 
