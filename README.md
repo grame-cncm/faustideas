@@ -81,7 +81,7 @@ The primary objective of the project is to [develop a backend](https://github.co
 ---
 ### Differentiable DSP in Faust
 
-**Mentors:** [Thomas Rushton](mailto:thomas.rushton@inria.fr), [David Braun](David Braun <db1224@princeton.edu>), [Stéphane Letz](mailto:letz@grame.fr), and [Yann Orlarey](mailto:orlarey@gmail.com)  
+**Mentors:** [Thomas Rushton](mailto:thomas.rushton@inria.fr), [David Braun](mailto:db1224@princeton.edu), [Stéphane Letz](mailto:letz@grame.fr), and [Yann Orlarey](mailto:orlarey@gmail.com)  
 
 **Expected size of project:** 175 hours
 
