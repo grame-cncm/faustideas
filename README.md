@@ -65,7 +65,7 @@ Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
 **Expected size of project:** 175 hours
 
-[Mojo](https://www.modular.com/max/mojo) is a new programming language that bridges the gap between research and production by combining the best of Python syntax with systems programming and metaprogramming. Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models. With Mojo, you can write portable code that’s faster than C and seamlessly inter-op with the Python ecosystem. Having [autodifferentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) inside the language is not yet ready but is regularly discussed on [MOJO Discord](https://docs.modular.com/mojo/community). 
+[Mojo](https://www.modular.com/max/mojo) is a new programming language that bridges the gap between research and production by combining the best of Python syntax with systems programming and metaprogramming. Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models. With Mojo, you can write portable code that’s faster than C and seamlessly inter-op with the Python ecosystem. Having [autodifferentiation](https://en.wikipedia.org/wiki/Automatic_differentiation) inside the language is not yet ready but is regularly discussed on [Mojo Discord](https://docs.modular.com/mojo/community). 
 
 The primary objective of the project is to [develop a backend](https://github.com/grame-cncm/faust/tree/master-dev/compiler/generator/template) for this new language, add architecture files, and measure how the generated code behaves doing various benchmarks. 
 
