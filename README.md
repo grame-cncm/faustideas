@@ -295,13 +295,15 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 **Expected size of project:** 175 hours
 
-**More detailed description of the project:** [BELA](https://bela.io) is a maker platform for creating beautiful interaction. Designed for artists, musicians, researchers and makers, Bela brings the power of ultra-low latency interactive audio and sensors to your digital projects. A Faust/BELA integration has already been done in a `faust2bela` tool.
+**More detailed description of the project:** [BELA](https://bela.io) is a maker platform for creating beautiful interaction. Designed for artists, musicians, researchers and makers, Bela brings the power of ultra-low latency interactive audio and sensors to your digital projects. A Faust/BELA integration has already been done in a `faust2bela` tool and some preliminary work on the [dynamic compilation chain](https://faustdoc.grame.fr/manual/embedding/) have [been done](https://github.com/giuliomoro/bela-faust-jit).  
 
 **Expected outcomes:** The result will be: 
 
 - an improved `faust2bela` tool
 
 - a fully integrated Faust/BELA IDE that would allow to design and experiment Faust code in the Web plaform (using the dynamic WebAssembly based compilation chain), then compile it in C++ and deploy it on the BELA board. Monophonic DSP and MIDI controllable polyphonic instruments should be supported. 
+
+- a finished dynamic compilation chain integration.
 
 ---
 
