@@ -775,6 +775,49 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 
 ---
 
+## Improve [scale:xx] Metadata
+
+* Currently addressed by: nil
+
+The [[scale:xx]](https://faustdoc.grame.fr/manual/syntax/#scalexx-metadata) metadata feature has an issue <https://github.com/grame-cncm/faust/issues/574>. It may be useful to think about scales in a fresh way. Maybe a new primitive `clipslider` could improve the situation.
+
+Proposed syntax:
+
+```clipslider(label, default, scale, step, smoothing, modulation)```
+
+* `label`: Same as `hslider`/`vslider`'s label
+* `default`: Same as `hslider`/`vslider`'s default (or maybe it could be in the _output_ units, requiring the ["Invertible functions"](https://github.com/grame-cncm/faustideas/#invertible-functions) idea above)
+* `scale`: a function with one input and one output. The input is expected to be between 0 and 1 inclusive, and the `scale` doesn't need to clip it to those bounds. The output can be whatever we want.
+* `step`: Same as `hslider`/`vslider`'s step size.
+* `smoothing`: a smoothing function to be applied to the slider, not the modulation.
+* `modulation`: an incoming signal that is added to the (optionally) smoothed slider value. The result is clipped to [0,1] and passed to the scale. This is the final output.
+
+Example:
+```faust
+import("stdfaust.lib");
+
+// scale takes something in [0,1] and remaps to whatever you want.
+// Here we have scale(0)==freqMin and scale(1)==freqMax
+scale(x) = it.interpolate_linear(x, log(freqMin), log(freqMax)) : exp
+with {
+  freqMin = 8;
+  freqMax = 20050;
+};
+
+init = 0.1;
+step = 0.01;
+
+cutoff = modulation*.2 : clipslider("cutoff [unit:Hz]", 0.1, scale, step, _);
+
+modulation = button("gate") : si.smoo;
+
+process = fi.lowpass(1, cutoff);
+```
+
+The GUI would show useful values in Hz. It would be possible to show the final value, which includes the modulation, or compute a separate value which _ignores_ the incoming modulation. For example, you could just pass the non-smoothed value without the smoothing or the modulation to the `scale`.
+
+---
+
 ## faust2nih tool 
 
 [NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nih` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. This [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) can be used as a starting point. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
