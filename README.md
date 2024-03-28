@@ -517,6 +517,7 @@ section below.
 - [WebGPU audio architecture](#webgpu-audio-architecture)
 - [Invertible functions](#invertible-functions)
 - [faust2nih tool](#faust2nihplug-tool)
+- [Faust langage server](#faust-language-server) 
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -778,4 +779,10 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 ## faust2nihplug tool 
 
 [NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nihplug` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. Those [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) and [lamb-rs](https://github.com/magnetophon/lamb-rs) projects can be used as starting points. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
+
+---
+
+## Faust langage server 
+
+A [language server](https://en.wikipedia.org/wiki/Language_Server_Protocol), sometimes called an LSP, is a code analysis tool that allows programming environments to get information about projects. This lets them display information like code completions, inline errors, locations of function definitions, reference official documentation, and more. Many programming languages have their own language server (see https://langserver.org/ for a list), but it seems that Faust doesn't. If there was a Faust language server, it would make it easier to write Faust code using any IDE that supports LSP. This would make it easier for beginners to get started writing Faust using programming tools they're already familiar with, and it would make it easier for experts to navigate large codebases.
 
