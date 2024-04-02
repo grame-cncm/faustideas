@@ -18,12 +18,12 @@ The application process for GSoC consists of the next steps:
 
 ## Information Candidates Should Supply
 
-The application process has several steps. Before contacting anybody verify that you are eligible, that is that you are enrolled as student, don't get a tuition fee, etc. The next step is to contact the mentor of the project you are interested in. You have to convince him that you are the right person to get the job done. The next step is to work out more details and to contact the mentoring organization by providing the following information by email to [research@grame.fr](mailto:research@grame.fr):
+The application process has several steps. First, verify that you meet the GSoC contributor [eligibility requirements](https://summerofcode.withgoogle.com/get-started), i.e. you are at least 18 years old, eligible to work in your country of residence, etc. As of 2023, GSoC eligibility has been expanded to include "open source beginners" in addition to students. The next step is to contact the mentor(s) of the project you are interested in; the best place to do so is in the `#gsoc` channel of the [Faust Discord server](https://discord.gg/vzh7CggBtj), where you can ask questions related to the project you're interested in working on, and submit draft proposals for feedback. Your goal is to convince prospective mentors that you are the right person to get the job done; you can do this by sharing your previous work, demonstrating relevant experience/intuition, asking pertinent questions, etc. Finally, submit a project proposal via your GSoC contributor dashboard. Your submission must include a PDF that should contain the following information:
 
 * Project:
-  * Select a project in the list and provide your personal and detailed description. If you wish to work on another idea of your own, **we are pretty open as long as this serves the goal of consolidating Faust and its ecosystem as a whole**.
-  * Provide a proposal of a technical solution with your envisioned methodology. The more detailed the better.
-  * Provide a realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
+  * A detailed description of the project that you wish to tackle. Either select a topic from the list [below](#possible-projects), or, if you wish to work on an idea of your own, **we are pretty open as long as this serves the goal of consolidating Faust and its ecosystem as a whole**.
+  * A proposal of a technical solution with your envisioned methodology. The more detailed the better.
+  * A realistic schedule with objectives (one every two weeks for example) and deadlines. Focus on mid-term objectives as well as on the final evaluation.
 
 * Personal data:
   * First name, last name, affiliation and geographical location.
