@@ -342,11 +342,11 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 ##### Simple version
 
-`package("foo")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/librarie.lib")`
+`package("foo")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/library.lib")`
 
 ##### Version with constraint on version number
 
-`package("foo", "3.4")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/3.4/librarie.lib")`
+`package("foo", "3.4")` ⇒ syntactic sugar for `library("https://faustpackages.grame.fr, "path/to/actual/3.4/library.lib")`
 
 `package("foo").bar`
 
