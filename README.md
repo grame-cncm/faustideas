@@ -776,6 +776,60 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 
 ---
 
+## Improve [scale:xx] Metadata
+
+* Currently addressed by: nil
+
+The [[scale:xx]](https://faustdoc.grame.fr/manual/syntax/#scalexx-metadata) metadata feature has an issue <https://github.com/grame-cncm/faust/issues/574>. It may be useful to think about scales in a fresh way. Maybe a new primitive `scaleslider` could improve the situation.
+
+Proposed syntax:
+
+```scaleslider(label, default, step, scale, smoothing, modulation)```
+
+* `label`: Same as `hslider`/`vslider`'s label
+* `default`: Same as `hslider`/`vslider`'s default (or maybe it could be in the _output_ units, requiring the ["Invertible functions"](https://github.com/grame-cncm/faustideas/#invertible-functions) idea above)
+* `step`: Same as `hslider`/`vslider`'s step size.
+* `scale`: a function with one input and one output. The input is expected to be between 0 and 1 inclusive, and the `scale` doesn't need to clip it to those bounds. The output can be whatever we want.
+* `smoothing`: a smoothing function to be applied to the slider, not the modulation.
+* `modulation`: an incoming signal that is added to the (optionally) smoothed slider value. The result is clipped to [0,1] and passed to the scale, resulting in the final output.
+
+Example:
+```faust
+import("stdfaust.lib");
+// scale takes something in [0,1] and remaps to whatever you want.
+// Here we have scale(0)==freqMin and scale(1)==freqMax
+scale(x) = it.interpolate_linear(x, log(freqMin), log(freqMax)) : exp
+with {
+  freqMin = 8;
+  freqMax = 20050;
+};
+init = 0.1;
+step = 0.01;
+cutoff = modulation*.2 : scaleslider("cutoff [unit:Hz]", 0.1, step, scale, _);
+modulation = button("gate") : si.smoo;
+process = fi.lowpass(1, cutoff);
+```
+
+The GUI would show useful values in Hz. It would be possible to show the final value, which includes the modulation, or compute a separate value which _ignores_ the incoming modulation. For example, you could just pass the non-smoothed value without the smoothing or the modulation to the `scale`.
+
+If the ["Invertible functions"](https://github.com/grame-cncm/faustideas/#invertible-functions) idea is implemented, then the following could initialize the cutoff parameter at 5000 Hz:
+
+```faust
+scaleslider("cutoff [unit:Hz]", inverse(scale)(5000), step, scale, _)
+```
+
+For clarity, these two examples would result in the same DSP:
+
+```faust
+process = scaleslider("gain", 0.1, .01, _, _, 0);
+```
+and
+```faust
+process = hslider("gain", 0.1, 0, 1, .01);
+```
+
+---
+
 ## faust2nihplug tool 
 
 [NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nihplug` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. Those [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) and [lamb-rs](https://github.com/magnetophon/lamb-rs) projects can be used as starting points. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
@@ -785,4 +839,3 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 ## Faust language server 
 
 A [language server](https://en.wikipedia.org/wiki/Language_Server_Protocol), sometimes called an LSP, is a code analysis tool that allows programming environments to get information about projects. This lets them display information like code completions, inline errors, locations of function definitions, reference official documentation, and more. Many programming languages have their own language server (see https://langserver.org/ for a list), but it seems that Faust doesn't. If there was a Faust language server, it would make it easier to write Faust code using any IDE that supports LSP. This would make it easier for beginners to get started writing Faust using programming tools they're already familiar with, and it would make it easier for experts to navigate large codebases. The [tree-sitter-faust](https://github.com/khiner/tree-sitter-faust) project could be helpful in doing any parsing required for a language server.
-
