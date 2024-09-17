@@ -211,7 +211,7 @@ You'll probably have to develop or adapt [C++ architecture files](https://faustd
 
 ---
 
-### Integration in Cables.gl
+### Integration in Cables.gl [Taken in 2024]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
@@ -246,7 +246,7 @@ Another [faust_juce_pgm_skeleton](https://github.com/unicornsasfuel/faust_juce_p
 
 ---
 
-### VST plugin embedding the dynamic compiler
+### VST plugin embedding the dynamic compiler [Taken in 2024]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
@@ -319,7 +319,7 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 ---
 
-### Packaging system for Faust libraries
+### Packaging system for Faust libraries [Taken in 2024]
 
 **Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
 
