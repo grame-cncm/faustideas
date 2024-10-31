@@ -79,7 +79,7 @@ The primary objective of the project is to [develop a backend](https://github.co
 **An easy, medium or hard difficulty rating of each project:** medium
 
 ---
-### Differentiable DSP in Faust
+### Differentiable DSP in Faust [Taken in 2024]
 
 **Mentors:** [Thomas Rushton](mailto:thomas.rushton@inria.fr), [David Braun](mailto:db1224@princeton.edu), [Stéphane Letz](mailto:letz@grame.fr), and [Yann Orlarey](mailto:orlarey@gmail.com)  
 
