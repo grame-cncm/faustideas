@@ -39,18 +39,14 @@ The application process has several steps. First, verify that you meet the GSoC 
 ## Possible projects:
 
 - [Backend for MOJO](#backend-for-mojo)
-- [Differentiable DSP in Faust](#differentiable-dsp-in-faust)
 - [Support for CLAP format](#support-for-clap-format)
 - [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
 - [Integration in Godot](#integration-in-godot)
-- [Integration in Cables.gl](#integration-in-cablesgl)
 - [PluginGuiMagic architecture ](#pluginguimagic-architecture)
-- [VST plugin embedding the dynamic compiler](#vst-plugin-embedding-the-dynamic-compiler)
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
 - [Integration in BELA](#integration-in-bela)
 - [Integration in openFramework](#integration-in-openframework)
-- [Packaging system for Faust libraries](#packaging-system-for-faust-libraries)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 - [RISC-V backend in the Faust compiler](#risc-v-backend-in-the-faust-compiler)
