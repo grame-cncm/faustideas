@@ -469,7 +469,17 @@ The project would be to develop a set of [modular synthesizers](https://en.wikip
 
 ## Past GSoC editions
 
-### 2023 Automatic Differentiation in the Faust Compiler and Better Faust on the Web
+### 2024: FaustNet - DDSP, Faust in Cables.gl, Amati++, a VST/CLAP Plugin embedding the dynamic compiler and Faust Package Manager
+
+- **FaustNet - DDSP** aimed to continue the work done on adding automatic differentiation in Faust (started in a GSOC 2023 project), to leverage machine learning for audio processing tasks directly within the familiar Faust environment. It was worked on by [Advik Raj Basani](https://github.com/FloofCat) and contributed as a [Pull Request](https://github.com/hatchjaw/faust-ddsp/pull/1) on Thomas Rushton [faust-ddsp](https://github.com/hatchjaw/faust-ddsp) library. 
+
+- **Faust in Cables.gl** aimed to develop a Cables.gl plugin that compiles Faust DSP code into a WASM AudioWorklet in real-time. It was worked on by [Fay Carsons](https://github.com/FayCarsons) and contributed as a separated [Faust Cables plugin](https://github.com/FayCarsons/Cables-Faust-Plugin) project.
+
+ - **Amati++, a VST/CLAP Plugin embedding the dynamic compiler**, inspired by the pMix and Amati projects, this plugin has been built using the JUCE framework for the interface and libfaust with LLVM and interpreter backend API to compile Faust code. It was  worked on by [Tyler Li](https://github.com/Orisu179) and is still a [work-in-progress](https://github.com/Orisu179/AmatiPP).
+
+- **Faust Package Manager** aimed to add a packaging system to facilitate the integration of Faust libraries in a DSP project. It was worked on by [Shehab Khaled Roshdy](https://github.com/shehab299) and a was contributed as a [Pull Request](https://github.com/grame-cncm/faust/pull/1049) that is still in test in a [master-dev-pacman](https://github.com/grame-cncm/faust/tree/master-dev-pacman) branch.
+
+### 2023: Automatic Differentiation in the Faust Compiler and Better Faust on the Web
 
 - **Automatic Differentiation in the Faust Compiler** aimed at adding Automatic differentiation directly in the compiler, so that gradient calculation can be carried out natively in Faust, with applications in Machine Learning algorithms. The project was worked  by [Thomas Rushton](https://github.com/hatchjaw) and completed with this [Pull Request](https://github.com/grame-cncm/faust/pull/939), and finally integrated in the Faust [master-branch](https://github.com/grame-cncm/faust/commit/681a303b8ddc9ef2e67c2cc5d5df83f27323b865). 
 
