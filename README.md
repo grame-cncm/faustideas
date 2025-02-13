@@ -55,6 +55,7 @@ The application process has several steps. First, verify that you meet the GSoC 
 
 Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
+---
 ### Integrated Faust Language Server and Formatting Extension for VS Code
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr) 
