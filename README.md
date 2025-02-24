@@ -364,6 +364,26 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 
 ---
 
+### Integration in the Heavy Compiler Collection
+
+**Mentor:** [Alexander Chalikiopoulos](mailto:alexander@puikheid.nl)
+
+**Expected size of project:** 175 hours
+
+**More detailed description of the project:** [HVCC](https://github.com/Wasted-Audio/hvcc/) is a python-based dataflow audio programming language compiler that generates C/C++ code and a variety of specific framework wrappers. It's main focus is in parsing [Pure Data](https://puredata.info/) DSP patch files, statically interprets them, and converts them to C/C++. The project is to explore how Faust can be integrated into the compiler toolchain. Likely starting from [pd-faustgen](https://github.com/CICM/pd-faustgen) external and then internally calling [faustdoctor](https://github.com/SpotlightKid/faustdoctor) to wrap the resulting C into separate header and implementation files. A crude proof of concept integration between faust generated code and a heavy DSP graph was done to explore the feasibility of this integration.
+
+**Expected outcomes:** The result will be: 
+
+- extending hvcc compiler steps `pd2hv`, `hv2ir` and `ir2c`
+- jinja2 templates that create Heavy compatible C header and implementation files, based on Faust code
+- successfully create DSP prototypes using PD and Faust that can be compiled to C/C++ projects based on Heavy
+
+**Skills required/preferred:** Python, C, Pure Data, audio and Faust programming.
+
+**An easy, medium or hard difficulty rating of each project:** medium
+
+---
+
 ### Packaging system for Faust libraries [Taken in 2024]
 
 **Mentors:** [Yann Orlarey](mailto:orlarey@gmail.fr) and [Stéphane Letz](mailto:letz@grame.fr)
