@@ -49,6 +49,7 @@ The application process has several steps. First, verify that you meet the GSoC 
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
 - [Integration in BELA](#integration-in-bela)
 - [Integration in openFramework](#integration-in-openframework)
+- [Integration in the Heavy Compiler Collection](#integration-in-the-heavy-compiler-collection)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 - [Developing modular synthesis using widget modulation](#developing-modular-synthesis-using-widget-modulation)
