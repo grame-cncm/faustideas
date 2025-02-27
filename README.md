@@ -39,17 +39,16 @@ The application process has several steps. First, verify that you meet the GSoC 
 ## Possible projects:
 
 - [Integrated Faust Language Server and Formatting Extension for VS Code](#integrated-faust-language-server-and-formatting-extension-for-vs-code)
+- [Integration in the Heavy Compiler Collection](#integration-in-the-heavy-compiler-collection)
 - [Extending the Faust DSP Testbench](#extending-the-faust-dsp-testbench)
 - [Backend for MOJO](#backend-for-mojo)
 - [Support for CLAP format](#support-for-clap-format)
 - [Integration in Surge](#integration-in-surge)
 - [Integration in Bespoke](#integration-in-bespoke)
-- [Integration in Godot](#integration-in-godot)
-- [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [Integration in Audiokinetic Wwise ](#integration-in-audiokinetic-wwise)
 - [Integration in BELA](#integration-in-bela)
 - [Integration in openFramework](#integration-in-openframework)
-- [Integration in the Heavy Compiler Collection](#integration-in-the-heavy-compiler-collection)
+- [PluginGuiMagic architecture ](#pluginguimagic-architecture)
 - [Faust programming by examples](#faust-programming-by-examples)
 - [Languages built on top of the signal API](#languages-built-on-top-of-the-signal-api)
 - [Developing modular synthesis using widget modulation](#developing-modular-synthesis-using-widget-modulation)
@@ -231,7 +230,7 @@ References:
 - [Bespoke Anywhere](https://nime.pubpub.org/pub/8jaqbl7m/release/1?readingCollection=bd12ca41)
 ---
 
-### Integration in Godot
+### Integration in Godot [Taken as an internship in 2025]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
