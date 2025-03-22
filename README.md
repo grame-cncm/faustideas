@@ -8,7 +8,8 @@ This page contains a list of possible GSoC projects, with a preliminary section 
 
 The application process for GSoC consists of the next steps:
 
-- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. Read also the [technical documentation](https://faustdoc.grame.fr).
+- become acquainted with the [Faust language and ecosystem](https://faust.grame.fr). In particular looking at the [Powered By Faust](https://faust.grame.fr/community/powered-by-faust/) page can help understanding the variety of projects that have been developed using Faust. Read also the [technical documentation](https://faustdoc.grame.fr) and [papers on Faust](https://hal.science/search/index?q=GRAME+Faust). 
+- for several of the proposed projects, we expect candidates to have a solid understanding of audio programming concepts such as DSP (Digital Signal Processing) basics, real-time audio processing, synthesis techniques, and audio plugin development. 
 - join the [Faust discord server](https://discord.gg/RzuFg6B8zA) and #gsoc channel.
 - read the [GSoC guide for students](https://developers.google.com/open-source/gsoc/resources/guide). Develop your understanding of the various stages of the program. Read this [blog post](https://sayak.dev/gsoc-faqs/).
 - check the [GSoC contribution timeline](https://developers.google.com/open-source/gsoc/timeline).
