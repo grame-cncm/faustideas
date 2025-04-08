@@ -38,7 +38,7 @@ The application process has several steps. First, verify that you meet the GSoC 
   * What are your long-term wishes in terms of job?
   
   
-## Use of LLM (ChatGPT, Mistral AI, etc.):
+## Use of LLM (ChatGPT, Mistral AI, etc.)
 
 Usage of LLM must be done responsibly. Improper use can undermine trust—and trust is the foundation of any successful collaboration. Read for example the University of Alaska Anchorage [Acceptable and Ethical AI Use Policy](https://github.com/uaanchorage/GSoC/blob/main/Acceptable-and-Ethical-AI-Use-Policy.md). 
 
