@@ -36,6 +36,11 @@ The application process has several steps. First, verify that you meet the GSoC 
   * How do you see your involvement after the program ends? Do you see yourself pushing the project further, or do you see yourself contributing to other Faust and its ecosystem projects?
   * Are you more interested in the Faust language and its ecosystem, or do you feel more like a hacker?
   * What are your long-term wishes in terms of job?
+  
+  
+## Use of LLM (ChatGPT, Mistral AI, etc.):
+
+Usage of LLM must be done responsibly. Improper use can undermine trust—and trust is the foundation of any successful collaboration. Read for example the University of Alaska Anchorage [Acceptable and Ethical AI Use Policy](https://github.com/uaanchorage/GSoC/blob/main/Acceptable-and-Ethical-AI-Use-Policy.md). 
 
 ## Possible projects:
 
