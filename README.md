@@ -565,6 +565,7 @@ section below.
 - [WebGPU audio architecture](#webgpu-audio-architecture)
 - [Invertible functions](#invertible-functions)
 - [faust2nih tool](#faust2nihplug-tool)
+- [Faust IDE MCP](#faust-ide-mcp)
 
 ## Implement Jonathan Abel's Modal Reverb
 
@@ -828,3 +829,9 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 ## faust2nihplug tool 
 
 [NIH-plug](https://github.com/robbert-vdh/nih-plug) is an API-agnostic audio plugin framework written in Rust. The primary objective of the project is to develop a `faust2nihplug` tool to convert a Faust DSP program in a ready-to-compile NIH-plug project. Those [lowpass-lr4-faust-nih-plug](https://codeberg.org/obsoleszenz/lowpass-lr4-faust-nih-plug) and [lamb-rs](https://github.com/magnetophon/lamb-rs) projects can be used as starting points. Monophonic DSP and MIDI controllable polyphonic instruments should be supported.  
+
+---
+
+## Faust IDE MCP 
+
+A Faust based project [Model Context Portocal](https://modelcontextprotocol.io/introduction) to interact mith LLMs. See [WebChucK MCP](https://github.com/a-nom-ali/webchuck-mcp) as an example. 
