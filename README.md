@@ -66,7 +66,7 @@ Or read the University of Alaska Anchorage [Acceptable and Ethical AI Use Policy
 Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
 ---
-### Integrated Faust Language Server and Formatting Extension for VS Code
+### Integrated Faust Language Server and Formatting Extension for VS Code [Taken in 2025]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr) 
 
@@ -114,7 +114,7 @@ The proposed extensions aim to:
 **An easy, medium or hard difficulty rating of each project:** medium
 
 ---
-### Backend for MOJO 
+### Backend for MOJO [Will be taken in 2026]
 
 **Mentors:** [Stéphane Letz](mailto:letz@grame.fr) and [Yann Orlarey](mailto:orlarey@gmail.com)  
 
@@ -169,7 +169,7 @@ Related work, concerned with adding automatic differentiation capabilities to th
 
 ---
 
-### Support for CLAP format
+### Support for CLAP format [Taken in 2025]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
@@ -317,7 +317,7 @@ Another [faust_juce_pgm_skeleton](https://github.com/unicornsasfuel/faust_juce_p
 
 ---
 
-### Integration in Audiokinetic Wwise 
+### Integration in Audiokinetic Wwise [Taken in 2025]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr)
 
