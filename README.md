@@ -685,11 +685,9 @@ Faust distribution already contains some testing tools, like `faust2plot` or `fa
 
 ---
 
-## Progressive Web applications for iOS and Android
+## Progressive Web applications for iOS and Android [Done, see [faustpwa](https://faustpwa.grame.fr)]
 
 Faust code can easily be distributed as self-contained Web pages containing the Faust DSP code as a statically compiled Web Audio node. The project is to improve the current model to deploy the pages as [Progressive Web applications](https://en.wikipedia.org/wiki/Progressive_web_app). The [faustwasm](https://github.com/grame-cncm/faustwasm) package will be improved to allow this new kind of deployment model. The use of [movement sensors](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) will be added in the architecture to keep the same capability currently found in the native applications. Deployment on iOS and Android machines will be tested.
-
-Done, see [faustpwa](https://faustpwa.grame.fr).
 
 ---
 
