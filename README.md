@@ -832,4 +832,4 @@ This would be useful for numerical integration methods (see [en.adsr_bias](https
 
 ## Faust IDE MCP 
 
-A Faust based project [Model Context Protocol](https://modelcontextprotocol.io/introduction) to interact mith LLMs. See [WebChucK MCP](https://github.com/a-nom-ali/webchuck-mcp) as an example. 
+A Faust based project [Model Context Protocol](https://modelcontextprotocol.io/introduction) to interact with LLMs. See [WebChucK MCP](https://github.com/a-nom-ali/webchuck-mcp) as an example. 
