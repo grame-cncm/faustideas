@@ -6,7 +6,7 @@ The Faust project continues to grow through a open-source ecosystem of developer
 
 Faust is not only a language for real-time signal processing. Is is also a platform that bridges research, education, and production across many domains: web audio, embedded systems, sound synthesis, interactive installations, and machine learning.  
 
-To keep the ecosystem evolving, GRAME and the wider Faust community regularly propose, mentor, and support open-source development projects through initiatives such as **Google Summer of Code (GSoC)** and the **Faust Ideas List**.
+To keep the ecosystem evolving, [GRAME](https://www.grame.fr) and the wider Faust community regularly propose, mentor, and support open-source development projects through initiatives such as [Google Summer of Code (GSoC)](GSOC.md) and the [Faust Ideas List](IDEAS.md).
 
 ## Google Summer of Code
 
@@ -15,7 +15,7 @@ Faust has been an active participant in [Google Summer of Code](https://summerof
 Examples of recent GSoC work include:
 - Integration of **automatic differentiation** for Differentiable DSP (DDSP) in Faust.
 - Development of **Faust Package Manager** for managing DSP libraries.
-- Integrations of Faust into platforms such as **Cables.gl**, **Godot**, **Wwise**, and **Bespoke**.
+- Integrations of Faust into platforms such as **Cables.gl**, **Godot** and **Wwise**.
 - New tools such as `faust2clap`, `faust2surge`, and `faust2webaudio`.
 - A **VS Code Language Server and Formatter** for improved developer experience.
 
