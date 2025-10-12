@@ -4,7 +4,7 @@ The Faust project continues to grow through a open-source ecosystem of developer
 
 ## Overview
 
-Faust is not only a language for real-time signal processing. Is is also a platform that bridges research, education, and production across many domains: web audio, embedded systems, sound synthesis, interactive installations, and machine learning.  
+Faust is not only a language for real-time signal processing. Is is also a platform that bridges research, education, and production across many domains: web audio, embedded systems, sound synthesis, interactive installations, and machine learning for instance.  
 
 To keep the ecosystem evolving, [GRAME](https://www.grame.fr) and the wider Faust community regularly propose, mentor, and support open-source development projects through initiatives such as [Google Summer of Code (GSoC)](GSOC.md) and the [Faust Ideas List](IDEAS.md).
 
@@ -16,17 +16,16 @@ Examples of recent GSoC work include:
 - Integration of **automatic differentiation** for Differentiable DSP (DDSP) in Faust.
 - Development of **Faust Package Manager** for managing DSP libraries.
 - Integrations of Faust into platforms such as **Cables.gl**, **Godot** and **Wwise**.
-- New tools such as `faust2clap`, `faust2surge`, and `faust2webaudio`.
+- New tools such as `faust2clap` and `faust2wwise`.
 - A **VS Code Language Server and Formatter** for improved developer experience.
 
 These projects are documented in detail in [GSOC.md](GSOC.md), which includes descriptions, expected outcomes, required skills, and mentoring contacts. Each contribution strengthens the foundation of Faust and helps make high-level audio programming more accessible and powerful.
 
 ## The Ideas List
 
-The [IDEAS.md](IDEAS.md) document gathers ongoing and future ideas for extending the Faust ecosystem.   It functions as a **living roadmap** for experimental features, integrations, and research directions. Many of these ideas can become GSoC projects or independent community initiatives.
+The [IDEAS.md](IDEAS.md) document gathers ongoing and future ideas for extending the Faust ecosystem. It functions as a **living roadmap** for experimental features, integrations, and research directions. Many of these ideas can become GSoC projects or independent community initiatives.
 
 Some current and past highlights include:
-- **WebAssembly and WebGPU optimizations** to push Faust performance in the browser.
 - **New deployment models** such as Progressive Web Apps and NPM-packaged web components.
 - **Advanced DSP features** like invertible functions, hot-reloadable soundfiles, and PFFT-like wrappers.
 - **Improved developer tools**, including better linear algebra support, UI declarations, and `faust2nihplug` for Rust.
