@@ -19,8 +19,6 @@ section below.
 
 - [Implement Jonathan Abel's Modal Reverb](#implement*jonathan-abels*modal-reverb)
 - [Improved UI Declarations](#improved-ui-declarations)
-- [Improved Linear Algebra Support](#improved-linear-algebra-support)
-- [Finish the DX7 Implementation](#finish-the-dx7-implementation)
 - [Trigonometric simplifications](#trigonometric-simplifications)
 - [WebAssembly specific optimisations](#webassembly-specific-optimisations)
 - [Improve faust2audiokit](#improve-faust2audiokit)
@@ -79,33 +77,6 @@ process = hgroup("synth",os.sawtooth(f)*g);
 ```
 
 Of course, it would still be possible to declare metadatas within the UI declaration (this system would be fully backward compatible). Internally, we'd have to parse the metadata and create a corpus of supported CSS metadatas knowing that interfaces would be based on a specific kind of layout (e.g., grid layout). Once again, another option would be to allow to specify "pure CSS" giving access to all the CSS features without having to do some reformatting. 
-
----
-
-## Improved Linear Algebra Support
-
-* Currently addressed by: nil
-
-Linear algebra operations are currently poorly supported in Faust. Having a way to conveniently express matrices would improvement. As part of that, linear algebra/matrix operations (e.g., inversion, multiplication, determinant, etc.) primitives could be added to the language.
-
-### Potential Implementation
-
-Matrices could be expressed using the Faust-multirate `vectorize` primitives
-by creating vectors of vectors.
-
-It would be interesting to try to implement matrix operations from scratch in  Faust. Although it might be hard and not so optimized, thus a more pragmatic solution would be to implement them as primitives. That would be a fair amount of work as this would imply that the corresponding code for each language supported by Faust would have to be supported. 
-
----
-
-## Finish the DX7 Implementation
-
-* Currently addressed by: nil
-
-Essentially, finish `dx7.lib`. It might be worth looking at these elements to
-make this happen:
-
-* <https://webaudiomodules.org/demos/wasm/dx7.html>
-* <https://github.com/everythingwillbetakenaway/DX7-Supercollider>
 
 ---
 
