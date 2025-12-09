@@ -73,7 +73,7 @@ Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 **Expected size of project:** 175 hours
 
 **Description:**  
-Faust provides several automatic UI generation backends, but it currently lacks a **modern, fully web-based patch UI system** comparable to the **Cmajor patch GUI model**. This project proposes the design and implementation of a **standardized Web UI layer for Faust**, enabling DSP modules to expose rich, interactive graphical interfaces directly in the browser.
+Faust provides several automatic UI generation backends, but it currently lacks a **modern, fully web-based patch UI system** comparable to the [Cmajor](https://cmajor.dev) patch GUI model. This project proposes the design and implementation of a **standardized Web UI layer for Faust**, enabling DSP modules to expose rich, interactive graphical interfaces directly in the browser.
 
 Inspired by the [Cmajor patch format](https://cmajor.dev/docs/PatchFormat#patch-guis), the project will define a **Faust Web UI specification**, along with a **reference implementation**. The system will rely on standard Web technologies (HTML, CSS, JavaScript) and provide real-time parameter control via WebAudio.
 
