@@ -97,7 +97,7 @@ Inspired by the [Cmajor patch format](https://cmajor.dev/docs/PatchFormat#patch-
 
 **Skills required:** JavaScript/TypeScript, HTML/CSS, WebAudio API, Faust.
 
-**An easy, medium or hard difficulty rating of each project:** medium to hard
+**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 ### Integrated Faust Language Server and Formatting Extension for VS Code [Taken in 2025]
