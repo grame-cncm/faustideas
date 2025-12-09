@@ -65,6 +65,40 @@ Or read the University of Alaska Anchorage [Acceptable and Ethical AI Use Policy
 Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
 ---
+### Web-Based UI System for Faust (Inspired by Cmajor Patch GUIs)
+
+**Mentor:** To be confirmed  
+
+**Expected size of project:** 175–350 hours  
+
+**Description:**  
+Faust provides several automatic UI generation backends, but it currently lacks a **modern, fully web-based patch UI system** comparable to the **Cmajor patch GUI model**. This project proposes the design and implementation of a **standardized Web UI layer for Faust**, enabling DSP modules to expose rich, interactive graphical interfaces directly in the browser.
+
+Inspired by the [Cmajor patch format](https://cmajor.dev/docs/PatchFormat#patch-guis), the project will define a **Faust Web UI specification**, along with a **reference implementation**. The system will rely on standard Web technologies (HTML, CSS, JavaScript) and provide real-time parameter control via WebAudio.
+
+- **Define a Faust Web UI specification:**  
+  Based on [Faust JSON format](https://faustdoc.grame.fr/manual/architectures/#dsp-json-description) and inspired by Cmajor’s patch GUI format.
+
+- **Implement the Web UI backend:**  
+  Generate parameter bindings and Web UI templates from Faust DSP code.
+
+- **Real-time DSP/UI communication:**  
+  Using WebAudio AudioWorklet and WebAssembly.
+
+- **Integration and demos:**  
+  Compatibility with Faust PWAs and online demo instruments/effects.
+
+**Expected outcomes:**
+
+- A new Faust Web UI backend.
+- A standardized parameter binding and messaging format.
+- A set of documented Web-based Faust demo applications.
+
+**Skills required:** JavaScript/TypeScript, HTML/CSS, WebAudio API, WebAssembly basics, Faust (recommended).
+
+**An easy, medium or hard difficulty rating of each project:** medium to hard
+
+---
 ### Integrated Faust Language Server and Formatting Extension for VS Code [Taken in 2025]
 
 **Mentor:** [Stéphane Letz](mailto:letz@grame.fr) 
