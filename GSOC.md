@@ -70,7 +70,7 @@ Some [more ideas](#faust-ideas) could possibly be turned as GSoC projects.
 
 **Mentor:** To be confirmed  
 
-**Expected size of project:** 175–350 hours  
+**Expected size of project:** 175
 
 **Description:**  
 Faust provides several automatic UI generation backends, but it currently lacks a **modern, fully web-based patch UI system** comparable to the **Cmajor patch GUI model**. This project proposes the design and implementation of a **standardized Web UI layer for Faust**, enabling DSP modules to expose rich, interactive graphical interfaces directly in the browser.
