@@ -47,7 +47,7 @@ Or read the University of Alaska Anchorage [Acceptable and Ethical AI Use Policy
 
 ## Possible projects:
 
-- [Extending the Faust DSP Testbench](#web-based-ui-system-for-faust-inspired-by-cmajor-patch-guis)
+- [Web-Based UI System for Faust (Inspired by Cmajor Patch GUIs)](#web-based-ui-system-for-faust-inspired-by-cmajor-patch-guis)
 - [Integrated Faust Language Server and Formatting Extension for VS Code](#integrated-faust-language-server-and-formatting-extension-for-vs-code)
 - [Integration in the Heavy Compiler Collection](#integration-in-the-heavy-compiler-collection)
 - [Extending the Faust DSP Testbench](#extending-the-faust-dsp-testbench)
