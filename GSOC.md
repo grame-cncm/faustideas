@@ -95,7 +95,7 @@ Inspired by the [Cmajor patch format](https://cmajor.dev/docs/PatchFormat#patch-
 - A standardized parameter binding and messaging format.
 - A set of documented Web-based Faust demo applications.
 
-**Skills required:** JavaScript/TypeScript, HTML/CSS, WebAudio API, WebAssembly basics, Faust (recommended).
+**Skills required:** JavaScript/TypeScript, HTML/CSS, WebAudio API, Faust.
 
 **An easy, medium or hard difficulty rating of each project:** medium to hard
 
