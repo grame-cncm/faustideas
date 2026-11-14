@@ -48,7 +48,6 @@ Or read the University of Alaska Anchorage [Acceptable and Ethical AI Use Policy
 https://github.com/grame-cncm/faustideas/blob/master/GSOC.md#integrated-faust-language-server-and-formatting-extension-for-vs-code-taken-in-2025
 
 - [Web-Based UI System for Faust (Inspired by Cmajor Patch GUIs)](#web-based-ui-system-for-faust-inspired-by-cmajor-patch-guis)
-- [Integration in the Heavy Compiler Collection](#integration-in-the-heavy-compiler-collection)
 - [Extending the Faust DSP Testbench](#extending-the-faust-dsp-testbench)
 - [Integration in Surge](#integration-in-surge)
 - [Integration in BELA](#integration-in-bela)
@@ -388,26 +387,6 @@ Look at the [faust2wwise](https://github.com/grame-cncm/faust2wwise) preliminary
 **More detailed description of the project:** [openFrameworks](https://openframeworks.cc/about/) is an open source C++ toolkit designed to assist the creative process by providing a simple and intuitive framework for experimentation. It allows to access a lot of additional extensions and libraries in the form of [addons](https://ofxaddons.com). The project is to explore how Faust can be integated in the framework as an [ofxFaust](https://forum.openframeworks.cc/t/developing-a-faust-addon) addon, either statically (using the C++ generated code from a DSP program), or possibly embedding the [libfaust](https://faustdoc.grame.fr/manual/embedding/) compiler. Adapted architecture files will have to be developed.
 
 **Expected outcomes:** The result will be a new **ofxFaust** and openFrameworks demo examples explaining how to use it.
-
----
-
-### Integration in the Heavy Compiler Collection
-
-**Mentor:** [Alexander Chalikiopoulos](mailto:alexander@puikheid.nl)
-
-**Expected size of project:** 175 hours
-
-**More detailed description of the project:** [HVCC](https://github.com/Wasted-Audio/hvcc/) is a python-based dataflow audio programming language compiler that generates C/C++ code and a variety of specific framework wrappers. It's main focus is in parsing [Pure Data](https://puredata.info/) DSP patch files, statically interprets them, and converts them to C/C++. The project is to explore how Faust can be integrated into the compiler toolchain. Likely starting from [pd-faustgen](https://github.com/CICM/pd-faustgen) external and then internally calling [faustdoctor](https://github.com/SpotlightKid/faustdoctor) to wrap the resulting C into separate header and implementation files. A crude proof of concept integration between faust generated code and a heavy DSP graph was done to explore the feasibility of this integration.
-
-**Expected outcomes:** The result will be:
-
-- extending hvcc compiler steps `pd2hv`, `hv2ir` and `ir2c`
-- jinja2 templates that create Heavy compatible C header and implementation files, based on Faust code
-- successfully create DSP prototypes using PD and Faust that can be compiled to C/C++ projects based on Heavy
-
-**Skills required/preferred:** Python, C, Pure Data, audio and Faust programming.
-
-**An easy, medium or hard difficulty rating of each project:** medium
 
 ---
 
